@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="600px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<g transform="translate(0 0)">
+	<g>
+		<path id="prev-button" d="M26.936,0.103l0.793,0.676L1.594,32.5L27.67,64.22l-0.793,0.676L0.271,32.5L26.936,0.103z"/>
+	</g>
+</g>
+<g transform="translate(75 0)">
+	<g>
+		<path id="next-button" d="M27.729,32.5L1.124,64.896L0.33,64.221L26.406,32.5L0.271,0.779l0.794-0.676L27.729,32.5z"/>
+	</g>
+</g>
+<g transform="translate(150 0)">
+	<g>
+		<path id="close-button" d="M17.012,16.5l15.594,15.593l-0.513,0.512L16.5,17.012L0.907,32.604l-0.512-0.512L15.988,16.5
+			L0.396,0.907l0.512-0.512L16.5,15.988L32.093,0.396l0.513,0.512L17.012,16.5z"/>
+	</g>
+</g>
+<g transform="translate(150 0)">
+	<g>
+		<path id="close-button_3_" fill="#0088CC" d="M95.906,16.5L111.5,32.093l-0.513,0.512L95.395,17.012L79.802,32.604l-0.513-0.512
+			L94.883,16.5L79.291,0.907l0.512-0.512l15.592,15.593l15.593-15.592l0.513,0.512L95.906,16.5z"/>
+	</g>
+</g>
+<g transform="translate(0 100)">
+	<g>
+		<path id="prev-button_1_" fill="#FFFFFF" d="M26.936,0.103l0.793,0.676L1.594,32.5L27.67,64.221l-0.793,0.676L0.271,32.5
+			L26.936,0.103z"/>
+	</g>
+</g>
+<g transform="translate(75 100)">
+	<g>
+		<path id="next-button_1_" fill="#FFFFFF" d="M27.729,32.5L1.124,64.896L0.33,64.221L26.406,32.5L0.271,0.779l0.794-0.676
+			L27.729,32.5z"/>
+	</g>
+</g>
+<g transform="translate(150 100)">
+	<g>
+		<path id="close-button_1_" fill="#FFFFFF" d="M17.012,16.5l15.594,15.593l-0.513,0.512L16.5,17.012L0.907,32.604l-0.512-0.512
+			L15.988,16.5L0.396,0.907l0.512-0.512L16.5,15.988L32.093,0.396l0.513,0.512L17.012,16.5z"/>
+	</g>
+</g>
+<g transform="translate(0 200)">
+	<g>
+		<path id="prev-button_2_" fill="#999999" d="M26.936,0.104l0.793,0.676L1.594,32.5L27.67,64.221l-0.793,0.676L0.271,32.5
+			L26.936,0.104z"/>
+	</g>
+</g>
+<g transform="translate(75 200)">
+	<g>
+		<path id="next-button_2_" fill="#999999" d="M27.729,32.5L1.124,64.896L0.33,64.221L26.406,32.5L0.271,0.779l0.794-0.676
+			L27.729,32.5z"/>
+	</g>
+</g>
+<g transform="translate(150 200)">
+	<g>
+		<path id="close-button_2_" fill="#999999" d="M17.012,16.5l15.594,15.593l-0.513,0.513L16.5,17.012L0.907,32.604l-0.512-0.512
+			L15.988,16.5L0.396,0.907l0.512-0.513L16.5,15.988L32.093,0.396l0.513,0.512L17.012,16.5z"/>
+	</g>
+</g>
+</svg>
