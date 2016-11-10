@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.static(__dirname + './../public'));
 
 // MASSIVE //
-var massiveUri = 'postgres://localhost/cart';
+var massiveUri = 'postgres://localhost/macbook';
 var massiveServer = massive.connectSync({
 	connectionString: massiveUri
 });

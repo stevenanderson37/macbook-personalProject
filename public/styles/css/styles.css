@@ -1,6 +1,283 @@
+@import url('https://fontlibrary.org/face/vegur');
+
+body {
+  font-family: 'VegurRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* OVERALL NAVBAR */
+
 .navbar-container {
   width: 100%;
   height: 44px;
   margin: auto;
   background-color: #262626;
+  text-align: center;
+}
+
+.navbar-container img {
+  margin-left: 2.75vw;
+  margin-right: 2.75vw;
+}
+
+.nav-wide a:hover {
+  /*color: #a5a5a5;*/
+  opacity: .65;
+}
+
+.nav-dropdown {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .nav-wide {
+    visibility: hidden;
+  }
+
+  .nav-dropdown {
+    visibility: visible;
+  }
+
+  .nav-dropdown img {
+    margin: auto;
+  }
+}
+
+/* NAVBAR-MacBook */
+
+.state-navbar {
+  width: 75vw;
+  height: 52px;
+  margin: auto;
+  text-align: center;
+  font-family: 'VegurRegular';
+  font-weight: lighter;
+  font-style: normal;
+  color: #333333;
+  border-bottom: thin solid #eaeaea;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.state-navbar a {
+  color: #333333;
+}
+
+.state-navbar h2 {
+  color: #333333;
+}
+
+.state-navbar-left {
+  float: left;
+  font-size: 28px;
+  line-height: 28px;
+  padding-top: 11px;
+}
+
+.state-navbar-right {
+  float: right;
+  font-size: 13px;
+  line-height: 22px;
+  padding-top: 16px;
+}
+
+.state-navbar-right a, button {
+  margin-left: 20px;
+}
+
+/* homeTmpl.html */
+
+.body-content {
+  text-align: center;
+}
+
+.macbook-intro a {
+  color: #d0bca4;
+}
+
+.watch-film {
+  width: 100%;
+  height: 22px;
+}
+
+.watch-film img {
+  width: 20px;
+  height: auto;
+}
+
+.watch-film:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.watch-film img:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.home-photo2 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+}
+
+.home-photo2 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo3 {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.home-photo3 img {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+}
+
+.small-line {
+  width: 48px;
+  height: 1px;
+  background-color: #ccc;
+  margin: auto;
+}
+
+.home-photo4 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo4 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.information-left {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  text-align: left;
+}
+
+.information-center {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.information-center a {
+  color: #0070c9;
+}
+
+.information-left a {
+  color: #0070c9;
+}
+
+.long-line {
+  width: 1024px;
+  height: 2px;
+  margin: auto;
+  background: white;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.home-photo5 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo5 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo5-shadow {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo5-shadow img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo6 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo6 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo6-vert-line {
+  width: 1px;
+  height: 30px;
+  margin: auto;
+  background: #bdb099;
+}
+
+.home-photo6-horizontal-line {
+  width: 764px;
+  height: 21px;
+  margin: auto;
+  border-top: thin solid #bdb099;
+  border-left: thin solid #bdb099;
+  border-right: thin solid #bdb099;
+}
+
+.home-photo7 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo7 img {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+.home-photo8 {
+  width: 1018px;
+  height: 711px;
+  margin: auto;
+  background-image: url("../styles/img/home/internals_layer_end_medium_2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+.home-photo8 img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  opacity: 0;
 }
