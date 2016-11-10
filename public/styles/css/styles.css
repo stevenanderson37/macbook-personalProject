@@ -60,7 +60,7 @@ a {
   font-style: normal;
   color: #333333;
   border-bottom: thin solid #eaeaea;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0);
 }
 
 .state-navbar a {
@@ -89,34 +89,34 @@ a {
   margin-left: 20px;
 }
 
+.full-state-navbar {
+  width: 100%;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
 /* homeTmpl.html */
 
 .body-content {
   text-align: center;
 }
 
-.macbook-intro a {
-  color: #d0bca4;
-}
-
 .watch-film {
   width: 100%;
   height: 22px;
+  color: #d0bca4;
+  fill: #d0bca4;
 }
 
-.watch-film img {
+.watch-film svg {
   width: 20px;
   height: auto;
 }
 
 .watch-film:hover {
-  color: black;
+  color: #000000;
   cursor: pointer;
-}
-
-.watch-film img:hover {
-  color: black;
-  cursor: pointer;
+  fill: #000000;
 }
 
 .home-photo2 {
