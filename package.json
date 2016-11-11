@@ -1,0 +1,26 @@
+{
+  "name": "macbook-personal-project",
+  "version": "1.0.0",
+  "description": "clone of MacBook site",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "massive": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenanderson37/macbook-personalProject.git"
+  },
+  "author": "Steven Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenanderson37/macbook-personalProject/issues"
+  },
+  "homepage": "https://github.com/stevenanderson37/macbook-personalProject#readme"
+}
