@@ -38,21 +38,24 @@
 </div>
 
 <div class="full-state-navbar">
-  <div class="state-navbar">
-    <h2 class="state-navbar-left">MacBook</h2>
-    <div class="state-navbar-right">
-      <ul>
-        <a ui-sref="design">Design</a>
-        <a ui-sref="wireless">Wireless</a>
-        <a ui-sref="macos">macOS</a>
-        <a ui-sref="specs">Tech Specs</a>
-        <button class="button">Buy</button>
-      </ul>
+  <div class="full-state-navbar-top">
+    <div class="state-navbar">
+      <h2 class="state-navbar-left">MacBook</h2>
+      <div class="state-navbar-right">
+        <ul>
+          <a ui-sref="design">Design</a>
+          <a ui-sref="wireless">Wireless</a>
+          <a ui-sref="macos">macOS</a>
+          <a ui-sref="specs">Tech Specs</a>
+          <button class="button">Buy</button>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="body-content">
+
   <div class="top-headline">
     <h1>MacBook</h1>
     <h2>Light. Years ahead.</h2>
@@ -76,7 +79,7 @@
     <p>Our goal with MacBook was to do the impossible: engineer a full‑size experience into the lightest and most compact Mac notebook ever. That meant reimagining every element to make it not only lighter and thinner but also better. The result is more than just a new notebook. It’s the future of the notebook. And now, with sixth‑generation Intel processors, improved graphics performance, faster flash storage, and up to 10 hours of battery life,* MacBook is even more capable.</p>
   </div>
 
-  <div style="padding-bottom: 150px;">
+  <div style="padding-top: 50px; padding-bottom: 150px;">
     <div>
       13.1 mm
       THIN
@@ -116,9 +119,9 @@
       <div class="small-line" style="float: left;"></div>
       <h2>A Retina display that takes <br> everything to the edge.</h2>
       <br>
-    <p>The moment you open your MacBook, its gorgeous 12-inch Retina display with edge-to- <br> edge glass brings everything into focus. Every photo leaps off the screen in rich, vibrant <br> detail. Over 3 million pixels render each letter with crystal clarity. And it all comes to light <br> on the thinnest Retina display ever on a Mac, meticulously honed to deliver a bold visual <br> experience within an impossibly minimal design.</p>
+      <p>The moment you open your MacBook, its gorgeous 12-inch Retina display with edge-to- <br> edge glass brings everything into focus. Every photo leaps off the screen in rich, vibrant <br> detail. Over 3 million pixels render each letter with crystal clarity. And it all comes to light <br> on the thinnest Retina display ever on a Mac, meticulously honed to deliver a bold visual <br> experience within an impossibly minimal design.</p>
       <br>
-      <a>Learn more about Design</a>
+      <a ui-sref="design">Learn more about Design ></a>
     </div>
 
     <div style="padding-bottom: 150px;">
@@ -140,19 +143,23 @@
   </div>
 
   <div>
-    <div class="information-center">
+    <div class="information-center" style="margin-bottom: 100px;">
       <div class="small-line" style="margin-top: 150px;"></div>
       <h2>A full-size keyboard. <br> In a fraction of the space.</h2>
-      <p>We believe that a comfortable, full-size keyboard is essential for a great notebook experience. But to fit one into the elegantly thin MacBook, we had to completely rethink how a keyboard is engineered and constructed. We redesigned each key and its underlying mechanism — not only making the whole keyboard much thinner, but also allowing for more comfortable, precise, and responsive typing that just feels right.</p>
-      <a>Learn more about Design</a>
+      <br>
+      <p>We believe that a comfortable, full-size keyboard is essential for a great notebook <br> experience. But to fit one into the elegantly thin MacBook, we had to completely <br> rethink how a keyboard is engineered and constructed. We redesigned each key and its <br> underlying mechanism — not only making the whole keyboard much thinner, but also <br> allowing for more comfortable, precise, and responsive typing that just feels right.</p>
+      <br>
+      <a ui-sref="design">Learn more about Design ></a>
     </div>
     <div class="home-photo4">
       <img src="./styles/img/home/overview_keyboard_on_medium_2x.jpg" />
     </div>
-    <div class="information-center">
-      <h2>The trackpad, pushed even further with Force Touch.</h2>
-      <p>MacBook comes with a different way to experience a trackpad. The Force Touch trackpad is engineered to deliver a responsive, uniform click no matter where you press the surface. And underneath, force sensors detect how much pressure you’re applying. You can now use a Force click to enable useful capabilities, like quickly looking up the definition of a word or previewing a file just by clicking and continuing to press the trackpad. You’ll also experience haptic feedback — a tactile vibration from the trackpad that adds the sense of touch to what you see on the screen. These advanced capabilities work in addition to all the intuitive Multi-Touch gestures Mac users love. You’ll be more in touch with your Mac than ever before. Without lifting a finger.</p>
-      <a>Learn more about Design</a>
+    <div class="information-center" style="padding-top: 40px; padding-bottom: 200px;">
+      <h2>The trackpad, pushed even further <br> with Force Touch.</h2>
+      <br>
+      <p>MacBook comes with a different way to experience a trackpad. The Force Touch trackpad is <br> engineered to deliver a responsive, uniform click no matter where you press the surface. And <br> underneath, force sensors detect how much pressure you’re applying. You can now use a Force click <br> to enable useful capabilities, like quickly looking up the definition of a word or previewing a file just <br> by clicking and continuing to press the trackpad. You’ll also experience haptic feedback — a tactile <br> vibration from the trackpad that adds the sense of touch to what you see on the screen. These <br> advanced capabilities work in addition to all the intuitive Multi-Touch gestures Mac users love. You’ll <br> be more in touch with your Mac than ever before. Without lifting a finger.</p>
+      <br>
+      <a ui-sref="design">Learn more about Design ></a>
     </div>
   </div>
 
@@ -166,60 +173,66 @@
     </div>
   </div>
 
-  <div class="information-center">
+  <div class="information-center" style="margin-top: -400px;">
     <div class="small-line"></div>
     <h2>Fully equipped for a wireless world.</h2>
-    <p>MacBook is designed to fit effortlessly into our increasingly wireless world. Just about anything you do with a notebook can now be done over the air, thanks to Apple software that takes full advantage of the latest Wi-Fi and Bluetooth wireless technology. So no matter where you are, you can connect to the web, transfer files, organize your photos, listen to music, and more — without being tied down.</p>
-    <a>Learn more about Wireless</a>
-    <div>
-      <img src="./styles/img/home/icons/overview_icon_icloud_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_airdrop_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_bluetooth_audio_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_airplay_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_hotspot_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_appstore_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_print_large_2x.jpg" />
-      <img src="./styles/img/home/icons/overview_icon_time_machine_large_2x.jpg" />
-    </div>
+    <br>
+    <p>MacBook is designed to fit effortlessly into our increasingly wireless world. Just about anything you do <br> with a notebook can now be done over the air, thanks to Apple software that takes full advantage of the <br> latest Wi-Fi and Bluetooth wireless technology. So no matter where you are, you can connect to the web, <br> transfer files, organize your photos, listen to music, and more — without being tied down.</p>
+    <br>
+    <a ui-sref="wireless">Learn more about Wireless ></a>
+  </div>
+  <div class="wireless-icons">
+    <img id="wireless1" src="./styles/img/home/icons/overview_icon_icloud_large_2x.jpg" />
+    <img id="wireless2" src="./styles/img/home/icons/overview_icon_airdrop_large_2x.jpg" />
+    <img id="wireless3" src="./styles/img/home/icons/overview_icon_bluetooth_audio_large_2x.jpg" />
+    <img id="wireless4" src="./styles/img/home/icons/overview_icon_airplay_large_2x.jpg" />
+    <img id="wireless5" src="./styles/img/home/icons/overview_icon_hotspot_large_2x.jpg" />
+    <img id="wireless6" src="./styles/img/home/icons/overview_icon_appstore_large_2x.jpg" />
+    <img id="wireless7" src="./styles/img/home/icons/overview_icon_print_large_2x.jpg" />
+    <img id="wireless8" src="./styles/img/home/icons/overview_icon_time_machine_large_2x.jpg" />
   </div>
 
-  <div>
+  <div style="margin-top: 125px;">
     <div class="information-center">
       <div class="small-line"></div>
-      <h2>USB-C.</h2>
-      <h2>Singularly versatile.</h2>
+      <h2>USB-C. <br> Singularly versatile.</h2>
+      <br>
       <p>As long as we were including a port for charging your MacBook, we wanted to make sure it was the most advanced and versatile one available. The USB-C port puts just about everything you need in a port all in one place. This amazing port provides charging, speedy USB 3 data transfer, and video output in a reversible design that’s one-third the size of a USB 3 port, giving you the flexibility to easily connect your favorite devices.</p>
-      <a>Learn more about Design</a>
+      <br>
+      <a ui-sref="design">Learn more about Design ></a>
     </div>
     <div class="home-photo6">
       <img src="./styles/img/home/design_port_large_2x.jpg" />
     </div>
-    <div style="margin: auto;">
-      <img src="./styles/img/home/icons/usb_type_c_large_2x.png" />
-    </div>
-    <div class="home-photo6-vert-line"></div>
-    <div class="home-photo6-horizontal-line"></div>
-    <div>
-      <img src="./styles/img/home/icons/charging_icon_large_2x.png" />
-      <img src="./styles/img/home/icons/displays_icon_large_2x.png" />
-      <img src="./styles/img/home/icons/storage_icon_large_2x.png" />
-      <img src="./styles/img/home/icons/devices_icon_large_2x.png" />
-    </div>
-    <div style="margin: auto; color: #bdb099;">
-      <span>CHARGING</span>
-      <span>DISPLAYS</span>
-      <span>STORAGE</span>
-      <span>DEVICES</span>
+
+    <div class="usbc-icons">
+      <div style="margin: auto;">
+        <img src="./styles/img/home/icons/usb_type_c_large_2x.png" style="height: 20px;" />
+      </div>
+      <div class="home-photo6-vert-line"></div>
+      <div class="home-photo6-horizontal-line"></div>
+      <div>
+        <img src="./styles/img/home/icons/charging_icon_large_2x.png" style="height: 40px;" />
+        <img src="./styles/img/home/icons/displays_icon_large_2x.png" style="height: 75px;" />
+        <img src="./styles/img/home/icons/storage_icon_large_2x.png" />
+        <img src="./styles/img/home/icons/devices_icon_large_2x.png" />
+      </div>
+      <div style="margin: auto; color: #bdb099;">
+        <span>CHARGING</span>
+        <span>DISPLAYS</span>
+        <span>STORAGE</span>
+        <span>DEVICES</span>
+      </div>
     </div>
   </div>
 
-  <div>
-    <div class="information-center">
-      <h2>The capability to connect to everything you need.</h2>
-      <h2>In a fraction of the space.</h2>
-      <p>We gave a lot of consideration to the way MacBook connects to peripherals and power. We chose USB-C for its compact design and versatility. This single port lets you connect your charger; HDMI, DisplayPort, and VGA displays; USB devices like external drives; and your iPhone or iPad. All of which goes to show that sometimes less really is more.</p>
+  <div style="margin-top: 40px; margin-bottom: 100px;">
+    <div class="information-center" style="margin-bottom: 100px;">
+      <h2 style="font-size: 32px; line-height: 36px;">The capability to connect to everything you need.</h2>
+      <br>
+      <p>We gave a lot of consideration to the way MacBook connects to peripherals and power. <br> We chose USB-C for its compact design and versatility. This single port lets you connect <br> your charger; HDMI, DisplayPort, and VGA displays; USB devices like external drives; and <br> your iPhone or iPad. All of which goes to show that sometimes less really is more.</p>
     </div>
-    <div class="home-photo7">
+    <div class="home-photo7" style="margin-bottom: 50px;">
       <img src="./styles/img/home/usbc_av_medium_2x.jpg" />
     </div>
     <div class="information-center">
@@ -230,27 +243,124 @@
   <div>
     <div class="information-center">
       <div class="small-line"></div>
-      <h2>Quietly astonishing. <br> In a fraction of the space.</h2>
+      <h2>Quietly astonishing.</h2>
+      <br>
       <p>MacBook has been engineered from the ground up for silent, efficient performance. It includes sixth-generation Intel Core M processors that run on just 5 watts of power, made even more efficient by optimizations throughout macOS. Together the processor and macOS sip so little energy that the system generates very little heat, so no fan is required to cool the computer. That means when your MacBook is working, you won’t hear a thing. And the logic board on which the processor sits has been painstakingly engineered to pack all the capability you expect in a Mac into as little space as possible.</p>
-      <a>Learn more about Design</a>
+      <br>
+      <a ui-sref="design">Learn more about Design ></a>
     </div>
-    <div class="home-photo8">
-        <!-- <img id="home-photo8a" src="./styles/img/home/internals_layer_end_medium_2x.jpg" /> -->
+    <div class="home-internals" style="margin-top: 50px;">
         <img id="home-photo8b" src="./styles/img/home/internals_layer_start_medium_2x.jpg" />
     </div>
     <div class="information-center">
-      <h2>Measurably faster.</h2>
-      <p>MacBook features sixth-generation Intel Core m3, m5, and m7 processors with speeds of up to 1.3GHz and up to 25 percent faster graphics. It also comes with faster 1866MHz memory. So your MacBook is quicker and more responsive.</p>
+      <h2 style="font-size: 32px; line-height: 36px;">Measurably faster.</h2>
+      <br>
+      <p>MacBook features sixth-generation Intel Core m3, m5, and m7 processors with speeds of up to <br> 1.3GHz and up to 25 percent faster graphics. It also comes with faster 1866MHz memory. So <br> your MacBook is quicker and more responsive.</p>
     </div>
   </div>
 
-  <div class="information-left">
-    <div class="small-line" style="float: left;"></div>
-    <h2>All-day battery life. <br> Now even longer.</h2>
-    <br>
-  <p>With the slim MacBook enclosure, all-day battery life simply would not be achievable <br> using traditional rectangular batteries. So we developed our own battery technology <br> specifically designed to make use of every last millimeter of available space. The <br> result is a terraced, contoured battery design that not only fits perfectly inside the <br> incredibly slim MacBook, but also is unlike anything seen before in a notebook. And <br> now, thanks to more efficient processors and improved battery chemistry, battery life <br> has been extended by an hour.</p>
-    <br>
-    <a>Learn more about Design</a>
+  <div class="home-battery">
+    <div class="information-left">
+      <div class="small-line" style="float: left;"></div>
+      <h2>All-day battery life. <br> Now even longer.</h2>
+      <br>
+      <p>With the slim MacBook enclosure, all-day battery life simply would not be achievable <br> using traditional rectangular batteries. So we developed our own battery technology <br> specifically designed to make use of every last millimeter of available space. The <br> result is a terraced, contoured battery design that not only fits perfectly inside the <br> incredibly slim MacBook, but also is unlike anything seen before in a notebook. And <br> now, thanks to more efficient processors and improved battery chemistry, battery life <br> has been extended by an hour.</p>
+      <br>
+      <a ui-sref="design">Learn more about Design ></a>
+      <div class="home-battery-stack_container">
+        <div class="home-battery-stack">
+            <img id="battery1" src="./styles/img/home/overview_battery_2b_medium_2x.png" />
+            <img id="battery2" src="./styles/img/home/overview_battery_2a_medium_2x.png" />
+            <img id="battery3" src="./styles/img/home/overview_battery_1b_medium_2x.png" />
+            <img id="battery4" src="./styles/img/home/overview_battery_1a_medium_2x.png" />
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="home-macos">
+    <div class="information-left" style="margin-top: 270px">
+      <div class="small-line" style="float: left;"></div>
+      <h2>macOS</h2>
+      <br>
+      <p>macOS is the operating system that <br> powers everything you do on a Mac. <br> macOS Sierra introduces Siri to Mac — <br> along with new ways to enjoy your <br> photos, shop more securely online, and <br> work more seamlessly between devices.</p>
+      <br>
+      <a ui-sref="macos">Learn more about macOS ></a>
+    </div>
+    <div class="home-macos-image">
+      <img src="./styles/img/home/overview_osx_medium_2x.jpg" />
+    </div>
+  </div>
+
+  <div class="spacing-adjustment"></div>
+
+  <div class="home-builtinapps">
+    <div class="information-center">
+      <div class="small-line"></div>
+      <h2>Built-in Apps</h2>
+      <br>
+      <p>Every Mac comes with apps for creativity and apps for productivity. It also comes with a <br> collection of great apps for things you do every day, like surﬁng the web, sending mail <br> and messages, and organizing your calendar. It even comes with an app for finding new <br> apps. Your Mac is more than full‑featured, it’s fully loaded.</p>
+    </div>
+    <div class="home-builtinapps-image">
+      <img src="./styles/img/home/overview_builtinapps_shadow_medium_2x.png" style="position: relative; z-index: 2;" />
+      <img src="./styles/img/home/overview_builtinapps_medium_2x.jpg" style="z-index: 1; margin-top: -35px;" />
+    </div>
+  </div>
+
+  <div class="home-pure-invention">
+    <div class="information-center">
+      <div class="small-line"></div>
+      <h2>Pure invention.</h2>
+      <br>
+      <a ui-sref="design">Learn more about the <br> design of MacBook ></a>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer-container">
+  <div class="inner-footer-container">
+
+    <div class="buystrip">
+      <img src="./styles/img/home/buystrip_macbook_large_2x.png" />
+      <div class="buystrip-info">
+        <h3>MacBook</h3>
+        <p>Starting at $1299</p>
+        <br>
+        <a>Compare Mac notebooks ></a>
+      </div>
+    </div>
+
+    <div class="icon-footer-info">
+      <div>
+        <img src="./styles/img/home/icons/boxIcon_large.svg" />
+        <h3>Free two-day delivery</h3>
+        <p>On in-stock items <br> ordered by 5pm.</p>
+        <br>
+        <a>Learn more ></a>
+      </div>
+      <div>
+        <img src="./styles/img/home/icons/pickupIcon_large.svg" />
+        <h3>Pick up at the Apple <br> Store today.</h3>
+        <p>Buy online and pick up available <br> items in an hour.</p>
+        <br>
+        <a>Learn more ></a>
+      </div>
+      <div>
+        <img src="./styles/img/home/icons/financingIcon_large.svg" />
+        <h3>Special financing</h3>
+        <p>Apply for special financing and <br> earn rewards.</p>
+        <br>
+        <a>Learn more ></a>
+      </div>
+      <div>
+        <img src="./styles/img/home/icons/chatIcon_large.svg" />
+        <h3>Get help buying</h3>
+        <p>Have a question? Call a Specialist <br> or chat online. <br> Call 1-800-MY-APPLE.</p>
+        <br>
+        <a>Learn more ></a>
+      </div>
+    </div>
+
+  </div>
 </div>

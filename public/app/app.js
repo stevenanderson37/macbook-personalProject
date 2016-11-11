@@ -60,7 +60,6 @@ angular.module("app")
 			controller: 'userCtrl'
 		})
 
-
 		// ORDER STATE
 		.state('order', {
 			url: '/order/:id',
@@ -72,7 +71,6 @@ angular.module("app")
 				}
 			}
 		})
-
 
 		// PRODUCTS STATE
 		.state('products', {
