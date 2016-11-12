@@ -1,5 +1,6 @@
+hello
 <div ng-repeat="user in users">
-  {{user.name}}<br> {{user.email}}
+  <h3>{{user.first_name}} {{user.last_name}} <br> {{user.email}}</h3>
   <br>
   <button type="button" name="button" ui-sref="order({id: user.id})">View My Cart</button>
   <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">Products</button>

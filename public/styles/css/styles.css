@@ -34,7 +34,6 @@ a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  text-shadow: rgba(0,0,0,.4) 0 1px 0;
   color: #ffffff;
   font-size: 13px;
   line-height: 20px;
@@ -49,8 +48,8 @@ a {
   cursor: pointer;
 }
 .button:active {
-  border-top-color: #2a85d4;
-  background: #2a85d4;
+  border-top-color: #3f9fef;
+  background: #3f9fef;
 }
 
 /* OVERALL NAVBAR */
@@ -121,7 +120,7 @@ a {
 }
 
 .buystrip {
-  width: 452px;
+  width: 512px;
   height: auto;
   margin: auto;
   padding-top: 60px;
@@ -147,6 +146,7 @@ a {
 
 .buystrip-info {
   float: right;
+  padding-right: 50px;
 }
 
 .buystrip h3 {
@@ -182,16 +182,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-flow: row;
   text-align: center;
   color: #333333;
+  align-content: space-between;
 }
 
-.icon-footer-info div {
-  width: 195px;
+.icon-footer-info .grid {
+  width: 216px;
   height: 217px;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin: auto;
 }
 
 .icon-footer-info h3 {
@@ -219,6 +218,55 @@ a {
 .icon-footer-info a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.battery-warning {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  border-bottom: thin solid #999999;
+  border-top: thin solid #999999;
+  text-align: left;
+}
+
+.battery-warning a {
+  color: #343434;
+}
+
+.battery-warning a:hover {
+  text-decoration: underline;
+}
+
+.site-location {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  text-align: left;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items: center;
+}
+
+.site-location div {
+  margin-right: 10px;
+}
+
+.site-location svg {
+  height: 35px;
+  width: auto;
+  margin-right: 10px;
 }
 
 /* NAVBAR-MacBook */
@@ -478,7 +526,7 @@ a {
 }
 
 .information-center {
-  width: 780px;
+  width: 980px;
   height: auto;
   margin: auto;
   text-align: center;
@@ -605,17 +653,20 @@ a {
 
 .home-photo6 {
   width: 100%;
-  height: auto;
+  height: 882px;
   margin: auto;
   overflow: hidden;
+  background-image: url("../img/home/design_port_large_2x.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 2204px auto;
 }
 
-.home-photo6 img {
+/*.home-photo6 img {
   width: 2204px;
   height: auto;
   margin: auto;
-  transform: translateX(-11%);
-}
+}*/
 
 .home-photo6-vert-line {
   width: 1px;
@@ -715,12 +766,11 @@ a {
 }
 
 #battery1 {
-  width: 420px;
+  width: 415px;
   height: auto;
   position: absolute;
-  margin-top: 12px;
-  transform: translateX(83.5%);
-  /*transform: translateY(16%);*/
+  margin-top: 13px;
+  left: 580px;
   z-index: 4;
 }
 
@@ -729,8 +779,7 @@ a {
   height: auto;
   position: absolute;
   margin-top: 17px;
-  transform: translateX(52%);
-  /*transform: translateY(16%);*/
+  left: 500px;
   z-index: 1;
 }
 
@@ -739,7 +788,7 @@ a {
   height: auto;
   position: absolute;
   margin-top: 136px;
-  transform: translateX(26.5%);
+  left: 330px;
   z-index: 3;
 }
 
@@ -748,7 +797,7 @@ a {
   height: auto;
   position: absolute;
   margin-top: 140px;
-  transform: translateX(15%);
+  left: 290px;
   z-index: 2;
 }
 
@@ -796,10 +845,11 @@ a {
 }
 
 .home-builtinapps-image {
-  width: 1266px;
+  width: 95%;
   height: auto;
   margin: auto;
   padding-bottom: 175px;
+  overflow: hidden;
 }
 
 .home-builtinapps-image img {

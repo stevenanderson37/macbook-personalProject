@@ -34,14 +34,6 @@ CREATE TABLE orders
   qty INTEGER
 );
 
-CREATE TABLE order
-(
-  id SERIAL PRIMARY KEY,
-  orderid INTEGER,
-  productid INTEGER,
-  qty INTEGER
-);
-
 CREATE TABLE macbook
 (
   id SERIAL PRIMARY KEY,

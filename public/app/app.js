@@ -54,15 +54,15 @@ angular.module("app")
     })
 
 		// USER STATE
-			.state('user', {
-			url: '/user',
+		.state('user', {
+			url: "/user",
 			templateUrl: './app/routes/user/userTmpl.html',
 			controller: 'userCtrl'
 		})
 
 		// ORDER STATE
 		.state('order', {
-			url: '/order/:id',
+			url: "/order/:id",
 			templateUrl: './app/routes/order/orderTmpl.html',
 			controller: 'orderCtrl',
 			resolve: {
@@ -74,7 +74,7 @@ angular.module("app")
 
 		// PRODUCTS STATE
 		.state('products', {
-			url: '/products/:id/:cartid',
+			url: "/products/:id/:cartid",
 			templateUrl: './app/routes/products/productsTmpl.html',
 			controller: 'productsCtrl',
 			resolve: {

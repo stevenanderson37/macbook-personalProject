@@ -1,20 +1,18 @@
-// INITILIZE CONTROLLER
-// ============================================================
 angular.module("app")
-	.controller("userCtrl", function($scope, mainService) {
+.controller("userCtrl", function($scope, $stateParams, mainService) {
 
-		// VARIABLES
-		// ============================================================
+	// VARIABLES
+	// ============================================================
 
-		// FUNCTIONS
-		// ============================================================
-		$scope.getUsers = function() {
-			mainService.getUsers()
-				.then(function(response) {
-					$scope.users = response.data;
-				});
-		};
-		$scope.getUsers();
+	// FUNCTIONS
+	// ============================================================
+	$scope.getUsers = function() {
+		mainService.getUsers()
+		.then(function(response) {
+			$scope.users = response.data;
+		});
+	};
+	$scope.getUsers();
 
 
-	});
+});

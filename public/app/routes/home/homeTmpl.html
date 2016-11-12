@@ -1,41 +1,4 @@
-<div class="navbar-container">
-  <div class="nav-wide">
-    <a href="http://www.apple.com/">
-      <img src="../styles/img/navBarView/appleLogo_large.svg" style="margin-left: 0px;" />
-    </a>
-    <a href="http://www.apple.com/mac/" style="opacity: .65;">
-      <img src="../styles/img/navBarView/Mac_large.svg" />
-    </a>
-    <a href="http://www.apple.com/ipad/">
-      <img src="../styles/img/navBarView/iPad_large.svg" />
-    </a>
-    <a href="http://www.apple.com/iphone/">
-      <img src="../styles/img/navBarView/iPhone_large.svg" />
-    </a>
-    <a href="http://www.apple.com/watch/">
-      <img src="../styles/img/navBarView/Watch_large.svg" />
-    </a>
-    <a href="http://www.apple.com/tv/">
-      <img src="../styles/img/navBarView/TV_large.svg" />
-    </a>
-    <a href="http://www.apple.com/music/">
-      <img src="../styles/img/navBarView/Music_large.svg" />
-    </a>
-    <a href="https://support.apple.com/">
-      <img src="../styles/img/navBarView/Support_large.svg" />
-    </a>
-    <a>
-      <img src="../styles/img/navBarView/searchicon_large.svg" />
-    </a>
-    <a>
-      <img src="../styles/img/navBarView/bagIcon_large.svg" style="margin-right: 0px;" />
-    </a>
-  </div>
-  <div class="nav-dropdown">
-    <img src="../styles/img/navBarView/appleLogo_small.svg" />
-    <img src="../styles/img/navBarView/bagIcon_small.svg" />
-  </div>
-</div>
+<navbar-dir></navbar-dir>
 
 <div class="full-state-navbar">
   <div class="full-state-navbar-top">
@@ -47,7 +10,7 @@
           <a ui-sref="wireless">Wireless</a>
           <a ui-sref="macos">macOS</a>
           <a ui-sref="specs">Tech Specs</a>
-          <button class="button">Buy</button>
+          <button class="button" type="button" name="button">Buy</button>
         </ul>
       </div>
     </div>
@@ -193,17 +156,19 @@
   </div>
 
   <div style="margin-top: 125px;">
-    <div class="information-center">
-      <div class="small-line"></div>
-      <h2>USB-C. <br> Singularly versatile.</h2>
-      <br>
-      <p>As long as we were including a port for charging your MacBook, we wanted to make sure it was the most advanced and versatile one available. The USB-C port puts just about everything you need in a port all in one place. This amazing port provides charging, speedy USB 3 data transfer, and video output in a reversible design that’s one-third the size of a USB 3 port, giving you the flexibility to easily connect your favorite devices.</p>
-      <br>
-      <a ui-sref="design">Learn more about Design ></a>
-    </div>
     <div class="home-photo6">
-      <img src="./styles/img/home/design_port_large_2x.jpg" />
+      <div class="information-center">
+        <div class="small-line"></div>
+        <h2>USB-C. <br> Singularly versatile.</h2>
+        <br>
+        <p>As long as we were including a port for charging your MacBook, we wanted to make sure it was the most advanced and versatile one available. The USB-C port puts just about everything you need in a port all in one place. This amazing port provides charging, speedy USB 3 data transfer, and video output in a reversible design that’s one-third the size of a USB 3 port, giving you the flexibility to easily connect your favorite devices.</p>
+        <br>
+        <a ui-sref="design">Learn more about Design ></a>
+      </div>
     </div>
+    <!-- <div class="home-photo6">
+      <img src="./styles/img/home/design_port_large_2x.jpg" />
+    </div> -->
 
     <div class="usbc-icons">
       <div style="margin: auto;">
@@ -269,10 +234,10 @@
       <a ui-sref="design">Learn more about Design ></a>
       <div class="home-battery-stack_container">
         <div class="home-battery-stack">
-            <img id="battery1" src="./styles/img/home/overview_battery_2b_medium_2x.png" />
-            <img id="battery2" src="./styles/img/home/overview_battery_2a_medium_2x.png" />
-            <img id="battery3" src="./styles/img/home/overview_battery_1b_medium_2x.png" />
-            <img id="battery4" src="./styles/img/home/overview_battery_1a_medium_2x.png" />
+          <img id="battery1" src="./styles/img/home/overview_battery_2b_medium_2x.png" />
+          <img id="battery2" src="./styles/img/home/overview_battery_2a_medium_2x.png" />
+          <img id="battery3" src="./styles/img/home/overview_battery_1b_medium_2x.png" />
+          <img id="battery4" src="./styles/img/home/overview_battery_1a_medium_2x.png" />
         </div>
       </div>
     </div>
@@ -332,34 +297,67 @@
     </div>
 
     <div class="icon-footer-info">
-      <div>
+      <div class="grid">
         <img src="./styles/img/home/icons/boxIcon_large.svg" />
         <h3>Free two-day delivery</h3>
         <p>On in-stock items <br> ordered by 5pm.</p>
         <br>
         <a>Learn more ></a>
       </div>
-      <div>
+      <div class="grid">
         <img src="./styles/img/home/icons/pickupIcon_large.svg" />
         <h3>Pick up at the Apple <br> Store today.</h3>
         <p>Buy online and pick up available <br> items in an hour.</p>
         <br>
         <a>Learn more ></a>
       </div>
-      <div>
+      <div class="grid">
         <img src="./styles/img/home/icons/financingIcon_large.svg" />
         <h3>Special financing</h3>
         <p>Apply for special financing and <br> earn rewards.</p>
         <br>
         <a>Learn more ></a>
       </div>
-      <div>
+      <div class="grid">
         <img src="./styles/img/home/icons/chatIcon_large.svg" />
         <h3>Get help buying</h3>
         <p>Have a question? Call a Specialist <br> or chat online. <br> Call 1-800-MY-APPLE.</p>
         <br>
         <a>Learn more ></a>
       </div>
+    </div>
+
+    <div class="battery-warning">
+      <h6>*Battery life varies by use and configuration. See <a href="http://www.apple.com/batteries/">www.apple.com/batteries</a> for more information.</h6>
+    </div>
+
+    <div class="site-location">
+      <svg version="1.1" id="Global_Nav_Small_Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      	 x="0px" y="0px" width="21px" height="48px" viewBox="0 0.5 21 48" enable-background="new 0 0.5 21 48" xml:space="preserve">
+      	<path id="Apple_1_" fill="#666666" d="M19.35,26.896c-0.119,0.34-0.244,0.664-0.377,0.974c-0.324,0.733-0.705,1.409-1.149,2.028
+      		c-0.604,0.847-1.097,1.432-1.479,1.754c-0.59,0.535-1.223,0.81-1.9,0.824c-0.487,0-1.074-0.137-1.758-0.412
+      		c-0.686-0.273-1.314-0.412-1.891-0.412c-0.604,0-1.251,0.139-1.943,0.412c-0.694,0.275-1.253,0.42-1.68,0.434
+      		c-0.65,0.027-1.298-0.253-1.945-0.846c-0.414-0.353-0.929-0.957-1.548-1.817c-0.664-0.915-1.209-1.979-1.636-3.192
+      		c-0.456-1.309-0.685-2.576-0.685-3.803c0-1.408,0.311-2.621,0.929-3.637c0.487-0.816,1.135-1.461,1.945-1.934
+      		s1.687-0.713,2.629-0.729c0.517,0,1.193,0.158,2.035,0.467c0.839,0.309,1.376,0.464,1.613,0.464c0.177,0,0.774-0.183,1.789-0.55
+      		c0.958-0.338,1.769-0.478,2.433-0.422c1.797,0.142,3.146,0.838,4.043,2.093c-1.605,0.959-2.4,2.298-2.387,4.014
+      		c0.016,1.341,0.51,2.455,1.481,3.339C18.311,26.355,18.803,26.674,19.35,26.896z M14.828,11.518
+      		c0.015,0.141,0.021,0.279,0.021,0.421c0,1.047-0.389,2.027-1.166,2.936c-0.939,1.078-2.074,1.701-3.307,1.604
+      		c-0.016-0.126-0.024-0.259-0.024-0.398c0-1.009,0.445-2.085,1.24-2.969c0.396-0.446,0.899-0.816,1.509-1.109
+      		C13.709,11.707,14.287,11.546,14.828,11.518z"/>
+      </svg>
+      <div><h6> > </h6></div>
+      <div><h6> Mac </h6></div>
+      <div><h6> > </h6></div>
+      <div><h6> MacBook </h6></div>
+    </div>
+
+    <div class="">
+
+    </div>
+
+    <div class="">
+
     </div>
 
   </div>

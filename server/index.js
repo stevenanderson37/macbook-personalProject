@@ -8,10 +8,10 @@ var bodyParser = require('body-parser');
 var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(__dirname + './../public'));
+app.use(express.static(__dirname + "./../public"));
 
 // MASSIVE //
-var massiveUri = 'postgres://localhost/macbook';
+var massiveUri = "postgres://localhost/macbook";
 var massiveServer = massive.connectSync({
 	connectionString: massiveUri
 });
