@@ -1,0 +1,179 @@
+.navbar-container {
+  width: 100%;
+  height: 44px;
+  margin: auto;
+  background-color: #262626;
+  text-align: center;
+}
+
+.nav-wide {
+  width: 980px;
+  height: 44px;
+  margin: auto;
+}
+
+.navbar-container img {
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+.nav-wide a:hover {
+  /*color: #a5a5a5;*/
+  opacity: .65;
+  cursor: pointer;
+}
+
+.nav-dropdown {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .nav-wide {
+    visibility: hidden;
+  }
+
+  .nav-dropdown {
+    visibility: visible;
+  }
+
+  .nav-dropdown img {
+    margin: auto;
+  }
+}
+
+/* BAG DROPDOWN MENU */
+
+.bag-dropdown-full {
+  /*display: none;*/
+}
+
+.bag-dropdown-diamond {
+  width: 980px;
+  height: auto;
+  margin: auto;
+}
+
+#diamond {
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #ffffff;
+	position: relative;
+	top: -17px;
+  right: 4px;
+  float: right;
+}
+#diamond:after {
+	position: absolute;
+	left: -20px;
+	top: 10px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #ffffff;
+  float: right;
+}
+
+.bag-dropdown-menu {
+  max-width: 1172px;
+  min-width: 980px;
+  height: auto;
+  z-index: 9990;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.bag-dropdown {
+  width: 290px;
+  height: 324px;
+  margin: auto;
+  margin-top: 5px;
+  margin-right: 5px;
+  background: #ffffff;
+  position: relative;
+  border: thin solid #e0e0e0;
+  color: #999999;
+  border-radius: 3px;
+  text-align: left;
+  z-index: 200;
+  float: right;
+}
+
+.inner-bag-dropdown {
+  margin-left: 18px;
+}
+
+#bag1 {
+  width: 248px;
+  height: 90px;
+  padding-top: 45px;
+  padding-left: 73px;
+  border-bottom: thin solid #e0e0e0;
+}
+
+#bag2 {
+  width: 248px;
+  height: 44px;
+  padding-top: 13px;
+  border-bottom: thin solid #e0e0e0;
+  color: #0c7ace;
+}
+
+#bag2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#bag3 {
+  width: 248px;
+  height: 44px;
+  padding-top: 14px;
+  border-bottom: thin solid #e0e0e0;
+  color: #0c7ace;
+}
+
+#bag3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#bag4 {
+  width: 248px;
+  height: 44px;
+  padding-top: 14px;
+  border-bottom: thin solid #e0e0e0;
+  color: #0c7ace;
+}
+
+#bag4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#bag5 {
+  width: 248px;
+  height: 44px;
+  padding-top: 14px;
+  border-bottom: thin solid #e0e0e0;
+  color: #0c7ace;
+}
+
+#bag5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#bag6 {
+  width: 248px;
+  height: 44px;
+  padding-top: 14px;
+  color: #0c7ace;
+}
+
+#bag6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

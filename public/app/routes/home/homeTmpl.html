@@ -1,73 +1,27 @@
-<navbar-dir></navbar-dir>
+<div class="animated-body fadeIn">
+  <navbar-dir></navbar-dir>
 
-<div class="full-state-navbar">
-  <div class="full-state-navbar-top">
-    <div class="state-navbar">
-      <h2 class="state-navbar-left">MacBook</h2>
-      <div class="state-navbar-right">
-        <ul>
-          <a ui-sref="design">Design</a>
-          <a ui-sref="wireless">Wireless</a>
-          <a ui-sref="macos">macOS</a>
-          <a ui-sref="specs">Tech Specs</a>
-          <button class="button" type="button" name="button">Buy</button>
-        </ul>
+  <div class="full-state-navbar animated-body fadeIn">
+    <div class="full-state-navbar-top">
+      <div class="state-navbar">
+        <h2 ui-sref="macbook" class="state-navbar-left">MacBook</h2>
+        <div class="state-navbar-right">
+          <ul>
+            <a ui-sref="design">Design</a>
+            <a ui-sref="wireless">Wireless</a>
+            <a ui-sref="macos">macOS</a>
+            <a ui-sref="specs">Tech Specs</a>
+            <span ui-sref="buy_a" class="button">Buy</span>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="body-content">
+<div class="home-body-content">
 
-  <div class="top-headline">
-    <h1>MacBook</h1>
-    <h2>Light. Years ahead.</h2>
-    <div class="home-photo1">
-      <img src="./styles/img/home/hero_static_medium_2x.jpg" />
-    </div>
-  </div>
-
-  <div class="macbook-intro">
-    <div class="watch-film">
-      <a>
-        Watch the Design film
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="512px" height="512px">
-          <g>
-      	    <path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30   c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15   C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z" fill=""/>
-      	    <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30   S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z" fill=""/>
-          </g>
-        </svg>
-      </a>
-    </div>
-    <p>Our goal with MacBook was to do the impossible: engineer a full‑size experience into the lightest and most compact Mac notebook ever. That meant reimagining every element to make it not only lighter and thinner but also better. The result is more than just a new notebook. It’s the future of the notebook. And now, with sixth‑generation Intel processors, improved graphics performance, faster flash storage, and up to 10 hours of battery life,* MacBook is even more capable.</p>
-  </div>
-
-  <div style="padding-top: 50px; padding-bottom: 150px;">
-    <div>
-      13.1 mm
-      THIN
-    </div>
-
-    <div>
-      2 lb.
-      LIGHT
-    </div>
-
-    <div>
-      12-inch
-      RETINA DISPLAY
-    </div>
-
-    <div>
-      UP TO
-      10 hrs
-      BATTERY LIFE*
-    </div>
-  </div>
-
-  <div class="home-photo2">
-    <img src="./styles/img/home/overview_colors_medium_2x.jpg" />
-  </div>
+  <home-intro-dir></home-intro-dir>
 
   <div class="gray-background">
     <div id="available-in">
@@ -87,22 +41,28 @@
       <a ui-sref="design">Learn more about Design ></a>
     </div>
 
-    <div style="padding-bottom: 150px;">
-      <div>
-        12-inch
-        RETINA DISPLAY
-      </div>
-
-      <div>
-        2304 ×1440
-        RESOLUTION
-      </div>
-
-      <div>
-        16:10
-        ASPECT RATIO
+    <div class="retina-display-measurements-full">
+      <div class="retina-display-measurements-partial">
+        <div class="retina-display-measurements">
+          <div id="measurements5" class="measurements-container">
+            <h3>12<span>-inch</span></h3>
+            <br>
+            <h4>RETINA DISPLAY</h4>
+          </div>
+          <div id="measurements6" class="measurements-container">
+            <h3>2304 ×1440</h3>
+            <br>
+            <h4>RESOLUTION</h4>
+          </div>
+          <div id="measurements7" class="measurements-container">
+            <h3>16:10</h3>
+            <br>
+            <h4>ASPECT RATIO</h4>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
   <div>
@@ -283,82 +243,4 @@
 
 </div>
 
-<div class="footer-container">
-  <div class="inner-footer-container">
-
-    <div class="buystrip">
-      <img src="./styles/img/home/buystrip_macbook_large_2x.png" />
-      <div class="buystrip-info">
-        <h3>MacBook</h3>
-        <p>Starting at $1299</p>
-        <br>
-        <a>Compare Mac notebooks ></a>
-      </div>
-    </div>
-
-    <div class="icon-footer-info">
-      <div class="grid">
-        <img src="./styles/img/home/icons/boxIcon_large.svg" />
-        <h3>Free two-day delivery</h3>
-        <p>On in-stock items <br> ordered by 5pm.</p>
-        <br>
-        <a>Learn more ></a>
-      </div>
-      <div class="grid">
-        <img src="./styles/img/home/icons/pickupIcon_large.svg" />
-        <h3>Pick up at the Apple <br> Store today.</h3>
-        <p>Buy online and pick up available <br> items in an hour.</p>
-        <br>
-        <a>Learn more ></a>
-      </div>
-      <div class="grid">
-        <img src="./styles/img/home/icons/financingIcon_large.svg" />
-        <h3>Special financing</h3>
-        <p>Apply for special financing and <br> earn rewards.</p>
-        <br>
-        <a>Learn more ></a>
-      </div>
-      <div class="grid">
-        <img src="./styles/img/home/icons/chatIcon_large.svg" />
-        <h3>Get help buying</h3>
-        <p>Have a question? Call a Specialist <br> or chat online. <br> Call 1-800-MY-APPLE.</p>
-        <br>
-        <a>Learn more ></a>
-      </div>
-    </div>
-
-    <div class="battery-warning">
-      <h6>*Battery life varies by use and configuration. See <a href="http://www.apple.com/batteries/">www.apple.com/batteries</a> for more information.</h6>
-    </div>
-
-    <div class="site-location">
-      <svg version="1.1" id="Global_Nav_Small_Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      	 x="0px" y="0px" width="21px" height="48px" viewBox="0 0.5 21 48" enable-background="new 0 0.5 21 48" xml:space="preserve">
-      	<path id="Apple_1_" fill="#666666" d="M19.35,26.896c-0.119,0.34-0.244,0.664-0.377,0.974c-0.324,0.733-0.705,1.409-1.149,2.028
-      		c-0.604,0.847-1.097,1.432-1.479,1.754c-0.59,0.535-1.223,0.81-1.9,0.824c-0.487,0-1.074-0.137-1.758-0.412
-      		c-0.686-0.273-1.314-0.412-1.891-0.412c-0.604,0-1.251,0.139-1.943,0.412c-0.694,0.275-1.253,0.42-1.68,0.434
-      		c-0.65,0.027-1.298-0.253-1.945-0.846c-0.414-0.353-0.929-0.957-1.548-1.817c-0.664-0.915-1.209-1.979-1.636-3.192
-      		c-0.456-1.309-0.685-2.576-0.685-3.803c0-1.408,0.311-2.621,0.929-3.637c0.487-0.816,1.135-1.461,1.945-1.934
-      		s1.687-0.713,2.629-0.729c0.517,0,1.193,0.158,2.035,0.467c0.839,0.309,1.376,0.464,1.613,0.464c0.177,0,0.774-0.183,1.789-0.55
-      		c0.958-0.338,1.769-0.478,2.433-0.422c1.797,0.142,3.146,0.838,4.043,2.093c-1.605,0.959-2.4,2.298-2.387,4.014
-      		c0.016,1.341,0.51,2.455,1.481,3.339C18.311,26.355,18.803,26.674,19.35,26.896z M14.828,11.518
-      		c0.015,0.141,0.021,0.279,0.021,0.421c0,1.047-0.389,2.027-1.166,2.936c-0.939,1.078-2.074,1.701-3.307,1.604
-      		c-0.016-0.126-0.024-0.259-0.024-0.398c0-1.009,0.445-2.085,1.24-2.969c0.396-0.446,0.899-0.816,1.509-1.109
-      		C13.709,11.707,14.287,11.546,14.828,11.518z"/>
-      </svg>
-      <div><h6> > </h6></div>
-      <div><h6> Mac </h6></div>
-      <div><h6> > </h6></div>
-      <div><h6> MacBook </h6></div>
-    </div>
-
-    <div class="">
-
-    </div>
-
-    <div class="">
-
-    </div>
-
-  </div>
-</div>
+<footer-dir></footer-dir>

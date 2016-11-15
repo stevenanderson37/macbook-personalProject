@@ -1,0 +1,215 @@
+.buy-body {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.buy-macbook-left {
+  width: 490px;
+  height: auto;
+}
+
+.buy-macbook-right {
+  width: 490px;
+  height: auto;
+}
+
+.buy-macbook h1 {
+  font-size: 42px;
+  line-height: 44px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.buy-macbook h6 {
+  font-weight: normal;
+  color: #0c7ace;
+}
+
+.buy-macbook h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.buy-macbook hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buy-finish {
+  width: 425px;
+  height: 248px;
+  margin-top: 40px;
+}
+
+.buy-finish h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.buy-finish-buttons {
+  width: 425px;
+  height: 210px;
+}
+
+.finish-buttons {
+  width: 202px;
+  height: 86px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: normal;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.finish-buttons:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.finish-buttons h3 {
+  padding-top: 25px;
+}
+
+.finish-swatches {
+  width: 31px;
+  height: 31px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.finish-swatches img {
+  width: 100%;
+  height: auto;
+  margin-left: 85px;
+  padding-top: 15px;
+}
+
+.buy-model {
+  width: 425px;
+  height: 392px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.buy-model h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.buy-model h6 {
+  color: #0c7ace;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.buy-model h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.buy-model-buttons {
+  width: 425px;
+  height: 326px;
+}
+
+.buy-model-buttons p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #333333;
+  padding: 10px;
+}
+
+.model-buttons {
+  width: 202px;
+  height: 307px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.model-buttons:hover {
+  cursor: pointer;
+}
+
+.fixed-bottom-bar {
+  width: 100%;
+  height: 109px;
+  position: fixed;
+  bottom: 0;
+  background: #fafafa;
+  border-top: thin solid #e6e6e6;
+}
+
+.fixed-bottom-bar-left {
+  float: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fixed-bottom-bar-right {
+  float: right;
+  width: 250px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.fixed-bottom-bar-right h1 {
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.inner-fixed-bottom-bar {
+  width: 980px;
+  height: 90px;
+  margin: auto;
+  margin-top: 25px;
+  align-content: center;
+  align-items: center;
+}
+
+.button-large {
+  border-style: hidden;
+  background: #0070c9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2a85d4), to(#0070c9));
+  background: -webkit-linear-gradient(top, #2a85d4, #0070c9);
+  background: -moz-linear-gradient(top, #2a85d4, #0070c9);
+  background: -ms-linear-gradient(top, #2a85d4, #0070c9);
+  background: -o-linear-gradient(top, #2a85d4, #0070c9);
+  padding: 15px 8px 15px 25px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 35px;
+  font-family: "Myriad Set Pro","Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+}
+.button-large:hover {
+  border-top-color: #2a85d4;
+  background: #2a85d4;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-large:active {
+  border-top-color: #3f9fef;
+  background: #3f9fef;
+}
+
+.buy-bottom-blank-div {
+  width: 100%;
+  height: 109px;
+}

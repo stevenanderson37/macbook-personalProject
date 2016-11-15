@@ -53,6 +53,55 @@ angular.module("app")
       controller: "bagCtrl"
     })
 
+		// MacBook BUY_a STATE
+    .state('buy_a', {
+      url: "/buy_a",
+      templateUrl: "./app/routes/buy/buyTmpl_a.html",
+      controller: "buyCtrl_a"
+    })
+
+		// MacBook BUY_a_Silver STATE
+    .state('buy_a_silver', {
+      url: "/buy_a_silver",
+      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_Silver.html",
+      controller: "buyCtrl_a_Silver"
+    })
+
+		// MacBook BUY_a_Silver_256GB STATE
+    .state('buy_a_silver_256gb', {
+      url: "/buy_a_silver_256gb",
+      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_Silver_256GB.html",
+      controller: "buyCtrl_a_Silver_256GB"
+    })
+
+		// MacBook BUY_a_Silver_256GB_1.1GHz STATE
+    .state('silver_256gb_1.1ghz', {
+      url: "/silver_256gb_1.1ghz",
+      templateUrl: "./app/routes/buy/buy_b/Silver_256GB_1.1GHz.html",
+      controller: "Silver_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_a_Gold STATE
+    .state('buy_a_gold', {
+      url: "/buy_a_gold",
+      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_Gold.html",
+      controller: "buyCtrl_a_Gold"
+    })
+
+		// MacBook BUY_a_SpaceGray STATE
+    .state('buy_a_spacegray', {
+      url: "/buy_a_spacegray",
+      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_SpaceGray.html",
+      controller: "buyCtrl_a_SpaceGray"
+    })
+
+		// MacBook BUY_a_RoseGold STATE
+    .state('buy_a_rosegold', {
+      url: "/buy_a_rosegold",
+      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_RoseGold.html",
+      controller: "buyCtrl_a_RoseGold"
+    })
+
 		// USER STATE
 		.state('user', {
 			url: "/user",
