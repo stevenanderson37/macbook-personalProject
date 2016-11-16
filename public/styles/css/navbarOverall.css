@@ -58,6 +58,7 @@
   z-index: 4000;
   position: absolute;
   /*display: none;*/
+  /*perspective: 3000px;*/
 }
 
 #bag img {
@@ -71,7 +72,8 @@
 }
 
 #bag:hover .bag-dropdown-full {
-  opacity: 1;
+  transform: rotateX(0deg);
+  /*opacity: 1;*/
 }
 
 /*#bag.clicked .bag-dropdown-full {
@@ -80,8 +82,11 @@
 
 .bag-dropdown-full {
   margin-top: 0px;
-  /*transition: transform 300ms ease-in-out;*/
-  opacity: 0;
+  transition: 0ms transform ease-in-out;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  /*opacity: 0;*/
+
 }
 
 .bag-dropdown-diamond {
