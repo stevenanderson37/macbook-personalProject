@@ -1,0 +1,270 @@
+/* OVERALL FOOTER */
+
+.footer-container {
+  width: 100%;
+  height: 963px;
+  background: #f2f2f2;
+  color: #333333;
+  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-weight: 200;
+}
+
+.inner-footer-container {
+  width: 980px;
+  height: 963px;
+  margin: auto;
+  background: #f2f2f2;
+}
+
+.buystrip {
+  width: 512px;
+  height: auto;
+  margin: auto;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  color: #333333;
+}
+
+.buystrip div {
+  margin: auto;
+}
+
+.buystrip img {
+  width: auto;
+  height: 92px;
+  margin: auto;
+  margin-right: 34px;
+  float: left;
+}
+
+.buystrip-info {
+  float: right;
+  padding-right: 50px;
+}
+
+.buystrip h3 {
+  font-family: "Myriad Set Pro","Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 200;
+}
+
+.buystrip p {
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.buystrip a {
+  color: #0c7ace;
+  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-weight: 200;
+  font-style: normal;
+}
+
+.buystrip a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-footer-info {
+  margin: auto;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-content: space-between;
+  color: #333333;
+}
+
+.icon-footer-info .grid {
+  width: 216px;
+  height: 217px;
+  margin: auto;
+}
+
+.icon-footer-info h3 {
+  font-family: "Myriad Set Pro","Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 200;
+}
+
+.icon-footer-info p {
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.icon-footer-info a {
+  color: #0c7ace;
+  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-weight: 200;
+  font-style: normal;
+}
+
+.icon-footer-info a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.battery-warning {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  border-bottom: thin solid #999999;
+  border-top: thin solid #999999;
+  text-align: left;
+}
+
+.battery-warning a {
+  color: #343434;
+}
+
+.battery-warning a:hover {
+  text-decoration: underline;
+}
+
+.site-location {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  text-align: left;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items: center;
+}
+
+.site-location div {
+  margin-right: 10px;
+}
+
+.site-location svg {
+  height: 35px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.directory-5-coloumns {
+  width: 100%;
+  height: 240px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+  align-content: space-between;
+  color: #333333;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.directory-5-coloumns .grid {
+  width: 196px;
+  height: 240px;
+  margin: auto;
+}
+
+.directory-5-coloumns a {
+  color: #666666;
+  font-weight: 200;
+}
+
+.directory-5-coloumns a:hover {
+  text-decoration: underline;
+  color: #333333;
+}
+
+.more-ways-to-shop {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  text-align: left;
+}
+
+.more-ways-to-shop a {
+  color: #0c7ace;
+  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-weight: 200;
+  font-style: normal;
+}
+
+.more-ways-to-shop a:hover {
+  color: #333333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright-row {
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  padding-top: 13px;
+  font-family: "Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  border-top: thin solid #999999;
+  text-align: left;
+}
+
+.copyright-row a {
+  color: #343434;
+}
+
+.copyright-row a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright-row .left {
+  float: left;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.copyright-row .right {
+  float: right;
+  text-align: right;
+}
+
+.flag-container {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 10px;
+}
+
+.flag-container img {
+  width: 100%;
+  height: auto;
+}

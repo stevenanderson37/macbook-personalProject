@@ -213,3 +213,109 @@
   width: 100%;
   height: 109px;
 }
+
+/* PAGE 2 */
+
+.configure-macbook h1 {
+  font-size: 42px;
+  line-height: 44px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.configure-macbook h6 {
+  font-weight: normal;
+  color: #0c7ace;
+}
+
+.configure-macbook h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.configure-macbook hr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.buy-processor {
+  width: 425px;
+  height: 248px;
+  margin-top: 40px;
+}
+
+.buy-processor h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.buy-processor a {
+  color: #0c7ace;
+}
+
+.buy-processor p {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 19px 0px 10px 20px;
+}
+
+.inner-processor-buttons {
+  width: 315px;
+  height: 42px;
+}
+
+.buy-processor-buttons {
+  width: 488px;
+  height: 87px;
+}
+
+.processor-buttons {
+  width: 488px;
+  height: 87px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.processor-buttons:hover {
+  cursor: pointer;
+}
+
+.buy-keyboard {
+  width: 488px;
+  height: 62px;
+  margin-top: 60px;
+}
+
+.buy-keyboard h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.buy-keyboard a {
+  color: #0c7ace;
+}
+
+.buy-keyboard p {
+  padding: 22px 30px 10px 20px;
+}
+
+.buy-keyboard-selector {
+  width: 488px;
+  height: 62px;
+}
+
+.keyboard-selector {
+  width: 488px;
+  height: 62px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.keyboard-selector:hover {
+  cursor: pointer;
+}

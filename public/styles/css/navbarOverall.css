@@ -18,7 +18,7 @@
 }
 
 .nav-wide a:hover {
-  /*color: #a5a5a5;*/
+  /*fill: #a5a5a5;*/
   opacity: .65;
   cursor: pointer;
 }
@@ -43,14 +43,54 @@
 
 /* BAG DROPDOWN MENU */
 
-.bag-dropdown-full {
+.entire-bag {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /*overflow: hidden;*/
+}
+
+#bag {
+  float: right;
+  margin-top: -47px;
+  margin-right: 0px;
+  right: 0;
+  z-index: 4000;
+  position: absolute;
   /*display: none;*/
 }
 
+#bag img {
+  float: right;
+  margin-right: 220px;
+}
+
+#bag img:hover {
+  opacity: .65;
+  cursor: pointer;
+}
+
+#bag:hover .bag-dropdown-full {
+  opacity: 1;
+}
+
+/*#bag.clicked .bag-dropdown-full {
+  opacity: 1;
+}*/
+
+.bag-dropdown-full {
+  margin-top: 0px;
+  /*transition: transform 300ms ease-in-out;*/
+  opacity: 0;
+}
+
 .bag-dropdown-diamond {
-  width: 980px;
+  width: 25px;
   height: auto;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 #diamond {
@@ -58,32 +98,25 @@
 	height: 0;
 	border: 10px solid transparent;
 	border-bottom-color: #ffffff;
-	position: relative;
-	top: -17px;
-  right: 4px;
-  float: right;
-}
-#diamond:after {
 	position: absolute;
-	left: -20px;
-	top: 10px;
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-top-color: #ffffff;
+	top: 27px;
+  right: 220px;
   float: right;
+  margin-right: 0px;
+  z-index: 4000;
 }
 
 .bag-dropdown-menu {
-  max-width: 1172px;
-  min-width: 980px;
+  width: 250px;
   height: auto;
   z-index: 9990;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
+  top: 44px;
+  left: 0px;
+  right: 150px;
+  /*pointer-events: none;*/
 }
 
 .bag-dropdown {
@@ -110,7 +143,7 @@
   width: 248px;
   height: 90px;
   padding-top: 45px;
-  padding-left: 73px;
+  padding-left: 70px;
   border-bottom: thin solid #e0e0e0;
 }
 
