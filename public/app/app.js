@@ -46,13 +46,6 @@ angular.module("app")
       controller: "wirelessCtrl"
     })
 
-    // MacBook BAG STATE
-    .state('bag', {
-      url: "/bag",
-      templateUrl: "./app/routes/bag/bagTmpl.html",
-      controller: "bagCtrl"
-    })
-
 		// MacBook BUY_a STATE
     .state('buy_a', {
       url: "/buy_a",
@@ -65,6 +58,13 @@ angular.module("app")
       url: "/buy_b",
       templateUrl: "./app/routes/buy/buyTmpl_b.html",
       controller: "buyCtrl_b"
+    })
+
+		// MacBook BUY_c STATE
+    .state('buy_c', {
+      url: "/buy_c",
+      templateUrl: "./app/routes/buy/buyTmpl_c.html",
+      controller: "buyCtrl_c"
     })
 
 		// MacBook BUY_a_Silver STATE
@@ -86,6 +86,41 @@ angular.module("app")
       url: "/silver_256gb_1.1ghz",
       templateUrl: "./app/routes/buy/buy_b/Silver_256GB_1.1GHz.html",
       controller: "Silver_256GB_1.1GHz"
+    })
+
+		// CREATE ACCOUNT
+		.state('create_account', {
+      url: "/create_account",
+      templateUrl: "./app/routes/signin/create-account/createAccTmpl.html",
+      controller: "createAccCtrl"
+    })
+
+		// SIGN IN
+		.state('signin', {
+      url: "/signin",
+      templateUrl: "./app/routes/signin/signinTmpl.html",
+      controller: "signinCtrl"
+    })
+
+    // BAG STATE
+    .state('bag', {
+      url: "/bag",
+      templateUrl: "./app/routes/bag/bagTmpl.html",
+      controller: "bagCtrl"
+    })
+
+		// FAVORITES STATE
+    .state('favorites', {
+      url: "/favorites",
+      templateUrl: "./app/routes/favorites/favoritesTmpl.html",
+      controller: "favoritesCtrl"
+    })
+
+		// ORDERS_a STATE
+    .state('orders_a', {
+      url: "/orders_a",
+      templateUrl: "./app/routes/orders/ordersTmpl_a.html",
+      controller: "ordersCtrl_a"
     })
 
 		// USER STATE

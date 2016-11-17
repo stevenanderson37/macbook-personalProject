@@ -1,0 +1,90 @@
+.order-a-mid-right {
+  width: 338px;
+  height: auto;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 100px;
+  float: left;
+}
+
+.order-a-mid-right h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #000000;
+}
+
+.order-a-mid-right input {
+  margin-bottom: 15px;
+}
+
+.order-a-mid-right a {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #0c7ace;
+}
+
+.order-a-mid-right a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#find-order-number:hover .find-order-popup {
+  transform: rotateX(0deg);
+}
+
+#half-diamond {
+	width: 0;
+	height: 0;
+  margin-top: -20px;
+  margin-left: 190px;
+	border: 10px solid transparent;
+	border-bottom-color: #ffffff;
+	position: absolute;
+  z-index: 4000;
+}
+
+.find-order-popup {
+  width: 500px;
+  height: 250px;
+  margin-top: 30px;
+  margin-left: -150px;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(125, 125, 125, .65);
+  transition: 0ms transform ease-in-out;
+  transform: rotateX(90deg);
+  transform-origin: top;
+}
+
+.find-order-img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.find-order-popup h2 {
+  font-size: 16px;
+  line-height: 17px;
+  color: #333333;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.find-order-popup h6 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  font-weight: normal;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.find-order-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}

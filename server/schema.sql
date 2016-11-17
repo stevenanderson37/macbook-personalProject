@@ -133,7 +133,7 @@ CREATE TABLE macbooks
 
 INSERT INTO users
 (first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address, email)
-VALUES ('Milo', 'Perry', '801', '722-4966', '8965 Old Southwick Pass', 'Provo', 'UT', '84065', 'false', 'awesomeson@family.com');
+VALUES ('Milo', 'Perry', '801', '722-4966', '8965 Fake Address Pass', 'Provo', 'UT', '84065', 'false', 'awesomeson@family.com');
 
 INSERT INTO users
 (first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address, email)
