@@ -44,17 +44,17 @@
     <div class="retina-display-measurements-full">
       <div class="retina-display-measurements-partial">
         <div class="retina-display-measurements">
-          <div id="measurements5" class="measurements-container">
+          <div id="measurements5" class="measurements-container wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="200ms">
             <h3>12<span>-inch</span></h3>
             <br>
             <h4>RETINA DISPLAY</h4>
           </div>
-          <div id="measurements6" class="measurements-container">
+          <div id="measurements6" class="measurements-container wow fadeInRightSmall" data-wow-duration="1.5s">
             <h3>2304 ×1440</h3>
             <br>
             <h4>RESOLUTION</h4>
           </div>
-          <div id="measurements7" class="measurements-container">
+          <div id="measurements7" class="measurements-container wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="300ms">
             <h3>16:10</h3>
             <br>
             <h4>ASPECT RATIO</h4>
@@ -103,15 +103,33 @@
     <br>
     <a ui-sref="wireless">Learn more about Wireless ></a>
   </div>
-  <div class="wireless-icons">
-    <img id="wireless1" src="./styles/img/home/icons/overview_icon_icloud_large_2x.jpg" />
-    <img id="wireless2" src="./styles/img/home/icons/overview_icon_airdrop_large_2x.jpg" />
-    <img id="wireless3" src="./styles/img/home/icons/overview_icon_bluetooth_audio_large_2x.jpg" />
-    <img id="wireless4" src="./styles/img/home/icons/overview_icon_airplay_large_2x.jpg" />
-    <img id="wireless5" src="./styles/img/home/icons/overview_icon_hotspot_large_2x.jpg" />
-    <img id="wireless6" src="./styles/img/home/icons/overview_icon_appstore_large_2x.jpg" />
-    <img id="wireless7" src="./styles/img/home/icons/overview_icon_print_large_2x.jpg" />
-    <img id="wireless8" src="./styles/img/home/icons/overview_icon_time_machine_large_2x.jpg" />
+  <div class=".wireless-icons-container">
+    <div class="wireless-icons">
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s">
+        <img id="wireless1" src="./styles/img/home/icons/overview_icon_icloud_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="100ms">
+        <img id="wireless2" src="./styles/img/home/icons/overview_icon_airdrop_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="200ms">
+        <img id="wireless3" src="./styles/img/home/icons/overview_icon_bluetooth_audio_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="300ms">
+        <img id="wireless4" src="./styles/img/home/icons/overview_icon_airplay_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="400ms">
+        <img id="wireless5" src="./styles/img/home/icons/overview_icon_hotspot_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="500ms">
+        <img id="wireless6" src="./styles/img/home/icons/overview_icon_appstore_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="600ms">
+        <img id="wireless7" src="./styles/img/home/icons/overview_icon_print_large_2x.jpg" />
+      </div>
+      <div class="wow fadeInRightSmall" data-wow-duration="1.5s" data-wow-delay="700ms">
+        <img id="wireless8" src="./styles/img/home/icons/overview_icon_time_machine_large_2x.jpg" />
+      </div>
+    </div>
   </div>
 
   <div style="margin-top: 125px;">
@@ -174,7 +192,7 @@
       <a ui-sref="design">Learn more about Design ></a>
     </div>
     <div class="home-internals" style="margin-top: 50px;">
-        <img id="home-photo8b" src="./styles/img/home/internals_layer_start_medium_2x.jpg" />
+        <img id="home-photo8b" class="wow fadeIn" data-wow-duration="3.5s" data-wow-delay="1s" src="./styles/img/home/internals_layer_end_medium_2x.jpg" />
     </div>
     <div class="information-center">
       <h2 style="font-size: 32px; line-height: 36px;">Measurably faster.</h2>
@@ -191,13 +209,11 @@
       <p>With the slim MacBook enclosure, all-day battery life simply would not be achievable <br> using traditional rectangular batteries. So we developed our own battery technology <br> specifically designed to make use of every last millimeter of available space. The <br> result is a terraced, contoured battery design that not only fits perfectly inside the <br> incredibly slim MacBook, but also is unlike anything seen before in a notebook. And <br> now, thanks to more efficient processors and improved battery chemistry, battery life <br> has been extended by an hour.</p>
       <br>
       <a ui-sref="design">Learn more about Design ></a>
-      <div class="home-battery-stack_container">
-        <div class="home-battery-stack battery-stack-animation">
-          <img id="battery1" src="./styles/img/home/overview_battery_2b_medium_2x.png" />
-          <img id="battery2" src="./styles/img/home/overview_battery_2a_medium_2x.png" />
-          <img id="battery3" src="./styles/img/home/overview_battery_1b_medium_2x.png" />
-          <img id="battery4" src="./styles/img/home/overview_battery_1a_medium_2x.png" />
-        </div>
+      <div class="home-battery-stack">
+        <img id="battery1" class="wow batteryMoveUp1" data-wow-duration="2s" data-wow-delay="1.4s" src="./styles/img/home/overview_battery_2b_medium_2x.png"></img>
+        <img id="battery2" class="wow batteryMoveUp2" data-wow-duration="2s" data-wow-delay="1.5s" src="./styles/img/home/overview_battery_2a_medium_2x.png" />
+        <img id="battery3" class="wow batteryMoveUp3" data-wow-duration="2s" data-wow-delay="1.4s" src="./styles/img/home/overview_battery_1b_medium_2x.png" />
+        <img id="battery4" class="wow batteryMoveUp4" data-wow-duration="2s" data-wow-delay="1.5s" src="./styles/img/home/overview_battery_1a_medium_2x.png" />
       </div>
     </div>
   </div>

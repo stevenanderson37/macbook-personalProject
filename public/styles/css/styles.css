@@ -234,17 +234,10 @@ li {
   width: 100%;
   height: auto;
   margin: auto;
-}
-
-.top-headline {
-  width: 100%;
-  height: auto;
-  margin: auto;
   margin-top: 80px;
-  position: relative;
 }
 
-.top-headline h1 {
+.top-headline-full h1 {
   text-align: center;
   font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
   font-size: 64px;
@@ -254,7 +247,7 @@ li {
   color: #333333;
 }
 
-.top-headline h2 {
+.top-headline-full h2 {
   text-align: center;
   font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
   font-size: 42px;
@@ -629,11 +622,19 @@ li {
   transform: translateX(-38%);
 }
 
-.wireless-icons {
+.wireless-icons-container {
   width: 980px;
   height: auto;
   margin: auto;
+}
+
+.wireless-icons {
+  width: 692px;
+  height: auto;
+  margin: auto;
   margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .wireless-icons img {
@@ -755,7 +756,7 @@ li {
   width: 1018px;
   height: 711px;
   margin: auto;
-  background-image: url("../img/home/internals_layer_end_medium_2x.jpg");
+  background-image: url("../img/home/internals_layer_start_medium_2x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -781,17 +782,11 @@ li {
   overflow: hidden;
 }
 
-.home-battery-stack_container {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: 123px;
-  background-color: #ffffff;
-}
-
 .home-battery-stack {
   width: 911px;
   height: 378px;
+  margin: auto;
+  margin-top: 123px;
   float: left;
   background-image: url("../img/home/overview_battery_base_medium_2x.jpg");
   background-position: center;
@@ -804,8 +799,8 @@ li {
   width: 415px;
   height: auto;
   position: absolute;
-  margin-top: 13px;
-  /*margin-top: -70px;*/
+  /*margin-top: 13px;*/
+  margin-top: -70px;
   left: 41%;
   z-index: 4;
 }
@@ -814,8 +809,8 @@ li {
   width: 520px;
   height: auto;
   position: absolute;
-  margin-top: 17px;
-  /*margin-top: -25px;*/
+  /*margin-top: 17px;*/
+  margin-top: -25px;
   left: 35%;
   z-index: 1;
 }
@@ -824,8 +819,8 @@ li {
   width: 400px;
   height: auto;
   position: absolute;
-  margin-top: 136px;
-  /*margin-top: 50px;*/
+  /*margin-top: 136px;*/
+  margin-top: 50px;
   left: 23%;
   z-index: 3;
 }
@@ -834,10 +829,166 @@ li {
   width: 460px;
   height: auto;
   position: absolute;
-  margin-top: 139px;
-  /*margin-top: 100px;*/
+  /*margin-top: 139px;*/
+  margin-top: 100px;
   left: 20.5%;
   z-index: 2;
+}
+
+@-webkit-keyframes batteryMoveUp1 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 13px;
+    margin-top: 13px;
+  }
+
+  to {
+    -webkit-margin-top: -70px;
+    margin-top: -70px;
+  }
+}
+
+@keyframes batteryMoveUp1 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 13px;
+    margin-top: 13px;
+  }
+
+  to {
+    -webkit-margin-top: -70px;
+    margin-top: -70px;
+  }
+}
+
+.batteryMoveUp1 {
+  -webkit-animation-name: batteryMoveUp1;
+  animation-name: batteryMoveUp1;
+}
+
+@-webkit-keyframes batteryMoveUp2 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 17px;
+    margin-top: 17px;
+  }
+
+  to {
+    -webkit-margin-top: -25px;
+    margin-top: -25px;
+  }
+}
+
+@keyframes batteryMoveUp2 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 17px;
+    margin-top: 17px;
+  }
+
+  to {
+    -webkit-margin-top: -25px;
+    margin-top: -25px;
+  }
+}
+
+.batteryMoveUp2 {
+  -webkit-animation-name: batteryMoveUp2;
+  animation-name: batteryMoveUp2;
+}
+
+@-webkit-keyframes batteryMoveUp3 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 136px;
+    margin-top: 136px;
+  }
+
+  to {
+    -webkit-margin-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+@keyframes batteryMoveUp3 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 136px;
+    margin-top: 136px;
+  }
+
+  to {
+    -webkit-margin-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+.batteryMoveUp3 {
+  -webkit-animation-name: batteryMoveUp3;
+  animation-name: batteryMoveUp3;
+}
+
+@-webkit-keyframes batteryMoveUp4 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 139px;
+    margin-top: 139px;
+  }
+
+  to {
+    -webkit-margin-top: 100px;
+    margin-top: 100px;
+  }
+}
+
+@keyframes batteryMoveUp4 {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 139px;
+    margin-top: 139px;
+  }
+
+  to {
+    -webkit-margin-top: 100px;
+    margin-top: 100px;
+  }
+}
+
+.batteryMoveUp4 {
+  -webkit-animation-name: batteryMoveUp4;
+  animation-name: batteryMoveUp4;
 }
 
 .home-macos {
