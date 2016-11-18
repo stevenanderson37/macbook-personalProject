@@ -95,6 +95,20 @@ angular.module("app")
       controller: "createAccCtrl"
     })
 
+		// PRIVACY
+		.state('privacy', {
+      url: "/privacy",
+      templateUrl: "./app/routes/signin/create-account/privacy/privacyTmpl.html",
+      controller: "privacyCtrl"
+    })
+
+		// FAQ
+		.state('faq', {
+      url: "/faq",
+      templateUrl: "./app/routes/signin/create-account/createFAQTmpl.html",
+      controller: "createFAQCtrl"
+    })
+
 		// SIGN IN
 		.state('signin', {
       url: "/signin",

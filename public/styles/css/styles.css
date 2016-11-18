@@ -151,19 +151,6 @@ li {
   background: #3f9fef;
 }
 
-#diamond {
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-bottom-color: #ffffff;
-	position: absolute;
-	top: 27px;
-  right: 220px;
-  float: right;
-  margin-right: 0px;
-  z-index: 4000;
-}
-
 /* NAVBAR-MacBook */
 
 .state-navbar {

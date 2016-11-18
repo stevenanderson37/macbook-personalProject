@@ -146,13 +146,22 @@
 .signin-mid-right h2 {
   font-size: 20px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 26px;
   color: #333333;
+}
 
+.list-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 27px;
 }
 
 .signin-mid-right li {
   list-style-type: disc;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #666666;
 }
 
 .signin-mid-right a {

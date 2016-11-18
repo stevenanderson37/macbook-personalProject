@@ -53,7 +53,7 @@
 #bag {
   float: right;
   margin-top: -47px;
-  margin-right: 5px;
+  margin-right: 9px;
   right: 0;
   z-index: 4000;
   position: absolute;
@@ -65,31 +65,6 @@
   float: right;
   margin-right: 220px;
 }
-@media (max-width: 1396px) {
-  #bag img {
-    margin-right: 200px;
-  }
-}
-@media (max-width: 1346px) {
-  #bag img {
-    margin-right: 175px;
-  }
-}
-@media (max-width: 1296px) {
-  #bag img {
-    margin-right: 150px;
-  }
-}
-@media (max-width: 1246px) {
-  #bag img {
-    margin-right: 125px;
-  }
-}
-@media (max-width: 1196px) {
-  #bag img {
-    margin-right: 100px;
-  }
-}
 
 #bag img:hover {
   opacity: .65;
@@ -98,30 +73,39 @@
 
 #bag:hover .bag-dropdown-full {
   transform: rotateX(0deg);
-  /*opacity: 1;*/
 }
 
 /*#bag.clicked .bag-dropdown-full {
   opacity: 1;
 }*/
 
+#diamond {
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #ffffff;
+	position: absolute;
+	top: 25px;
+  right: 219px;
+  float: right;
+  margin-right: 0px;
+  z-index: 4000;
+}
+
 .bag-dropdown-full {
-  margin-top: 0px;
   transition: 0ms transform ease-in-out;
   transform: rotateX(90deg);
   transform-origin: top;
-  /*opacity: 0;*/
-
 }
 
-.bag-dropdown-diamond {
+/*.bag-dropdown-diamond {
   width: 25px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-}
+}*/
 
 .bag-dropdown-menu {
   width: 250px;
@@ -131,8 +115,7 @@
   margin-left: auto;
   margin-right: auto;
   top: 44px;
-  left: 0px;
-  right: 150px;
+  right: 5px;
   /*pointer-events: none;*/
 }
 
@@ -241,4 +224,47 @@
 #bag6:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1396px) {
+  #bag img {
+    margin-right: 200px;
+  }
+  #diamond {
+    right: 200px;
+  }
+}
+@media (max-width: 1346px) {
+  #bag img {
+    margin-right: 175px;
+  }
+  #diamond {
+    right: 175px;
+  }
+}
+@media (max-width: 1296px) {
+  #bag img {
+    margin-right: 150px;
+  }
+  #diamond {
+    right: 150px;
+  }
+}
+@media (max-width: 1246px) {
+  #bag img {
+    margin-right: 125px;
+  }
+  #diamond {
+    right: 125px;
+  }
+}
+@media (max-width: 1197px) {
+  #bag img {
+    margin-right: 100px;
+  }
+  #diamond {
+    right: 100px;
+  }
 }
