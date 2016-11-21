@@ -227,6 +227,8 @@ li {
 /* homeTmpl.html */
 
 .home-body-content {
+  width: 100vw;
+  height: auto;
   text-align: center;
 }
 
@@ -283,6 +285,13 @@ li {
   margin: auto;
 }
 
+.watch-film-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
 .watch-film {
   width: 230px;
   height: 40px;
@@ -293,15 +302,31 @@ li {
   margin: auto;
 }
 
+.watch-film a {
+  color: #d0bca4;
+}
+
 .watch-film svg {
   width: 20px;
   height: auto;
+  fill: #d0bca4;
   /*top: 16%;*/
   transform: translateY(16%);
 }
 
 .watch-film:hover {
   color: #000000;
+  cursor: pointer;
+  fill: #000000;
+}
+
+.watch-film a:hover {
+  color: #000000;
+  cursor: pointer;
+  fill: #000000;
+}
+
+.watch-film svg:hover {
   cursor: pointer;
   fill: #000000;
 }
@@ -355,10 +380,22 @@ li {
   margin: auto;
 }
 
+#measurements1 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
+}
+
 #measurements2 {
   width: 100px;
   height: 160px;
   margin: auto;
+}
+
+#measurements2 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 #measurements3 {
@@ -367,10 +404,22 @@ li {
   margin: auto;
 }
 
+#measurements3 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
+}
+
 #measurements4 {
   width: 150px;
   height: 160px;
   margin: auto;
+}
+
+#measurements4 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 .retina-display-measurements-full {
@@ -406,7 +455,9 @@ li {
 }
 
 #measurements5 h4 {
+  margin-top: -9px;
   padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 #measurements6 {
@@ -414,6 +465,12 @@ li {
   height: 160px;
   margin: auto;
   text-align: left;
+}
+
+#measurements6 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 #measurements7 {
@@ -424,7 +481,9 @@ li {
 }
 
 #measurements7 h4 {
+  margin-top: -9px;
   padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 .measurements-container span {
@@ -633,6 +692,7 @@ li {
   height: auto;
   margin: auto;
   margin-top: 60px;
+  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -780,6 +840,22 @@ li {
   margin: auto;
   background: #ffffff;
   overflow: hidden;
+}
+
+#measurements8 {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  margin-right: 100px;
+  margin-top: -150px;
+  float: right;
+  text-align: left;
+}
+
+#measurements8 h4 {
+  margin-top: -9px;
+  padding-left: 13px;
+  letter-spacing: 3px;
 }
 
 .home-battery-stack {
@@ -1059,4 +1135,38 @@ li {
 
 .home-pure-invention .information-center {
   padding-top: 275px;
+}
+
+/* DESIGN VIDEO */
+
+.design-video-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.video-close-button {
+  z-index: 2;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 20px;
+  left: 20px;
+}
+
+.video-close-button svg {
+  width: 100%;
+  height: auto;
+}
+
+.design-video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
 }

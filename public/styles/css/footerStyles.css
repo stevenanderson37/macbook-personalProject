@@ -44,12 +44,13 @@
 .buystrip-info {
   float: right;
   padding-right: 50px;
+  text-align: left;
 }
 
 .buystrip h3 {
   font-family: "Myriad Set Pro","Myriad Pro","HelveticaNeue","Helvetica","Arial","Verdana","sans-serif";
   font-size: 36px;
-  line-height: 44px;
+  line-height: 30px;
   font-weight: 200;
 }
 
@@ -59,6 +60,7 @@
   line-height: 25px;
   font-weight: 200;
   font-style: normal;
+  padding-bottom: 7px;
 }
 
 .buystrip a {

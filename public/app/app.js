@@ -18,6 +18,13 @@ angular.module("app")
       controller: "homeCtrl"
     })
 
+		// MacBook DESIGN VIDEO STATE
+		.state('design_video', {
+      url: "/design_video",
+      templateUrl: "./app/routes/home/design_video/designVideoTmpl.html",
+      controller: "designVideoCtrl"
+    })
+
     // MacBook DESIGN STATE
     .state('design', {
       url: "/design",
@@ -82,10 +89,17 @@ angular.module("app")
     })
 
 		// MacBook BUY_a_Silver_256GB_1.1GHz STATE
-    .state('silver_256gb_1.1ghz', {
-      url: "/silver_256gb_1.1ghz",
-      templateUrl: "./app/routes/buy/buy_b/Silver_256GB_1.1GHz.html",
-      controller: "Silver_256GB_1.1GHz"
+    .state('silver_256gb_11ghz', {
+      url: "/silver_256gb_11ghz",
+      templateUrl: "./app/routes/buy/buy_b/silver_256GB_1.1GHz.html",
+      controller: "silver_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_a_Silver_256GB_1.3GHz STATE
+    .state('silver_256gb_13ghz', {
+      url: "/silver_256gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_b/silver_256GB_1.3GHz.html",
+      controller: "silver_256GB_1.3GHz"
     })
 
 		// CREATE ACCOUNT

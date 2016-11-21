@@ -408,10 +408,21 @@
 .keyboard-selector {
   width: 488px;
   height: 62px;
-  border: 1px solid #333333;
+  border: 1px solid #000000;
   border-radius: 5px;
-  margin-bottom: 40px;
+  margin: auto;
+  margin-bottom: 30px;
   margin-top: 15px;
+  background: #ffffff;
+  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22px;
+  color: #000000;
+}
+
+.keyboard-selector option {
+  padding-left: 20px;
 }
 
 .keyboard-selector:hover {
