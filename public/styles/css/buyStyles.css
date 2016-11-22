@@ -9,13 +9,22 @@
 }
 
 .buy-macbook-left {
-  width: 490px;
+  width: 425px;
   height: auto;
+  position: relative;
+}
+
+.buy-macbook-left img {
+  width: 470px;
+  height: auto;
+  position: absolute;
+  left: -45px;
 }
 
 .buy-macbook-right {
-  width: 490px;
+  width: 425px;
   height: auto;
+  margin: auto;
 }
 
 .buy-macbook h1 {
@@ -139,6 +148,28 @@
 
 .model-buttons:hover {
   cursor: pointer;
+}
+
+.buy_a-summary {
+  width: 490px;
+  height: auto;
+  margin: auto;
+  /*margin-bottom: 70px;*/
+}
+
+.buy_a-summary h1 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: normal;
+  padding-top: 25px;
+}
+
+.buy_a-summary h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: 200;
 }
 
 .fixed-bottom-bar {

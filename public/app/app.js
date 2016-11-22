@@ -74,34 +74,6 @@ angular.module("app")
       controller: "buyCtrl_c"
     })
 
-		// MacBook BUY_a_Silver STATE
-    .state('buy_a_silver', {
-      url: "/buy_a_silver",
-      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_Silver.html",
-      controller: "buyCtrl_a_Silver"
-    })
-
-		// MacBook BUY_a_Silver_256GB STATE
-    .state('buy_a_silver_256gb', {
-      url: "/buy_a_silver_256gb",
-      templateUrl: "./app/routes/buy/buy_a/buyTmpl_a_Silver_256GB.html",
-      controller: "buyCtrl_a_Silver_256GB"
-    })
-
-		// MacBook BUY_a_Silver_256GB_1.1GHz STATE
-    .state('silver_256gb_11ghz', {
-      url: "/silver_256gb_11ghz",
-      templateUrl: "./app/routes/buy/buy_b/silver_256GB_1.1GHz.html",
-      controller: "silver_256GB_1.1GHz"
-    })
-
-		// MacBook BUY_a_Silver_256GB_1.3GHz STATE
-    .state('silver_256gb_13ghz', {
-      url: "/silver_256gb_13ghz",
-      templateUrl: "./app/routes/buy/buy_b/silver_256GB_1.3GHz.html",
-      controller: "silver_256GB_1.3GHz"
-    })
-
 		// CREATE ACCOUNT
 		.state('create_account', {
       url: "/create_account",
@@ -180,7 +152,203 @@ angular.module("app")
 					return mainService.getProducts();
 				}
 			}
-		});
+		})
+
+		// MacBook BUY_Silver STATE
+    .state('buy_a_silver', {
+      url: "/buy_a_silver",
+      templateUrl: "./app/routes/buy/buy_silver/buyTmpl_a_Silver.html",
+      controller: "buyCtrl_a_Silver"
+    })
+
+		// MacBook BUY_Silver_256GB STATE
+    .state('buy_a_silver_256gb', {
+      url: "/buy_a_silver_256gb",
+      templateUrl: "./app/routes/buy/buy_silver/buyTmpl_a_Silver_256GB.html",
+      controller: "buyCtrl_a_Silver_256GB"
+    })
+
+		// MacBook BUY_Silver_512GB STATE
+    .state('silver_512gb', {
+      url: "/silver_512gb",
+      templateUrl: "./app/routes/buy/buy_silver/silver_512GB.html",
+      controller: "silver_512GB"
+    })
+
+		// MacBook BUY_Silver_256GB_1.1GHz STATE
+    .state('silver_256gb_11ghz', {
+      url: "/silver_256gb_11ghz",
+      templateUrl: "./app/routes/buy/buy_silver/silver_256GB_1.1GHz.html",
+      controller: "silver_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_Silver_256GB_1.3GHz STATE
+    .state('silver_256gb_13ghz', {
+      url: "/silver_256gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_silver/silver_256GB_1.3GHz.html",
+      controller: "silver_256GB_1.3GHz"
+    })
+
+		// MacBook BUY_Silver_512GB_1.2GHz STATE
+    .state('silver_512gb_12ghz', {
+      url: "/silver_512gb_12ghz",
+      templateUrl: "./app/routes/buy/buy_silver/silver_512GB_1.2GHz.html",
+      controller: "silver_512GB_1.2GHz"
+    })
+
+		// MacBook BUY_Silver_512GB_1.3GHz STATE
+    .state('silver_512gb_13ghz', {
+      url: "/silver_512gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_silver/silver_512GB_1.3GHz.html",
+      controller: "silver_512GB_1.3GHz"
+    })
+
+		// MacBook BUY_Gold STATE
+    .state('gold', {
+      url: "/gold",
+      templateUrl: "./app/routes/buy/buy_gold/gold.html",
+      controller: "gold"
+    })
+
+		// MacBook BUY_Gold_256GB STATE
+    .state('gold_256gb', {
+      url: "/gold_256gb",
+      templateUrl: "./app/routes/buy/buy_gold/gold_256GB.html",
+      controller: "gold_256GB"
+    })
+
+		// MacBook BUY_Gold_512GB STATE
+    .state('gold_512gb', {
+      url: "/gold_512gb",
+      templateUrl: "./app/routes/buy/buy_gold/gold_512GB.html",
+      controller: "gold_512GB"
+    })
+
+		// MacBook BUY_Gold_256GB_1.1GHz STATE
+    .state('gold_256gb_11ghz', {
+      url: "/gold_256gb_11ghz",
+      templateUrl: "./app/routes/buy/buy_gold/gold_256GB_1.1GHz.html",
+      controller: "gold_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_Gold_256GB_1.3GHz STATE
+    .state('gold_256gb_13ghz', {
+      url: "/gold_256gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_gold/gold_256GB_1.3GHz.html",
+      controller: "gold_256GB_1.3GHz"
+    })
+
+		// MacBook BUY_Gold_512GB_1.2GHz STATE
+    .state('gold_512gb_12ghz', {
+      url: "/gold_512gb_12ghz",
+      templateUrl: "./app/routes/buy/buy_gold/gold_512GB_1.2GHz.html",
+      controller: "gold_512GB_1.2GHz"
+    })
+
+		// MacBook BUY_Gold_512GB_1.3GHz STATE
+    .state('gold_512gb_13ghz', {
+      url: "/gold_512gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_gold/gold_512GB_1.3GHz.html",
+      controller: "gold_512GB_1.3GHz"
+    })
+
+		// MacBook BUY_SpaceGray STATE
+    .state('spacegray', {
+      url: "/spacegray",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray.html",
+      controller: "spacegray"
+    })
+
+		// MacBook BUY_SpaceGray_256GB STATE
+    .state('spacegray_256gb', {
+      url: "/spacegray_256gb",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_256GB.html",
+      controller: "spacegray_256GB"
+    })
+
+		// MacBook BUY_SpaceGray_512GB STATE
+    .state('spacegray_512gb', {
+      url: "/spacegray_512gb",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_512GB.html",
+      controller: "spacegray_512GB"
+    })
+
+		// MacBook BUY_SpaceGray_256GB_1.1GHz STATE
+    .state('spacegray_256gb_11ghz', {
+      url: "/spacegray_256gb_11ghz",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_256GB_1.1GHz.html",
+      controller: "spacegray_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_SpaceGray_256GB_1.3GHz STATE
+    .state('spacegray_256gb_13ghz', {
+      url: "/spacegray_256gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_256GB_1.3GHz.html",
+      controller: "spacegray_256GB_1.3GHz"
+    })
+
+		// MacBook BUY_SpaceGray_512GB_1.2GHz STATE
+    .state('spacegray_512gb_12ghz', {
+      url: "/spacegray_512gb_12ghz",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_512GB_1.2GHz.html",
+      controller: "spacegray_512GB_1.2GHz"
+    })
+
+		// MacBook BUY_SpaceGray_512GB_1.3GHz STATE
+    .state('spacegray_512gb_13ghz', {
+      url: "/spacegray_512gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_spacegray/spacegray_512GB_1.3GHz.html",
+      controller: "spacegray_512GB_1.3GHz"
+    })
+
+		// MacBook BUY_RoseGold STATE
+    .state('rosegold', {
+      url: "/rosegold",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold.html",
+      controller: "rosegold"
+    })
+
+		// MacBook BUY_RoseGold_256GB STATE
+    .state('rosegold_256gb', {
+      url: "/rosegold_256gb",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_256GB.html",
+      controller: "rosegold_256GB"
+    })
+
+		// MacBook BUY_RoseGold_256GB_1.1GHz STATE
+    .state('rosegold_256gb_11ghz', {
+      url: "/rosegold_256gb_11ghz",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_256GB_1.1GHz.html",
+      controller: "rosegold_256GB_1.1GHz"
+    })
+
+		// MacBook BUY_RoseGold_256GB_1.3GHz STATE
+    .state('rosegold_256gb_13ghz', {
+      url: "/rosegold_256gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_256GB_1.3GHz.html",
+      controller: "rosegold_256GB_1.3GHz"
+    })
+
+		// MacBook BUY_RoseGold_512GB STATE
+    .state('rosegold_512gb', {
+      url: "/rosegold_512gb",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_512GB.html",
+      controller: "rosegold_512GB"
+    })
+
+		// MacBook BUY_RoseGold_512GB_1.2GHz STATE
+    .state('rosegold_512gb_12ghz', {
+      url: "/rosegold_512gb_12ghz",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_512GB_1.2GHz.html",
+      controller: "rosegold_512GB_1.2GHz"
+    })
+
+		// MacBook BUY_RoseGold_512GB_1.3GHz STATE
+    .state('rosegold_512gb_13ghz', {
+      url: "/rosegold_512gb_13ghz",
+      templateUrl: "./app/routes/buy/buy_rosegold/rosegold_512GB_1.3GHz.html",
+      controller: "rosegold_512GB_1.3GHz"
+    });
 
 
 
