@@ -189,14 +189,36 @@
 
 .fixed-bottom-bar-right {
   float: right;
-  width: 250px;
+  width: 230px;
   height: 80px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .fixed-bottom-bar-right h1 {
   font-size: 28px;
   line-height: 28px;
+}
+
+.fixed-bottom-bar-right button {
+  float: right;
+  margin-top: -10px;
+}
+
+.fixed-bottom-bar-right-add {
+  float: right;
+  width: 280px;
+  height: 80px;
+}
+
+.fixed-bottom-bar-right-add h1 {
+  font-size: 28px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+
+.fixed-bottom-bar-right-add button {
+  float: right;
+  margin-top: -10px;
 }
 
 .inner-fixed-bottom-bar {
