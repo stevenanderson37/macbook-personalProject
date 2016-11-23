@@ -17,6 +17,19 @@ CREATE TABLE users
   mobile_phone VARCHAR(100)
 );
 
+CREATE TABLE macbooks
+(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  processor VARCHAR(100),
+  sdram VARCHAR(100),
+  storage VARCHAR(100),
+  graphics VARCHAR(100),
+  keyboard VARCHAR(100),
+  accessory_kit VARCHAR(100),
+  price INTEGER
+);
+
 CREATE TABLE products_in_cart
 (
   id SERIAL PRIMARY KEY,
@@ -114,19 +127,6 @@ CREATE TABLE billing_info
   street_address_a VARCHAR(100),
   street_address_b VARCHAR(100),
   zip VARCHAR(100)
-);
-
-CREATE TABLE macbooks
-(
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  processor VARCHAR(100),
-  sdram VARCHAR(100),
-  storage VARCHAR(100),
-  graphics VARCHAR(100),
-  keyboard VARCHAR(100),
-  accessory_kit VARCHAR(100),
-  price INTEGER
 );
 
 -- users

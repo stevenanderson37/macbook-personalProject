@@ -533,25 +533,33 @@
 .accessory-img-container {
   width: 408px;
   height: 408px;
-  background: lightblue;
+  background: #cccccc;
+  color: #999999;
+  text-align: center;
 }
 
 .accessory-title-container {
   width: 408px;
   height: 100px;
-  background: pink;
+  background: #cccccc;
+  color: #999999;
+  text-align: center;
 }
 
 .accessory-description-container {
   width: 408px;
   height: 150px;
-  background: turquoise;
+  background: #cccccc;
+  color: #999999;
+  text-align: center;
 }
 
 .accessory-options-container {
   width: 408px;
   height: 155px;
-  background: palegreen;
+  background: #cccccc;
+  color: #999999;
+  text-align: center;
 }
 
 .fixed-bottom-bar-right-add {
