@@ -1,8 +1,11 @@
-hello
-<div ng-repeat="user in users">
-  user<h3>{{user.first_name}} {{user.last_name}} <br> {{user.email}}</h3>
-  <br>
-  <button type="button" name="button" ui-sref="order({id: user.id})">View My Cart</button>
-  <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">Products</button>
-  <br><br>
+<div class="wow fadeIn" data-wow-duration="0.5s">
+  <navbar-dir></navbar-dir>
+  <h1>{{hello}}</h1>
+  <div ng-repeat="user in users">
+    user<h3>{{user.first_name}} {{user.last_name}} <br> {{user.email}}</h3>
+    <br>
+    <button type="button" name="button" ui-sref="order({id: user.id})">View My Cart</button>
+    <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">Products</button>
+    <br><br>
+  </div>
 </div>

@@ -1,8 +1,11 @@
 CREATE TABLE users
 (
   id SERIAL PRIMARY KEY,
+  email VARCHAR(100) UNIQUE,
+  password VARCHAR(100),
   first_name VARCHAR(100),
   last_name VARCHAR(100),
+  birthday DATE,
   company_name VARCHAR(100),
   primary_area VARCHAR(100),
   primary_phone VARCHAR(100),
@@ -12,9 +15,18 @@ CREATE TABLE users
   state VARCHAR(100),
   zip VARCHAR(100),
   business_address BOOLEAN,
-  email VARCHAR(100),
   mobile_area VARCHAR(100),
   mobile_phone VARCHAR(100)
+);
+
+CREATE TABLE user
+(
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(100) UNIQUE,
+  password VARCHAR(100),
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  birthday DATE
 );
 
 CREATE TABLE macbooks
@@ -131,13 +143,13 @@ CREATE TABLE billing_info
 
 -- users
 
-INSERT INTO users
-(first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address, email)
-VALUES ('Milo', 'Perry', '801', '722-4966', '8965 Fake Address Pass', 'Provo', 'UT', '84065', 'false', 'awesomeson@family.com');
-
-INSERT INTO users
-(first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address, email)
-VALUES ('Steven', 'Perry', '801', '722-4966', 'A Fake Address', 'Provo', 'UT', '84065', 'false', 'boringemail@email.com');
+-- INSERT INTO users
+-- (email, first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address)
+-- VALUES ('awesomeson@family.com', 'Milo', 'Perry', '801', '722-4966', '8965 Fake Address Pass', 'Provo', 'UT', '84065', 'false');
+--
+-- INSERT INTO users
+-- (email, first_name, last_name, primary_area, primary_phone, street_address_a, city, state, zip, business_address)
+-- VALUES ('boringemail@email.com', 'Steven', 'Perry', '801', '722-4966', 'A Fake Address', 'Provo', 'UT', '84065', 'false');
 
 -- macbooks
 

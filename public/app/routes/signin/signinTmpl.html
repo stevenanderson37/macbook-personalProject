@@ -1,4 +1,4 @@
-<div class="signin-gray-background">
+<div class="signin-gray-background wow fadeIn" data-wow-duration="0.5s">
   <navbar-dir></navbar-dir>
 
   <div class="signin-container">
@@ -19,14 +19,14 @@
       <div class="signin-mid-left">
         <h2>Sign in to Apple Store</h2>
         <br>
-        <input placeholder="Apple ID*"></input>
-        <br>
-        <input placeholder="Password*"></input>
-        <br>
-        <div>
-          <a>Forgot your Apple ID or Password?</a>
-          <span ui-sref="" type="button" class="button-medium" style="float: right;">Sign In</span>
-        </div>
+        <form ng-submit="login(user)">
+          <input placeholder="Apple ID*" type="email" ng-model="user.email" required></input>
+          <br>
+          <input placeholder="Password*" type="password" ng-model="user.password" required></input>
+          <br>
+          <button type="submit" class="button-medium" style="float: right;">Sign In</button>
+        </form>
+        <a>Forgot your Apple ID or Password?</a>
       </div>
 
       <div class="signin-mid-center">

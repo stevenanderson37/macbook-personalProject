@@ -83,6 +83,10 @@
   cursor: pointer;
 }
 
+.finish-buttons:active {
+  box-shadow: 0px 0px 8px rgba(12, 122, 206, 1);
+}
+
 .finish-buttons h3 {
   padding-top: 25px;
 }
@@ -148,6 +152,10 @@
 
 .model-buttons:hover {
   cursor: pointer;
+}
+
+.model-buttons:active {
+  box-shadow: 0px 0px 8px rgba(12, 122, 206, 1);
 }
 
 .buy_a-summary {
@@ -431,6 +439,10 @@
 
 .processor-buttons:hover {
   cursor: pointer;
+}
+
+.processor-buttons:active {
+  box-shadow: 0px 0px 8px rgba(12, 122, 206, 1);
 }
 
 .buy-keyboard {

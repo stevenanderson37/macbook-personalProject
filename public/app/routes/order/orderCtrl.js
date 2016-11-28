@@ -1,4 +1,4 @@
-// INITILIZE CONTROLLER
+// INITIALIZE CONTROLLER
 // ============================================================
 angular.module("app")
 	.controller("orderCtrl", function($scope, order, $state, mainService) {

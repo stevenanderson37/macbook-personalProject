@@ -1,4 +1,4 @@
-// INITILIZE SERVICE
+// INITIALIZE SERVICE
 // ============================================================
 angular.module("app")
 	.service("mainService", function($http) {

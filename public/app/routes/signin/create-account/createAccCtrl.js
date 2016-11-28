@@ -1,7 +1,17 @@
 angular.module("app")
-.controller('createAccCtrl', function($scope, $stateParams, mainService) {
-  $scope.stateName = 'Create account';
+.controller('createAccCtrl', function($scope, authService, $state, $stateParams) {
 
-
+  $scope.register = function(user) {
+    authService.registerUser(user).then(function(response) {
+      if (!response.data) {
+        alert('Unable to create user');
+      } else {
+        alert('User Created');
+        $scope.newUser = {};
+      }
+    }).catch(function(err) {
+      alert('Unable to create user');
+    });
+  };
 
 })

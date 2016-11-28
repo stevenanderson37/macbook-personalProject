@@ -1,0 +1,21 @@
+<div class="account-body wow fadeIn" data-wow-duration="0.5s">
+  <navbar-dir></navbar-dir>
+  {{user}}
+
+  <br><br>
+
+  Name: <input type="text" ng-model="user.first_name">
+  <input type="text" ng-model="user.last_name">
+  <br>
+  Email: <input type="text" ng-model="user.email">
+  <br>
+  Birthday: <input type="text" ng-model="user.birthday|date:'M/d/yyyy'">
+  <br>
+  <button type="button" ng-click="updateUser(user)">update</button>
+
+  <br><br>
+
+  <div class="account-logout-container">
+    <a ng-click="logout()">logout</a>
+  </div>
+</div>

@@ -69,6 +69,32 @@
   padding-left: 10px;
 }
 
+.form-container input[type="date"] {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #aaaaaa;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.form-container input[type="date"]::before {
+	color: #aaaaaa;
+	content: attr(placeholder);
+}
+.form-container input[type="date"] {
+	color: #ffffff;
+}
+.form-container input[type="date"]:focus,
+.form-container input[type="date"]:valid {
+	color: #333333;
+}
+.form-container input[type="date"]:focus::before,
+.form-container input[type="date"]:valid::before {
+	content: "" !important;
+}
+
 .create-acc-select-long {
   width: 460px;
   height: 34px;

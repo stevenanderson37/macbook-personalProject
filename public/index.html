@@ -11,11 +11,14 @@
     <!--STYLES-->
     <link href="./styles/css/reset.css" rel="stylesheet">
     <link href="./styles/css/styles.css"  rel="stylesheet">
+    <link href="./styles/css/homeStyles.css"  rel="stylesheet">
     <link href="./styles/css/navbarOverall.css"  rel="stylesheet">
+    <link href="./styles/css/stateNavbarStyles.css"  rel="stylesheet">
     <link href="./styles/css/buyStyles.css" rel="stylesheet">
     <link href="./styles/css/bagStyles.css" rel="stylesheet">
     <link href="./styles/css/footerStyles.css" rel="stylesheet">
     <link href="./styles/css/signinStyles.css" rel="stylesheet">
+    <link href="./styles/css/accountStyles.css" rel="stylesheet">
     <link href="./styles/css/ordersStyles.css" rel="stylesheet">
     <link href="./styles/css/createAccStyles.css" rel="stylesheet">
     <link href="./styles/css/animate.css" rel="stylesheet">
@@ -35,15 +38,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ngCart/1.0.0/ngCart.js"></script> -->
 
     <script src="./app/app.js"></script>
 
     <!-- SERVICES  -->
+    <script src="./app/services/authService.js"></script>
     <script src="./app/services/mainService.js"></script>
+    <script src="./app/services/userService.js"></script>
 
     <!-- ROUTES  -->
     <script src="./app/routes/bag/bagCtrl.js"></script>
     <script src="./app/routes/signin/signinCtrl.js"></script>
+    <script src="./app/routes/account/accountCtrl.js"></script>
     <script src="./app/routes/favorites/favoritesCtrl.js"></script>
     <script src="./app/routes/orders/ordersCtrl_a.js"></script>
     <script src="./app/routes/signin/create-account/createAccCtrl.js"></script>
@@ -56,8 +63,8 @@
     <script src="./app/routes/specs/specsCtrl.js"></script>
     <script src="./app/routes/wireless/wirelessCtrl.js"></script>
     <script src="./app/routes/user/userCtrl.js"></script>
-    <script src="./app/routes/order/orderCtrl.js"></script>
-    <script src="./app/routes/products/productsCtrl.js"></script>
+    <!-- <script src="./app/routes/order/orderCtrl.js"></script> -->
+    <!-- <script src="./app/routes/products/productsCtrl.js"></script> -->
     <script src="./app/routes/navbarOverall/navbarDir.js"></script>
     <script src="./app/routes/navbarOverall/navbarBag_jQuery.js"></script>
     <script src="./app/routes/footer/footerDir.js"></script>
@@ -109,6 +116,7 @@
     <script>
       new WOW().init();
     </script>
+    <script src="./app/plugins/angular-animate.js"></script>
     <!-- <script src="./app/plugins/ngCart.js"></script>
     <script src="./app/plugins/ngCart.directives.js"></script>
     <script src="./app/plugins/ngCart.fulfilment.js"></script> -->

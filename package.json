@@ -4,10 +4,14 @@
   "description": "clone of MacBook site",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "express": "^4.14.0",
-    "massive": "^2.5.0"
+    "express-session": "^1.14.2",
+    "massive": "^2.5.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
