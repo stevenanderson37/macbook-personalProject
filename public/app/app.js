@@ -176,14 +176,14 @@ angular.module("app")
 
 		// MacBook BUY_Silver STATE
     .state('buy_a_silver', {
-      url: "/macbook/buy_a_silver",
+      url: "/macbook/silver",
       templateUrl: "./app/routes/buy/buy_silver/buyTmpl_a_Silver.html",
       controller: "buyCtrl_a_Silver"
     })
 
 		// MacBook BUY_Silver_256GB STATE
     .state('buy_a_silver_256gb', {
-      url: "/macbook/buy_a_silver_256gb",
+      url: "/macbook/silver_256gb",
       templateUrl: "./app/routes/buy/buy_silver/buyTmpl_a_Silver_256GB.html",
       controller: "buyCtrl_a_Silver_256GB"
     })

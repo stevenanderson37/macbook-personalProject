@@ -11,6 +11,7 @@ angular.module("app")
   var yPos, home_photo2;
   function parallax() {
     yPos = window.pageYOffset;
+    console.log(yPos);
     home_photo2 = document.getElementById('home_photo2');
     home_photo2.style.top = yPos * .2 +'px';
   };
