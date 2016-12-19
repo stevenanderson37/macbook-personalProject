@@ -2,12 +2,6 @@ angular.module("app")
 .controller('homeCtrl', function($scope, $stateParams, mainService) {
   $scope.stateName = 'Home';
 
-  // $(".full-state-navbar").stick_in_parent({
-  //   "parent": "body",
-  //   "bottoming": false,
-  //   "sticky_class": ".stuck-state-navbar"
-  // });
-
   var yPos, home_photo2;
   function parallax() {
     yPos = this.pageYOffset;

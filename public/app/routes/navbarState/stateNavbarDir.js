@@ -10,6 +10,17 @@ angular.module("app")
         "bottoming": false,
         "sticky_class": ".stuck-state-navbar"
       });
+
+      $(window).scroll(function() {
+        // find the scroll and use this variable to move elements
+        var winScroll = $(this).scrollTop();
+        // console.log(winScroll);
+        if (winScroll >= $('.full-state-navbar-top').offset().top) {
+          $('.full-state-navbar-top').css({
+            'border-bottom': 'thin solid #eaeaea'
+          });
+        }
+      });
     }
   }
 
