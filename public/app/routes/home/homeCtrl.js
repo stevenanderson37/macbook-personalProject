@@ -2,16 +2,16 @@ angular.module("app")
 .controller('homeCtrl', function($scope, $stateParams, mainService) {
   $scope.stateName = 'Home';
 
-  $(".full-state-navbar").stick_in_parent({
-    "parent": "body",
-    "bottoming": false,
-    "sticky_class": ".stuck-state-navbar"
-  });
+  // $(".full-state-navbar").stick_in_parent({
+  //   "parent": "body",
+  //   "bottoming": false,
+  //   "sticky_class": ".stuck-state-navbar"
+  // });
 
   var yPos, home_photo2;
   function parallax() {
-    yPos = window.pageYOffset;
-    console.log(yPos);
+    yPos = this.pageYOffset;
+    // console.log(yPos);
     home_photo2 = document.getElementById('home_photo2');
     home_photo2.style.top = yPos * .2 +'px';
   };
