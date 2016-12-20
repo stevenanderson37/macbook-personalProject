@@ -58,7 +58,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Passport Endpoints //
+// ENDPOINTS //
+//===================================
+
+// Passport //
 app.post('/api/login', passport.authenticate('local', {
 	successRedirect: '/api/me'
 }));
@@ -68,11 +71,20 @@ app.get('/api/logout', function(req, res, next) {
 		.send('logged out');
 });
 
-// User Endpoints //
+// User //
 app.post('/api/register', userCtrl.register);
 app.post('/api/user', userCtrl.read);
 app.get('/api/me', isAuthed, userCtrl.me);
 app.put('/api/user/current', isAuthed, userCtrl.update);
+
+// Order //
+
+
+// Products in Cart //
+
+
+// Favorites //
+
 
 // ENDPOINTS //
 //===================================

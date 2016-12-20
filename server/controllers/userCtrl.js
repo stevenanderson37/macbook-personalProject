@@ -73,7 +73,7 @@ module.exports = {
 			console.log('Current user not found');
 
 			return res.status(401)
-				.send('current user not defined');
+				.send('Current user not defined');
 		}
 
 		// Remove password for security
