@@ -3,7 +3,7 @@ angular.module("app")
 
 		this.login = function(user) {
 			return $http({
-					method: 'post',
+					method: 'POST',
 					url: '/api/login',
 					data: user
 				})

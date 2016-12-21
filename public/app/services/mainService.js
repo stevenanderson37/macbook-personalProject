@@ -31,7 +31,7 @@ angular.module("app")
 		this.addToCart = function(id, productid, qty) {
 			return $http({
 				method: 'POST',
-				url: '/api/add/item/cart/' + id,
+				url: '/api/add/' + id,
 				data: {
 					id: productid,
 					qty: qty
@@ -42,7 +42,7 @@ angular.module("app")
 		this.updateProductQty = function(id, qty) {
 			return $http({
 				method: 'PUT',
-				url: "/api/update/qty/" + id,
+				url: "/api/update/" + id,
 				data: {
 					qty: qty
 				}
@@ -52,14 +52,14 @@ angular.module("app")
 		this.removeFromCart = function(id) {
 			return $http({
 				method: 'DELETE',
-				url: '/api/delete/item/cart/' + id
+				url: '/api/delete/' + id
 			});
 		};
 
 		this.placeOrder = function(id, orderid) {
 			return $http({
 				method: 'PUT',
-				url: '/api/order/complete/' + orderid + "/" + id
+				url: '/api/complete/' + orderid + "/" + id
 			});
 		};
 

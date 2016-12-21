@@ -4,7 +4,7 @@ angular.module("app")
   return {
     restrict: 'AE',
     templateUrl: './app/routes/navbarOverall/navbarTmpl.html'
-    }
+  }
 
 
 });

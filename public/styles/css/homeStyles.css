@@ -884,7 +884,7 @@
 
 .home-macos .information-left {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
 }
 
 #home_macos_image {

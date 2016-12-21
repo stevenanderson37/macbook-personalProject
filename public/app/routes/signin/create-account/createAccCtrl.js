@@ -8,6 +8,7 @@ angular.module("app")
       } else {
         alert('User Created');
         $scope.newUser = {};
+        // $state.go('account');
       }
     }).catch(function(err) {
       alert('Unable to create user');
