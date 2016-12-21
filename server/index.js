@@ -28,7 +28,7 @@ dbSetup.run();
 // CONTROLLERS //
 var userCtrl = require('./controllers/userCtrl');
 var orderCtrl = require('./controllers/orderCtrl');
-// var productCtrl = require('./controllers/productsCtrl');
+var productCtrl = require('./controllers/productsCtrl');
 // var favoritesCtrl = require('./controllers/favoritesCtrl');
 
 // SERVICES //
@@ -85,15 +85,17 @@ app.get('/api/order/:userid', orderCtrl.getUserOrder);
 app.get('/api/completed_orders/:userid', orderCtrl.getUserHistory);
 
 // Products in Cart //
-// app.get('/api/products', productCtrl.getProducts);
-// app.get('/api/cart/:cartid', productCtrl.getInCart);
-// app.post('/api/add/:cartid', productCtrl.addToCart);
-// app.put('/api/update/:productid', productCtrl.updateProductInCart);
-// app.delete('/api/delete/:productid', productCtrl.deleteCartItem);
+app.get('/api/products', productCtrl.getProducts);
+app.get('/api/cart/:cartid', productCtrl.getInCart);
+app.post('/api/add/:cartid', productCtrl.addToCart);
+app.put('/api/update/:productid', productCtrl.updateProductInCart);
+app.delete('/api/delete/:productid', productCtrl.deleteCartItem);
 
-// Products in Favorites //
+// Favorites //
 // app.post('/api/create_favorites/:userid', favoritesCtrl.);
 // app.get('/api/favorites/:userid', favoritesCtrl.);
+
+// Products in Favorites //
 // app.post('/api/favorites_add/:favoritesid', favoritesCtrl.);
 // app.delete('/api/delete/:productid', favoritesCtrl.);
 

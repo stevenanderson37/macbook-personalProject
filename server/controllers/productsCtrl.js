@@ -12,6 +12,7 @@ module.exports = {
 				.send(products);
 		});
 	},
+
 	addToCart: function(req, res, next) {
 		var product = req.body;
 
@@ -24,6 +25,7 @@ module.exports = {
 				.send('Item added successfully');
 		});
 	},
+
 	updateProductInCart: function(req, res, next) {
 		db.product_cart_update([req.body.qty, req.params.productid], function(err, productInCart) {
 			if (err) {
@@ -34,6 +36,7 @@ module.exports = {
 				.send('Item updated successfully');
 		});
 	},
+
 	deleteCartItem: function(req, res, next) {
 		db.product_cart_remove([req.params.productid], function(err, product) {
 			if (err) {
@@ -44,6 +47,7 @@ module.exports = {
 				.send('Item removed successfully');
 		});
 	},
+	
 	getProducts: function(req, res, next) {
 		db.products(function(err, products) {
 			if (err) {

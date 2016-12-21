@@ -12,6 +12,7 @@ module.exports = {
 				.send('Order created successfully');
 		});
 	},
+
 	completeOrder: function(req, res, next) {
 		db.order_complete([req.params.orderid], function(err, order) {
 			if (err) {
@@ -21,6 +22,7 @@ module.exports = {
 			next();
 		});
 	},
+
 	getUserOrder: function(req, res, next) {
 		var completeOrder = {};
 		db.order_by_user([req.params.userid], function(err, order) {
@@ -42,6 +44,7 @@ module.exports = {
 			});
 		});
 	},
+
 	getUserHistory: function(req, res, next) {
 		db.order_history_by_user([req.params.userid], function(err, orders) {
 			if (err) {
@@ -51,5 +54,5 @@ module.exports = {
 			res.status(200)
 				.send(orders);
 		});
-	},
+	}
 };

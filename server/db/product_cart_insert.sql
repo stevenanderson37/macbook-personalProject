@@ -1,2 +1,2 @@
-INSERT INTO products_in_cart (orderid, productid, qty)
+INSERT INTO products_in_cart (orderid, macbookid, qty)
 VALUES ($1, $2, $3);

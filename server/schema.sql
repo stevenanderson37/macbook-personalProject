@@ -1,19 +1,3 @@
-CREATE TABLE billing_info (
-  id SERIAL PRIMARY KEY,
-  country VARCHAR(100),
-  first_name VARCHAR(100),
-  last_name VARCHAR(100),
-  primary_area VARCHAR(100),
-  primary_phone VARCHAR(100),
-  alt_area VARCHAR(25),
-  alt_phone VARCHAR(25),
-  email VARCHAR(100),
-  company_name VARCHAR(100),
-  street_address_a VARCHAR(100),
-  street_address_b VARCHAR(100),
-  zip VARCHAR(100)
-);
-
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   email VARCHAR(100) UNIQUE,
@@ -31,8 +15,24 @@ CREATE TABLE users (
   zip VARCHAR(25),
   business_address BOOLEAN,
   mobile_area VARCHAR(10),
-  mobile_phone VARCHAR(25),
-  billingid INTEGER REFERENCES billing_info.id
+  mobile_phone VARCHAR(25)
+);
+
+CREATE TABLE billing_info (
+  id SERIAL PRIMARY KEY,
+  country VARCHAR(100),
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  primary_area VARCHAR(100),
+  primary_phone VARCHAR(100),
+  alt_area VARCHAR(25),
+  alt_phone VARCHAR(25),
+  email VARCHAR(100),
+  company_name VARCHAR(100),
+  street_address_a VARCHAR(100),
+  street_address_b VARCHAR(100),
+  zip VARCHAR(100),
+  userid INTEGER REFERENCES users.id
 );
 
 CREATE TABLE macbooks (
@@ -58,15 +58,13 @@ CREATE TABLE accessories (
 CREATE TABLE products (
   id SERIAL PRIMARY KEY,
   macbookid INTEGER REFERENCES macbooks.id,
-  accessoryid INTEGER REFERENCES accessories.id,
-  qty INTEGER
+  accessoryid INTEGER REFERENCES accessories.id
 );
 
 CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
   userid INTEGER REFERENCES users.id,
-  complete BOOLEAN,
-  qty INTEGER
+  complete BOOLEAN
 );
 
 CREATE TABLE products_in_cart (
