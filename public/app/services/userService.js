@@ -25,7 +25,7 @@ angular.module("app")
 
 		this.logout = function() {
 			return $http({
-					method: 'get',
+					method: 'GET',
 					url: '/api/logout'
 				})
 				.then(function(response) {

@@ -1,5 +1,20 @@
-CREATE TABLE users
-(
+CREATE TABLE billing_info (
+  id SERIAL PRIMARY KEY,
+  country VARCHAR(100),
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  primary_area VARCHAR(100),
+  primary_phone VARCHAR(100),
+  alt_area VARCHAR(25),
+  alt_phone VARCHAR(25),
+  email VARCHAR(100),
+  company_name VARCHAR(100),
+  street_address_a VARCHAR(100),
+  street_address_b VARCHAR(100),
+  zip VARCHAR(100)
+);
+
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   email VARCHAR(100) UNIQUE,
   password VARCHAR(100),
@@ -17,28 +32,10 @@ CREATE TABLE users
   business_address BOOLEAN,
   mobile_area VARCHAR(10),
   mobile_phone VARCHAR(25),
-  billingid INTEGER references billing_info.id
+  billingid INTEGER REFERENCES billing_info.id
 );
 
-CREATE TABLE billing_info
-(
-  id SERIAL PRIMARY KEY,
-  country VARCHAR(100),
-  first_name VARCHAR(100),
-  last_name VARCHAR(100),
-  primary_area VARCHAR(100),
-  primary_phone VARCHAR(100),
-  alt_area VARCHAR(25),
-  alt_phone VARCHAR(25),
-  email VARCHAR(100),
-  company_name VARCHAR(100),
-  street_address_a VARCHAR(100),
-  street_address_b VARCHAR(100),
-  zip VARCHAR(100)
-);
-
-CREATE TABLE macbooks
-(
+CREATE TABLE macbooks (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100),
   processor VARCHAR(100),
@@ -50,8 +47,7 @@ CREATE TABLE macbooks
   price DECIMAL
 );
 
-CREATE TABLE accessories
-(
+CREATE TABLE accessories (
   id SERIAL PRIMARY KEY,
   name VARCHAR(75),
   description VARCHAR(1000),
@@ -59,43 +55,37 @@ CREATE TABLE accessories
   price DECIMAL
 );
 
-CREATE TABLE products
-(
+CREATE TABLE products (
   id SERIAL PRIMARY KEY,
-  macbookid INTEGER references macbooks.id,
-  accessoryid INTEGER references accessories.id,
+  macbookid INTEGER REFERENCES macbooks.id,
+  accessoryid INTEGER REFERENCES accessories.id,
   qty INTEGER
 );
 
-CREATE TABLE products_in_cart
-(
+CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
-  orderid INTEGER,
-  macbookid INTEGER,
-  qty INTEGER
-);
-
-CREATE TABLE orders
-(
-  id SERIAL PRIMARY KEY,
-  userid INTEGER,
-  productid INTEGER,
+  userid INTEGER REFERENCES users.id,
   complete BOOLEAN,
   qty INTEGER
 );
 
-CREATE TABLE products_in_favorites
-(
+CREATE TABLE products_in_cart (
   id SERIAL PRIMARY KEY,
-  favoritesid INTEGER,
-  productid INTEGER
+  orderid INTEGER REFERENCES orders.id,
+  productid INTEGER REFERENCES products.id,
+  qty INTEGER
 );
 
-CREATE TABLE favorites
-(
+CREATE TABLE favorites (
   id SERIAL PRIMARY KEY,
-  userid INTEGER,
-  productid INTEGER
+  userid INTEGER REFERENCES users.id,
+  productid INTEGER REFERENCES products.id
+);
+
+CREATE TABLE products_in_favorites (
+  id SERIAL PRIMARY KEY,
+  favoritesid INTEGER REFERENCES favorites.id,
+  productid INTEGER REFERENCES products.id
 );
 
 CREATE TABLE macbook

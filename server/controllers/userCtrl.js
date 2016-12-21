@@ -38,8 +38,13 @@ module.exports = {
 			// 		return res.status(500)
 			// 		.send(err);
 			// 	}
+			//
+			// 	// Send user back without password.
+			// 	delete user.password;
+			// 	res.status(200)
+			// 		.send(user);
+			// });
 
-			// Send user back without password.
 			delete user.password;
 			res.status(200)
 				.send(user);

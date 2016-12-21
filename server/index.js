@@ -1,6 +1,6 @@
 // REQUIRE //
 var express = require('express');
-// var cors = require('cors');
+var cors = require('cors');
 var massive = require('massive');
 var bodyParser = require('body-parser');
 var session = require('express-session');
@@ -12,7 +12,7 @@ var config = require('./config');
 var app = module.exports = express();
 app.use(express.static(__dirname + "./../public"));
 app.use(bodyParser.json());
-// app.use(cors());
+app.use(cors());
 
 // MASSIVE //
 var massiveUri = config.MASSIVE_URI;
@@ -27,8 +27,9 @@ dbSetup.run();
 
 // CONTROLLERS //
 var userCtrl = require('./controllers/userCtrl');
-// var orderCtrl = require('./controllers/orderCtrl');
+var orderCtrl = require('./controllers/orderCtrl');
 // var productCtrl = require('./controllers/productsCtrl');
+// var favoritesCtrl = require('./controllers/favoritesCtrl');
 
 // SERVICES //
 var passport = require('./services/passport');
@@ -78,41 +79,28 @@ app.get('/api/me', isAuthed, userCtrl.me);
 app.put('/api/user/current', isAuthed, userCtrl.update);
 
 // Order //
-
+app.post('/api/create_order/:userid', orderCtrl.createOrder);
+app.put('/api/complete/:orderid/:userid', orderCtrl.completeOrder, orderCtrl.createOrder);
+app.get('/api/order/:userid', orderCtrl.getUserOrder);
+app.get('/api/completed_orders/:userid', orderCtrl.getUserHistory);
 
 // Products in Cart //
-
-
-// Favorites //
-
-
-// ENDPOINTS //
-//===================================
-// USER //
-// app.post('/api/user', userCtrl.createUser);
-// app.get('/api/user', userCtrl.getUsers);
-
-// ORDER //
-// app.post('/api/order/:userid', orderCtrl.createOrder);
-// app.put('/api/order/complete/:orderid/:userid', orderCtrl.completeOrder, orderCtrl.createOrder);
-// app.get('/api/order/:userid', orderCtrl.getUserOrder);
-// app.get('/api/order/completed/:userid', orderCtrl.getUserHistory);
-
-// PRODUCTS IN CART //
 // app.get('/api/products', productCtrl.getProducts);
-// app.get('/api/in/cart/:cartid', productCtrl.getInCart);
-// app.post('/api/add/item/cart/:cartid', productCtrl.addToCart);
-// app.put('/api/update/qty/:productid', productCtrl.updateProductInCart);
-// app.delete('/api/delete/item/cart/:productid', productCtrl.deleteCartItem);
+// app.get('/api/cart/:cartid', productCtrl.getInCart);
+// app.post('/api/add/:cartid', productCtrl.addToCart);
+// app.put('/api/update/:productid', productCtrl.updateProductInCart);
+// app.delete('/api/delete/:productid', productCtrl.deleteCartItem);
+
+// Products in Favorites //
+// app.post('/api/create_favorites/:userid', favoritesCtrl.);
+// app.get('/api/favorites/:userid', favoritesCtrl.);
+// app.post('/api/favorites_add/:favoritesid', favoritesCtrl.);
+// app.delete('/api/delete/:productid', favoritesCtrl.);
+
+
 
 // CONNECTIONS //
 var port = config.PORT;
 app.listen(port, function() {
 	console.log('Listening on port ' + port);
 });
-
-// LISTEN //
-// var port = 3000;
-// app.listen(port, function() {
-// 	console.log('Listening on port ' + port);
-// });
