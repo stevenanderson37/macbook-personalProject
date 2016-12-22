@@ -51,6 +51,17 @@ module.exports = {
 		});
 	},
 
+	getUsers: function(req, res, next) {
+		db.users(function(err, users) {
+			if (err) {
+				return res.status(500)
+					.send(err);
+			}
+			res.status(200)
+				.send(users);
+		});
+	},
+
 	// READ USER //
 	read: function(req, res, next) {
 		// List the column names that you want the search to grab
