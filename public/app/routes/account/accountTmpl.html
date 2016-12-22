@@ -15,6 +15,14 @@
 
   <br><br>
 
+  <button type="button" name="button" ui-sref="order({id: user.id})">View My Bag</button>
+
+  <br><br>
+
+  <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">View Products</button>
+
+  <br><br>
+
   <div class="account-logout-container">
     <a ng-click="logout()">logout</a>
   </div>

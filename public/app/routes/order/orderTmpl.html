@@ -1,16 +1,22 @@
 <div class="wow fadeIn" data-wow-duration="0.5s">
-  {{order}}
+  <navbar-dir></navbar-dir>
+  <br><br>
+  <div class="wow fadeIn" data-wow-duration="0.5s">
+    {{order}}
 
-  <button type="button" ng-click="placeOrder(id, order.id)">Place Order</button>
+    <button type="button" ng-click="placeOrder(id, order.id)">Place Order</button>
 
-  <hr>
-  <div ng-repeat="product in products">
-    {{product.name}}<br> {{product.description}}
-    <br> {{product.price | currency}}
-    <br>{{product.qty}}
-    <input type="number" ng-model="product.qty">
-    <button type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
-    <button type="button" ng-click="removeFromCart(product.id)">Remove</button>
-    <br><br>
+    <hr>
+    <div ng-repeat="product in products">
+      {{product.name}}
+      <br>
+      {{product.price | currency}}
+      <br>
+      {{product.qty}}
+      <input type="number" ng-model="product.qty">
+      <button type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
+      <button type="button" ng-click="removeFromCart(product.id)">Remove</button>
+      <br><br>
+    </div>
   </div>
 </div>

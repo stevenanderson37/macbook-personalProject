@@ -1,7 +1,7 @@
 // INITIALIZE CONTROLLER
 // ============================================================
 angular.module("app")
-	.controller("productsCtrl", function($scope, products, mainService, $state) {
+	.controller("productsCtrl", function($scope, products, mainService, $state, $stateParams) {
 
 		// VARIABLES
 		// ============================================================

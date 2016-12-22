@@ -26,6 +26,12 @@ li {
   list-style-type: none;
 }
 
+.state-loading {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
 .button {
   border-style: hidden;
   background: #0070c9;
