@@ -47,7 +47,7 @@ module.exports = {
 				.send('Item removed successfully');
 		});
 	},
-	
+
 	getProducts: function(req, res, next) {
 		db.products(function(err, products) {
 			if (err) {

@@ -124,7 +124,7 @@ angular.module("app")
 
     // BAG STATE
     .state('bag', {
-      url: 'bag',
+      url: '/bag',
       templateUrl: "./app/routes/bag/bagTmpl.html",
       controller: "bagCtrl"
     })
