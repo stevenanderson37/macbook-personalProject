@@ -1,5 +1,5 @@
 angular.module("app")
-.controller('accountCtrl', function($scope, user, userService, $state, $stateParams) {
+.controller('accountCtrl', function($scope, user, userService, mainService, $state, $stateParams) {
   $scope.user = user;
 
   $scope.updateUser = function(user) {
@@ -16,7 +16,7 @@ angular.module("app")
   };
 
   $scope.getUsers = function() {
-		mainService.getUsers()
+		userService.getUsers()
 			.then(function(response) {
 				$scope.users = response.data;
 			});

@@ -1,5 +1,5 @@
-SELECT users.*, ord.id AS orderid
+SELECT users.*, orders.id AS orderid
 FROM users
-JOIN orders ord
-  ON ord.userid = users.id
-WHERE ord.complete = false;
+JOIN orders
+  ON orders.userid = users.id
+WHERE orders.complete = false;

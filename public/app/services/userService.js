@@ -8,6 +8,17 @@ angular.module("app")
 			});
 		};
 
+		this.getUserOrder = function(id) {
+			return $http({
+					method: 'GET',
+					url: '/api/order/' + id
+				})
+				.catch(function(err) {
+					console.log(err);
+
+				});
+		};
+
 		this.getUser = function(id) {
 			return $http({
 				method: 'GET',
