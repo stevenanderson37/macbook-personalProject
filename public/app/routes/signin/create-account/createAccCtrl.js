@@ -18,15 +18,5 @@ angular.module("app")
     });
   };
 
-  // I ended up just making "United States" the first option and used the below function to select the first option available just so the select bar wasn't blank. There's a way to get the USA selected even if it's not the first option, but I was having a hard time getting it to work. For some reason this function is making my registration process not working. Have to figure something else out.
-  // function countryPreSelect() {
-  //   // var select = document.getElementById('countrySelect');
-  //   var el = document.createElement('option');
-  //   // el.textContent = 'United States';
-  //   // el.value = 'USA';
-  //   el.selected = true;
-  //   // select.appendChild(el);
-  // };
-  // window.addEventListener(countryPreSelect);
 
 })

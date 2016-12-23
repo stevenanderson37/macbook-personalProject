@@ -72,9 +72,7 @@
 
         <div style="width: 460px; height: 1px; background: #ccc; margin-top: 30px; margin-bottom: 30px;"></div>
 
-        <p style="text-align: left; padding-left: 10px; color: #999999;">Select Country:</p>
-        <select class="create-acc-select-long" type="text" ng-model="newUser.country" style="margin-bottom: 30px;">
-          <option value="USA">United States</option>
+        <select class="create-acc-select-long" type="text" ng-model="newUser.country" ng-init="newUser.country='USA'" style="margin-bottom: 30px;">
         	<option value="AFG">Afghanistan</option>
         	<option value="ALA">Åland Islands</option>
         	<option value="ALB">Albania</option>
@@ -310,6 +308,7 @@
         	<option value="UKR">Ukraine</option>
         	<option value="ARE">United Arab Emirates</option>
         	<option value="GBR">United Kingdom</option>
+          <option value="USA">United States</option>
         	<option value="UMI">United States Minor Outlying Islands</option>
         	<option value="URY">Uruguay</option>
         	<option value="UZB">Uzbekistan</option>
