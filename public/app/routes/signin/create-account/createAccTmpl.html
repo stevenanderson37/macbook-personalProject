@@ -325,11 +325,11 @@
         </select>
 
         <div class="create-acc-checkboxes">
-          <input type="checkbox" />Announcements
+          <input type="checkbox" ng-model="newUser.announcements" ng-init="newUser.announcements=true" />Announcements
           <p>Get announcements, recommendations, and updates about Apple products, services, software updates, and more.</p>
-          <input type="checkbox" />Apple Music, iTunes, iBooks, and App Store Offers
+          <input type="checkbox" ng-model="newUser.media" ng-init="newUser.media=true" />Apple Music, iTunes, iBooks, and App Store Offers
           <p>Get recommendations, the latest releases, special offers, and exclusive content for music, apps, movies, TV, books, podcasts and more.</p>
-          <input type="checkbox" />Apple News Updates
+          <input type="checkbox" ng-model="newUser.news" ng-init="newUser.news=true" />Apple News Updates
           <p>Get the best stories and recommendations from Apple News delivered directly to your inbox.</p>
         </div>
 
