@@ -5,6 +5,23 @@ CREATE TABLE users (
   first_name VARCHAR(100),
   last_name VARCHAR(100),
   birthday DATE,
+  country VARCHAR(100),
+  announcements BOOLEAN,
+  media BOOLEAN,
+  news BOOLEAN
+);
+
+CREATE TABLE security_questions (
+  security_question1 TEXT,
+  security_answer1 VARCHAR(100),
+  security_question2 TEXT,
+  security_answer2 VARCHAR(100),
+  security_question3 TEXT,
+  security_answer3 VARCHAR(100),
+  userid INTEGER REFERENCES users.id
+);
+
+CREATE TABLE shipping_info (
   company_name VARCHAR(100),
   primary_area VARCHAR(10),
   primary_phone VARCHAR(25),
@@ -15,7 +32,8 @@ CREATE TABLE users (
   zip VARCHAR(25),
   business_address BOOLEAN,
   mobile_area VARCHAR(10),
-  mobile_phone VARCHAR(25)
+  mobile_phone VARCHAR(25),
+  userid INTEGER REFERENCES users.id
 );
 
 CREATE TABLE billing_info (
