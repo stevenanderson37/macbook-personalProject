@@ -32,23 +32,23 @@ module.exports = {
 					.send(err);
 			}
 
-			user = user[0];
-			db.order_create([user.id], function(err, order) {
-				if (err) {
-					return res.status(500)
-					.send(err);
-				}
+			// user = user[0];
+			// db.order_create([user.id], function(err, order) {
+			// 	if (err) {
+			// 		return res.status(500)
+			// 		.send(err);
+			// 	}
+			//
+			// 	// Send user back without password.
+			// 	delete user.password;
+			// 	user.orderid = order.id;
+			// 	res.status(200)
+			// 		.send(user);
+			// });
 
-				// Send user back without password.
-				delete user.password;
-				user.orderid = order.id;
-				res.status(200)
-					.send(user);
-			});
-
-			// delete user.password;
-			// res.status(200)
-			// 	.send(user);
+			delete user.password;
+			res.status(200)
+				.send(user);
 		});
 	},
 
@@ -104,7 +104,7 @@ module.exports = {
 					.send(err);
 			}
 			user.orderid = response[0].id;
-			console.log(107, response[0].id);
+			// console.log(response[0].id);
 
 			delete user.password;
 

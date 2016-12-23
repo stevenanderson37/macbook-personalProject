@@ -32,6 +32,7 @@ module.exports = {
 			}
 
 			completeOrder.order = order[0];
+			console.log(order[0].id);
 			db.product_cart_find([completeOrder.order.id], function(err, products) {
 				if (err) {
 					return res.status(500)

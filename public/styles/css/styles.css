@@ -30,8 +30,25 @@ li {
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 50px;
-  font-size: 30px;
+  margin: auto;
+}
+
+.state-loading img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+.state-loading h1 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 65px;
+  font-weight: normal;
+  margin: auto;
+  margin-top: -70px;
+  text-align: center;
+  color: #cccccc;
+  padding-left: 30px;
 }
 
 .button {
