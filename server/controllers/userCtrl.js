@@ -32,22 +32,23 @@ module.exports = {
 					.send(err);
 			}
 
-			// user = user[0];
-			// db.order_create([user.id], function(err, order) {
-			// 	if (err) {
-			// 		return res.status(500)
-			// 		.send(err);
-			// 	}
-			//
-			// 	// Send user back without password.
-			// 	delete user.password;
-			// 	res.status(200)
-			// 		.send(user);
-			// });
+			user = user[0];
+			db.order_create([user.id], function(err, order) {
+				if (err) {
+					return res.status(500)
+					.send(err);
+				}
 
-			delete user.password;
-			res.status(200)
-				.send(user);
+				// Send user back without password.
+				delete user.password;
+				user.orderid = order.id;
+				res.status(200)
+					.send(user);
+			});
+
+			// delete user.password;
+			// res.status(200)
+			// 	.send(user);
 		});
 	},
 
@@ -95,11 +96,22 @@ module.exports = {
 		// Remove password for security
 		var user = req.user;
 
-		delete user.password;
+		db.order_by_user([user.id], function(err, response) {
+			if (err) {
+				console.log('not working');
 
-		// Return user
-		return res.status(200)
-			.json(user);
+				return res.status(401)
+					.send(err);
+			}
+			user.orderid = response[0].id;
+			console.log(107, response[0].id);
+
+			delete user.password;
+
+			// Return user
+			return res.status(200)
+				.json(user);
+		})
 	},
 
 	update: function(req, res, next) {
