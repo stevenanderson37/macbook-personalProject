@@ -19,6 +19,13 @@ angular.module("app")
 				});
 		};
 
+		this.getProducts = function() {
+			return $http({
+				method: "GET",
+				url: '/api/products'
+			});
+		};
+
 		this.getUser = function(id) {
 			return $http({
 				method: 'GET',
