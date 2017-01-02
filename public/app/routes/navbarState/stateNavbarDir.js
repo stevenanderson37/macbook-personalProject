@@ -17,7 +17,8 @@ angular.module("app")
         // console.log(winScroll);
         if (winScroll >= $('.full-state-navbar-top').offset().top) {
           $('.full-state-navbar-top').css({
-            'border-bottom': 'thin solid #eaeaea'
+            'border-bottom': 'thin solid #eaeaea',
+            'background': 'rgba(255, 255, 255, 0.75)'
           });
         }
       });

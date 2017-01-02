@@ -169,7 +169,7 @@ angular.module("app")
 			controller: 'productsCtrl',
 			resolve: {
 				products: function(mainService, $state) {
-					
+
 					return mainService.getProducts();
 				}
 			}

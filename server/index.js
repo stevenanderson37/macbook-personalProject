@@ -74,6 +74,7 @@ app.get('/api/logout', function(req, res, next) {
 
 // User //
 app.post('/api/register', userCtrl.register);
+// app.post('/api/initial_user_order/:userid', userCtrl.initialUserOrder);
 app.post('/api/user', userCtrl.read);
 app.get('/api/me', isAuthed, userCtrl.me);
 app.put('/api/user/current', isAuthed, userCtrl.update);
@@ -92,12 +93,12 @@ app.put('/api/update/:productid', productCtrl.updateProductInCart);
 app.delete('/api/delete/:productid', productCtrl.deleteCartItem);
 
 // Favorites //
-// app.post('/api/create_favorites/:userid', favoritesCtrl.);
-// app.get('/api/favorites/:userid', favoritesCtrl.);
+// app.post('/api/create_favorites/:userid', userCtrl.);
+// app.get('/api/favorites/:userid', orderCtrl.);
 
 // Products in Favorites //
-// app.post('/api/favorites_add/:favoritesid', favoritesCtrl.);
-// app.delete('/api/delete/:productid', favoritesCtrl.);
+// app.post('/api/favorites_add/:favoritesid', orderCtrl.);
+// app.delete('/api/delete/:productid', orderCtrl.);
 
 
 
