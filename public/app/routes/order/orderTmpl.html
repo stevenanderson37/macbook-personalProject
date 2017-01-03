@@ -27,29 +27,52 @@
             </div>
 
             <div class="bag-item-container-right">
-              <h2>{{product.name}}</h2>
-              {{product.price | currency}}
-              <br>
-              {{product.qty}}
-              <input type="number" ng-model="product.qty">
-              <button class="bag-update-remove-button" type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
+              <div class="bag-product-upper">
+                <div class="bag-product-upper-left">
+                  <h2>{{product.name}}</h2>
+                </div>
+
+                <div class="bag-product-upper-right">
+                  {{product.price | currency}}
+                  <!-- <br> -->
+                  <!-- {{product.qty}} -->
+                  <input type="number" ng-model="product.qty">
+                  <button class="bag-update-button" type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
+                </div>
+              </div>
 
               <div class="bag-full-line"></div>
 
-              <h4>Hardware</h4>
-              <div class="bag-product-details" style="padding-left: 15px; font-weight: normal;">
-                • {{product.processor}}
-                <br>
-                • {{product.sdram}}
-                <br>
-                • {{product.storage}}
-                <br>
-                • {{product.graphics}}
-                <br>
-                • {{product.keyboard}}
+              <button class="bag-remove-button" type="button" ng-click="removeFromCart(product.id)">Remove</button>
+
+              <div class="bag-product-details-container">
+                <div class="bag-product-details-left">
+                  <h4>Hardware</h4>
+                  <div class="bag-product-details" style="padding-left: 15px; font-weight: normal;">
+                    • &nbsp; {{product.processor}}
+                    <br>
+                    • &nbsp; {{product.sdram}}
+                    <br>
+                    • &nbsp; {{product.storage}}
+                    <br>
+                    • &nbsp; {{product.graphics}}
+                    <br>
+                    • &nbsp; {{product.keyboard}}
+                  </div>
+                </div>
+
+                <div class="bag-product-details-right">
+                  <h4>Software</h4>
+                  <div class="bag-product-details" style="padding-left: 15px; font-weight: normal;">
+                    • &nbsp; {{product.operating_sys}}
+                    <br>
+                    • &nbsp; {{product.media_software}}
+                    <br>
+                    • &nbsp; {{product.office_software}}
+                  </div>
+                </div>
               </div>
 
-              <button class="bag-update-remove-button" type="button" ng-click="removeFromCart(product.id)">Remove</button>
               <br><br>
             </div>
 
@@ -77,7 +100,7 @@
       <div>
         <h1>Questions</h1>
       </div>
-      <hr>
+      <div class="bag-full-line"></div>
       <div></div>
       <div></div>
     </div>
