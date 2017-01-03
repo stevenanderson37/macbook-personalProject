@@ -30,6 +30,21 @@ angular.module("app")
             'color': '#999'
           });
         }
+        if (winScroll < $('.full-state-navbar-top').offset().top) {
+          $('.full-state-navbar-top').css({
+            'border-bottom': 'thin solid rgba(255, 255, 255, 0)',
+            'background': 'rgba(255, 255, 255, 0)',
+          });
+          $('.wireless-navbar h2').css({
+            'color': '#ffffff'
+          });
+          $('.wireless-navbar a').css({
+            'color': '#ffffff'
+          });
+          $('.wireless-navbar .state-navbar-right a.current').css({
+            'color': '#dedede'
+          });
+        }
       });
     }
   }
