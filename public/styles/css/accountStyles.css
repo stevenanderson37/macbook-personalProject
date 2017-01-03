@@ -23,6 +23,48 @@
   margin-top: 25px;
 }
 
+.account-header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.account-header h1 {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  color: #333333;
+  padding-top: 25px;
+}
+
+.account-header h3 {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #8a8a8a;
+  padding-bottom: 50px;
+}
+
+.account-header-shadow {
+  width: 977px;
+  height: auto;
+  margin-left: -19px;
+}
+
+.account-header-shadow img {
+  width: 100%;
+  height: auto;
+}
+
+.account-user-info-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: -20px;
+  text-align: left;
+}
+
 .account-logout-container {
 
 }

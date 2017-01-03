@@ -3,14 +3,25 @@
 
   <div class="account-body wow fadeIn" data-wow-duration="0.5s">
     <div class="account-body-inner-container">
-      Name: <input type="text" ng-model="user.first_name">
-      <input type="text" ng-model="user.last_name">
-      <br>
-      Email: <input type="text" ng-model="user.email">
-      <br>
-      Birthday: <input type="text" ng-model="user.birthday | date:'M/d/yyyy'">
-      <br>
-      <button type="button" ng-click="updateUser(user)">update</button>
+      <div class="account-header">
+        <h1>Your Account</h1>
+        <h3>Modify an order, track a shipment, and update your account info. <br> All you need in one place. All with a few simple clicks.</h3>
+      </div>
+
+      <div class="account-header-shadow">
+        <img src="./styles/img/accountHome/section_divider_crease_down.png" />
+      </div>
+
+      <div class="account-user-info-container">
+        Name: <input type="text" ng-model="user.first_name">
+        <input type="text" ng-model="user.last_name">
+        <br>
+        Email: <input type="text" ng-model="user.email">
+        <br>
+        Birthday: <input type="text" ng-model="user.birthday | date:'M/d/yyyy'">
+        <br>
+        <button type="button" ng-click="updateUser(user)">Update</button>
+      </div>
 
       <br><br>
 
@@ -18,9 +29,13 @@
 
       <br><br>
 
-      <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">All MacBook Options</button>
+      <button type="button" name="button" ui-sref="">View Past Orders</button>
 
       <br><br>
+
+      <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">Shop All MacBook Options</button>
+
+      <br><br><br>
 
       <div class="account-logout-container">
         <a ng-click="logout()">logout</a>
@@ -46,7 +61,7 @@
             C13.709,11.707,14.287,11.546,14.828,11.518z"/>
         </svg>
         <div><h6> > </h6></div>
-        <div><h6> Bag </h6></div>
+        <div><h6> Account </h6></div>
       </div>
 
       <div class="directory-5-coloumns">
