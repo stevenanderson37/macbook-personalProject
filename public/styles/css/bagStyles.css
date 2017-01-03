@@ -1,3 +1,23 @@
+.bag-full-line {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  margin-top: 10px;
+}
+
+.bag-container h1 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #333333;
+  text-align: left;
+}
+
+.bag-container a {
+  color: #0085CF;
+}
+
 .bag-free-shipping {
   width: 980px;
   height: 78px;
@@ -8,6 +28,29 @@
   border: thin solid #cccccc;
   border-radius: 7px;
   box-shadow: 0px 1px 2px rgba(125, 125, 125, .5);
+}
+
+.bag-free-shipping h6 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+  text-align: left;
+}
+
+.bag-shipping-inner-container {
+  width: 95%;
+  height: auto;
+  margin: 20px;
+  margin-top: 25px;
+}
+
+.bag-shipping-inner-container embed {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: -8px;
 }
 
 .bag-items-container {
@@ -22,6 +65,84 @@
   box-shadow: 0px 1px 2px rgba(125, 125, 125, .5);
 }
 
+.bag-items-inner-container {
+  width: 95%;
+  height: auto;
+  margin: 20px;
+}
+
+.bag-items {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.bag-item-container-left {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  /*float: left;*/
+  text-align: center;
+}
+
+.bag-item-container-left img {
+  width: 110px;
+  height: auto;
+  margin: auto;
+}
+
+.bag-item-container-right {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  /*float: right;*/
+}
+
+.bag-items-inner-container h2 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.bag-items-inner-container h4 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #333333;
+  padding-top: 10px;
+}
+
+.bag-product-details {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.bag-update-remove-button {
+  border-style: none;
+  background-color: #ffffff;
+  color: #0085CF;
+  cursor: pointer;
+}
+
+.bag-checkout-left {
+
+}
+
+.bag-checkout-right {
+  /*float: right;*/
+  text-align: right;
+}
+
 .bag-questions-container {
   width: 980px;
   height: auto;
@@ -31,4 +152,28 @@
   border: thin solid #cccccc;
   border-radius: 7px;
   box-shadow: 0px 1px 2px rgba(125, 125, 125, .5);
+}
+
+.bag-questions-inner-container {
+  width: 95%;
+  height: auto;
+  margin: 20px;
+}
+
+.bag-note-container {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  text-align: left;
+}
+
+.bag-note-inner-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  line-height: 17px;
+  color: #888888;
 }

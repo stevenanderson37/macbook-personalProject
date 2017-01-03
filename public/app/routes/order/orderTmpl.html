@@ -1,22 +1,91 @@
-<div class="wow fadeIn" data-wow-duration="0.5s">
+<div class="signin-gray-background bag-container wow fadeIn" data-wow-duration="0.5s">
   <navbar-dir></navbar-dir>
-  <br><br>
-  <div class="wow fadeIn" data-wow-duration="0.5s">
-    {{order}}
 
-    <button type="button" ng-click="placeOrder(id, order.id)">Place Order</button>
+  <div class="bag-free-shipping">
+    <div class="bag-shipping-inner-container">
+      <h6>
+        <embed src="./styles/img/icons/Shipping-icon-2x.svg" />
+        &nbsp;
+        Get free shipping or pick up at any Apple Store.
+      </h6>
+    </div>
+  </div>
 
-    <hr>
-    <div ng-repeat="product in products">
-      {{product.name}}
-      <br>
-      {{product.price | currency}}
-      <br>
-      {{product.qty}}
-      <input type="number" ng-model="product.qty">
-      <button type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
-      <button type="button" ng-click="removeFromCart(product.id)">Remove</button>
-      <br><br>
+  <div class="bag-items-container">
+    <div class="bag-items-inner-container">
+      <div>
+        <h1>Items in Your Bag</h1>
+      </div>
+
+      <div class="bag-full-line"></div>
+
+      <div>
+        <div ng-repeat="product in products">
+          <div class="bag-items">
+            <div class="bag-item-container-left">
+              <img src={{product.macbook_img}} />
+            </div>
+
+            <div class="bag-item-container-right">
+              <h2>{{product.name}}</h2>
+              {{product.price | currency}}
+              <br>
+              {{product.qty}}
+              <input type="number" ng-model="product.qty">
+              <button class="bag-update-remove-button" type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
+
+              <div class="bag-full-line"></div>
+
+              <h4>Hardware</h4>
+              <div class="bag-product-details" style="padding-left: 15px; font-weight: normal;">
+                • {{product.processor}}
+                <br>
+                • {{product.sdram}}
+                <br>
+                • {{product.storage}}
+                <br>
+                • {{product.graphics}}
+                <br>
+                • {{product.keyboard}}
+              </div>
+
+              <button class="bag-update-remove-button" type="button" ng-click="removeFromCart(product.id)">Remove</button>
+              <br><br>
+            </div>
+
+          </div>
+
+          <div class="bag-full-line"></div>
+
+        </div>
+        <div>
+          <br>
+          <!-- <div class="bag-checkout-left">
+          </div> -->
+
+          <div class="bag-checkout-right">
+            {{order}}
+            <button class="button-medium" type="button" ng-click="placeOrder(id, order.id)">Check Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bag-questions-container">
+    <div class="bag-questions-inner-container">
+      <div>
+        <h1>Questions</h1>
+      </div>
+      <hr>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="bag-note-container">
+    <div class="bag-note-inner-container">
+      <p>*Subject to credit approval. Minimum purchase required. <a href="">See Terms</a></p>
     </div>
   </div>
 </div>

@@ -62,7 +62,8 @@ CREATE TABLE macbooks (
   graphics VARCHAR(100),
   keyboard VARCHAR(100),
   accessory_kit VARCHAR(100),
-  price DECIMAL
+  price DECIMAL,
+  macbook_img TEXT
 );
 
 CREATE TABLE accessories (
@@ -156,68 +157,68 @@ CREATE TABLE applecare
 -- macbooks
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Silver',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Silver',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00, './styles/img/bag/macbook-select-silver-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Silver',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Silver',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00, './styles/img/bag/macbook-select-silver-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Gold',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Gold',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00, './styles/img/bag/macbook-select-gold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00, './styles/img/bag/macbook-select-gold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Space Gray',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Space Gray',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00, './styles/img/bag/macbook-select-spacegray-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Space Gray',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Space Gray',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00, './styles/img/bag/macbook-select-spacegray-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Rose Gold',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Rose Gold',	'1.1GHz dual-core Intel Core m3, Turbo Boost up to 2.2GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1299.00, './styles/img/bag/macbook-select-rosegold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 256GB - Rose Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 256GB - Rose Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'256GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1549.00, './styles/img/bag/macbook-select-rosegold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Silver',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Silver',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00, './styles/img/bag/macbook-select-silver-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Silver',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Silver',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00, './styles/img/bag/macbook-select-silver-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Gold',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Gold',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00, './styles/img/bag/macbook-select-gold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00, './styles/img/bag/macbook-select-gold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Space Gray',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Space Gray',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00, './styles/img/bag/macbook-select-spacegray-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Space Gray',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Space Gray',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00, './styles/img/bag/macbook-select-spacegray-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Rose Gold',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Rose Gold',	'1.2GHz dual-core Intel Core m5, Turbo Boost up to 2.7GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1599.00, './styles/img/bag/macbook-select-rosegold-small.jpeg');
 
 INSERT INTO macbooks
-(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price)
-VALUES ('12-inch MacBook 512GB - Rose Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00);
+(name, processor, sdram, storage, graphics, keyboard, accessory_kit, price, macbook_img)
+VALUES ('12-inch MacBook 512GB - Rose Gold',	'1.3GHz dual-core Intel Core m7, Turbo Boost up to 3.1GHz',	'8GB 1866MHz LPDDR3 SDRAM',	'512GB PCIe-based onboard flash storage',	'Intel HD Graphics 515',	'Backlit Keyboard (English) & Users Guide',	'Accessory Kit',	1749.00, './styles/img/bag/macbook-select-rosegold-small.jpeg');
 
 -- accessories
 
