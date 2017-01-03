@@ -24,7 +24,9 @@ angular.module("app")
             'color': '#333333'
           });
           $('.state-navbar a').css({
-            'color': '#333333'
+            'color': '#333333',
+            'font-size': '13px',
+            'font-weight': 'normal'
           });
           $('.state-navbar-right a.current').css({
             'color': '#999'
@@ -39,7 +41,9 @@ angular.module("app")
             'color': '#ffffff'
           });
           $('.wireless-navbar a').css({
-            'color': '#ffffff'
+            'color': '#ffffff',
+            'font-size': '14px',
+            'font-weight': '200'
           });
           $('.wireless-navbar .state-navbar-right a.current').css({
             'color': '#dedede'
