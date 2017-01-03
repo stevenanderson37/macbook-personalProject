@@ -5,7 +5,23 @@
   background-color: #ffffff;
 }
 
-.wireless a {
+.wireless-navbar h2 {
+  color: #ffffff;
+}
+
+.wireless-navbar a {
+  color: #ffffff;
+}
+
+.wireless-navbar a:hover {
+  color: #66BBFF;
+}
+
+.wireless-navbar .state-navbar-right a.current {
+  color: #dedede;
+}
+
+.wireless-body a {
   color: #0070C9;
 }
 

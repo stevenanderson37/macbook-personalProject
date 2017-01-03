@@ -20,6 +20,15 @@ angular.module("app")
             'border-bottom': 'thin solid #eaeaea',
             'background': 'rgba(255, 255, 255, 0.75)'
           });
+          $('.state-navbar h2').css({
+            'color': '#333333'
+          });
+          $('.state-navbar a').css({
+            'color': '#333333'
+          });
+          $('.state-navbar-right a.current').css({
+            'color': '#999'
+          });
         }
       });
     }
