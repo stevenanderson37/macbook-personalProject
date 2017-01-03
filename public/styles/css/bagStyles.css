@@ -119,16 +119,36 @@
 }
 
 .bag-product-upper-left {
-  width: 50%;
+  width: 40%;
   height: auto;
   margin: auto;
   text-align: left;
 }
 
 .bag-product-upper-right {
-  width: 50%;
+  width: 60%;
   height: auto;
   margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: right;
+}
+
+.bag-product-upper-right li {
+  margin-left: 50px;
+}
+
+.bag-product-upper-right h5 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.bag-product-upper-right input {
+  width: 30px;
   text-align: right;
 }
 
@@ -224,6 +244,78 @@
   margin: 20px;
 }
 
+.bag-recs-top {
+  width: 100%;
+  height: 138px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bag-recs-bottom {
+  width: 100%;
+  height: 138px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bag-recs-left {
+  width: 50%;
+  height: 138px;
+  margin: auto;
+  margin-left: 10px;
+  position: relative;
+}
+
+.bag-recs-right {
+  width: 50%;
+  height: 138px;
+  margin: auto;
+  position: relative;
+}
+
+.bag-recs-img {
+  width: 30%;
+  height: 138px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+}
+
+.bag-recs-img img {
+  width: 140px;
+  height: 124px;
+  margin: auto;
+}
+
+.bag-recs-info {
+  width: 70%;
+  height: 138px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  padding-left: 15px;
+}
+
+.bag-recs-info h2 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.bag-recs-info h6 {
+  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+}
+
 /* BAG QUESTIONS */
 
 .bag-questions-container {
@@ -282,7 +374,7 @@
   width: 30%;
   height: auto;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 5px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -311,4 +403,23 @@
   height: auto;
   background-color: #f2f2f2;
   padding-bottom: 50px;
+}
+
+.bag-footer-full h6 {
+  color: #888888;
+}
+
+.bag-footer-full .grid h5 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #555555;
+  padding-bottom: 5px;
+}
+
+.bag-footer-full .grid a {
+  color: #888888;
+}
+
+.bag-footer-full .left a {
+  color: #888888;
 }

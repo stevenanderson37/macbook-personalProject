@@ -32,13 +32,18 @@
                   <h2>{{product.name}}</h2>
                 </div>
 
-                <div class="bag-product-upper-right">
-                  {{product.price | currency}}
-                  <!-- <br> -->
-                  <!-- {{product.qty}} -->
-                  <input type="number" ng-model="product.qty">
-                  <button class="bag-update-button" type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
-                </div>
+                <ul class="bag-product-upper-right">
+                  <li class="bag-item-total">
+                    <h2>{{product.price | currency}}</h2>
+                  </li>
+                  <li>
+                    <input type="number" ng-model="product.qty">
+                    <button class="bag-update-button" type="button" name="button" ng-click="changeQty(product.id, product.qty)">Update QTY.</button>
+                  </li>
+                  <li class="bag-item-price">
+                    <h5>{{product.price | currency}}</h5>
+                  </li>
+                </ul>
               </div>
 
               <div class="bag-full-line"></div>
@@ -101,6 +106,60 @@
         <h1>Recommended for You</h1>
       </div>
       <div class="bag-full-line"></div>
+      <ul class="bag-recs-top">
+        <li class="bag-recs-left">
+          <div class="bag-recs-img">
+            <img src="./styles/img/bag/USB-C-to-Lightning-Cable-small.jpeg" />
+          </div>
+          <div class="bag-recs-info">
+            <h2>USB-C to Lightning Cable (1 m)</h2>
+            <br>
+            <h6>$19.00</h6>
+            <br>
+            <button class="button-medium-white">Add To Bag</button>
+          </div>
+        </li>
+
+        <li class="bag-recs-right">
+          <div class="bag-recs-img">
+            <img src="./styles/img/bag/SanDisk-64GB-Dual-Drive-USB-C-Flash-Drive-small.jpeg" />
+          </div>
+          <div class="bag-recs-info">
+            <h2>SanDisk 64GB Dual Drive USB-C Flash Drive</h2>
+            <br>
+            <h6>$52.00</h6>
+            <br>
+            <button class="button-medium-white">Add To Bag</button>
+          </div>
+        </li>
+      </ul>
+      <ul class="bag-recs-bottom">
+        <li class="bag-recs-left">
+          <div class="bag-recs-img">
+            <img src="./styles/img/bag/USB-C-Digital-AV-Multiport-Adapter-small.jpeg" />
+          </div>
+          <div class="bag-recs-info">
+            <h2>USB-C Digital AV Multiport Adapter</h2>
+            <br>
+            <h6>$49.00</h6>
+            <br>
+            <button class="button-medium-white">Add To Bag</button>
+          </div>
+        </li>
+
+        <li class="bag-recs-right">
+          <div class="bag-recs-img">
+            <img src="./styles/img/bag/Belkin-USB-C-to-USB-C-Cable-small.jpeg" />
+          </div>
+          <div class="bag-recs-info">
+            <h2>Belkin USB-C to USB-C Cable (USB 3.1)</h2>
+            <br>
+            <h6>$22.00</h6>
+            <br>
+            <button class="button-medium-white">Add To Bag</button>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -181,8 +240,7 @@
 
     <div class="directory-5-coloumns">
       <div class="grid">
-        Shop and Learn
-        <br>
+        <h5>Shop and Learn</h5>
         <a href="">Mac</a>
         <br>
         <a href="">iPad</a>
@@ -205,8 +263,7 @@
       </div>
 
       <div class="grid">
-        Apple Store
-        <br>
+        <h5>Apple Store</h5>
         <a href="">Find a Store</a>
         <br>
         <a href="">Genius Bar</a>
@@ -229,23 +286,20 @@
       </div>
 
       <div class="grid">
-        For Education
-        <br>
+        <h5>For Education</h5>
         <a href="">Apple and Education</a>
         <br>
         <a href="">Shop for College</a>
         <br>
         <br>
-        For Business
-        <br>
+        <h5>For Business</h5>
         <a href="">Apple and Business</a>
         <br>
         <a href="">Shop for Business</a>
       </div>
 
       <div class="grid">
-        Account
-        <br>
+        <h5>Account</h5>
         <a href="">Manage Your Apple ID</a>
         <br>
         <a href="">Apple Store Account</a>
@@ -253,8 +307,7 @@
         <a href="">iCloud.com</a>
         <br>
         <br>
-        Apple Values
-        <br>
+        <h5>Apple Values</h5>
         <a href="">Accessibility</a>
         <br>
         <a href="">Education</a>
@@ -269,8 +322,7 @@
       </div>
 
       <div class="grid">
-        About Apple
-        <br>
+        <h5>About Apple</h5>
         <a href="">Apple Info</a>
         <br>
         <a href="">Newsroom</a>
