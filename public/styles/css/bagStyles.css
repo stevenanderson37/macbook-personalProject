@@ -148,7 +148,13 @@
 }
 
 .bag-product-upper-right input {
-  width: 30px;
+  width: 35px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
   text-align: right;
 }
 
@@ -216,12 +222,85 @@
   /*float: right;*/
 }
 
+.bag-items-totals-container {
+  width: 100%;
+  height: auto;
+}
+
+.bag-items-totals {
+  width: 245px;
+  height: auto;
+  margin: auto;
+  margin-right: 0px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.bag-items-totals h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.bag-items-totals h3 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.bag-items-totals h4 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.bag-items-totals h5 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.bag-items-totals span {
+  color: #ff1200;
+}
+
+.bag-items-totals-left {
+  width: 45%;
+  height: auto;
+  text-align: right;
+}
+
+.bag-items-totals-right {
+  width: 55%;
+  height: auto;
+  text-align: right;
+}
+
+.bag-checkout-container {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  margin-left: -20px;
+  border-top: 1px solid #cccccc;
+}
+
 .bag-checkout-left {
   text-align: left;
 }
 
 .bag-checkout-right {
   text-align: right;
+  margin-right: 30px;
 }
 
 /* BAG RECOMMENDATIONS */
