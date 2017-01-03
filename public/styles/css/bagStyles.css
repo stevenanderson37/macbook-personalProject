@@ -22,6 +22,8 @@
   text-decoration: underline;
 }
 
+/* BAG FREE SHIPPING */
+
 .bag-free-shipping {
   width: 980px;
   height: 78px;
@@ -56,6 +58,8 @@
   margin: auto;
   margin-bottom: -8px;
 }
+
+/* BAG ITEMS */
 
 .bag-items-container {
   width: 980px;
@@ -200,6 +204,28 @@
   text-align: right;
 }
 
+/* BAG RECOMMENDATIONS */
+
+.bag-recommendations-container {
+  width: 980px;
+  height: auto;
+  min-height: 400px;
+  margin: auto;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: thin solid #cccccc;
+  border-radius: 7px;
+  box-shadow: 0px 1px 2px rgba(125, 125, 125, .5);
+}
+
+.bag-recommendations-inner-container {
+  width: 95%;
+  height: auto;
+  margin: 20px;
+}
+
+/* BAG QUESTIONS */
+
 .bag-questions-container {
   width: 980px;
   height: auto;
@@ -278,4 +304,11 @@
   font-size: 11px;
   line-height: 17px;
   color: #888888;
+}
+
+.bag-footer-full {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
 }
