@@ -1,3 +1,10 @@
+.wireless {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+}
+
 .wireless p {
   font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
   font-weight: 200;
@@ -78,9 +85,16 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
-  margin-top: -150px;
+  margin-top: -125px;
   padding-left: 90px;
   padding-right: 90px;
+}
+
+.wireless-airdrop-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 .wireless-airdrop {
@@ -91,4 +105,67 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+.wireless-airdrop-headline {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-airdrop-headline h6 {
+  font-size: 28px;
+  line-height: 42px;
+  margin: auto;
+  padding-top: 250px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wireless-airdrop-headline h1 {
+  font-size: 52px;
+  line-height: 56px;
+  margin: auto;
+  padding-bottom: 75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wireless-airdrop-text {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.wireless-airdrop-text p {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 75px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.wireless-airdrop-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-left: 75px;
+  background-color: #ffffff;
+}
+
+.wireless-airdrop-img img {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  float: left;
 }
