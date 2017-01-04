@@ -435,7 +435,6 @@
   margin-top: 50px;
   background-color: #ffffff;
   text-align: center;
-  padding-bottom: 200px;
 }
 
 .wireless-hotspot-img img {
@@ -447,10 +446,236 @@
 
 /* WIRELESS APP STORE */
 
+.wireless-appstore-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: -5px;
+  background-color: #fafafa;
+  color: #000000;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
 
+.wireless-appstore {
+  width: 100%;
+  height: 1253px;
+  background-image: url("../img/wireless/mac_appstore_hero_large_2x.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.wireless-appstore-headline {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-appstore-text {
+  width: 980px;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-appstore-headline h6 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.wireless-appstore-headline h1 {
+  font-size: 54px;
+  line-height: 56px;
+  margin: auto;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.wireless-appstore-text p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 60px;
+  padding-right: 490px;
+}
+
+.wireless-appstore-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #fafafa;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.wireless-appstore-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #fafafa;
+}
 
 /* WIRELESS PRINTING */
 
+.wireless-printing-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  color: #000000;
+}
 
+.wireless-printing {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wireless-printing-headline {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-printing-text {
+  width: 980px;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-printing-headline h6 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.wireless-printing-headline h1 {
+  font-size: 54px;
+  line-height: 56px;
+  margin: auto;
+  text-align: center;
+}
+
+.wireless-printing-text p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 35px;
+  padding-left: 175px;
+  padding-right: 175px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.wireless-printing-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wireless-printing-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-right: -350px;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+}
 
 /* WIRELESS TIME MACHINE */
+
+.wireless-timemachine-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: -5px;
+  background-color: #fafafa;
+  color: #000000;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.wireless-timemachine {
+  width: 100%;
+  height: 978px;
+  background-image: url("../img/wireless/time_machine_hero_large_2x.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  margin-left: 75px;
+}
+
+.wireless-timemachine-headline {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-timemachine-text {
+  width: 980px;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-timemachine-headline h6 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: auto;
+  padding-top: 225px;
+  padding-bottom: 10px;
+  padding-left: 415px;
+  text-align: left;
+}
+
+.wireless-timemachine-headline h1 {
+  font-size: 54px;
+  line-height: 56px;
+  margin: auto;
+  padding-left: 415px;
+  text-align: left;
+}
+
+.wireless-timemachine-text p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 415px;
+}
+
+.wireless-timemachine-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #fafafa;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.wireless-timemachine-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #fafafa;
+}
