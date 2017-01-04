@@ -165,7 +165,7 @@ angular.module("app")
 
 		// USER STATE
 		.state('user', {
-			url: '/user',
+			url: '/order_complete',
 			templateUrl: './app/routes/user/userTmpl.html',
 			controller: 'userCtrl'
 		})
