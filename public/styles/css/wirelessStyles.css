@@ -361,3 +361,96 @@
   margin: auto;
   background-color: #ffffff;
 }
+
+/* WIRELESS HOTSPOT */
+
+.wireless-hotspot-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.wireless-hotspot {
+  width: 100%;
+  height: 730px;
+  background-image: url("../img/wireless/personal_hotspot_lifestyle_large_2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wireless-hotspot-headline {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.wireless-hotspot-headline h6 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: auto;
+  padding-top: 250px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wireless-hotspot-headline h1 {
+  font-size: 54px;
+  line-height: 56px;
+  margin: auto;
+  padding-bottom: 75px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.wireless-hotspot-text {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.wireless-hotspot-text p {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 75px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.wireless-hotspot-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.wireless-hotspot-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+/* WIRELESS APP STORE */
+
+
+
+/* WIRELESS PRINTING */
+
+
+
+/* WIRELESS TIME MACHINE */
