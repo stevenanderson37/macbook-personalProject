@@ -76,7 +76,7 @@ angular.module("app")
 
 		// CREATE ACCOUNT STATE
 		.state('create_account', {
-      url: '/create_account',
+      url: '/register',
       templateUrl: "./app/routes/signin/create-account/createAccTmpl.html",
       controller: "createAccCtrl"
     })
@@ -117,6 +117,26 @@ angular.module("app")
 						})
 						.catch(function(err) {
 							$state.go('signin');
+						});
+				}
+			}
+		})
+
+		// ACCOUNT EDIT STATE
+		.state('account_edit', {
+			url: '/account_edit',
+			templateUrl: "./app/routes/account/accountEditTmpl.html",
+			controller: "accountEditCtrl",
+			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.alert('Unable to complete');
 						});
 				}
 			}
