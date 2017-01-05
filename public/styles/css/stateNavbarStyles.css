@@ -69,6 +69,11 @@
   /*background: rgba(255, 255, 255, 0.75);*/
   position: absolute;
   z-index: 200;
+  -ms-transition: background 1s;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .stuck-state-navbar {

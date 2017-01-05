@@ -1,0 +1,20 @@
+.design-pure-invention-container {
+  width: 100%;
+  height: 809px;
+  margin: auto;
+  background-image: url("../img/design/design-large-files/design_hero_large.jpg");
+  background-position: 50% -300px;
+  background-repeat: no-repeat;
+  background-size: auto 1109px;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+
+.design-pure-invention-container .navbar-container {
+  background-color: rgba(38, 38, 38, .90);
+}
+
+.design-pure-invention-container .full-state-navbar {
+  background: rgba(255, 255, 255, .75);
+  border-bottom: thin solid #eaeaea;
+}

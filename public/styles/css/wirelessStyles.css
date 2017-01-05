@@ -7,12 +7,22 @@
 
 .wireless-navbar h2 {
   color: #ffffff;
+  -ms-transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
 }
 
 .wireless-navbar a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 200;
+  -ms-transition: color 1s;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
 }
 
 .wireless-navbar a:hover {
