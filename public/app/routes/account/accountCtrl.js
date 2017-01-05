@@ -1,7 +1,7 @@
 angular.module("app")
 .controller('accountCtrl', function($scope, user, userService, mainService, $state, $stateParams) {
   $scope.user = user;
-  console.log($scope.user);
+  // console.log($scope.user);
 
   $scope.updateUser = function(user) {
 		userService.updateUser(user)
