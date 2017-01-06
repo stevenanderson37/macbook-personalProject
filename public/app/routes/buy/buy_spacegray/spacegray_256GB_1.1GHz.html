@@ -49,7 +49,7 @@
         <li><h2>Processor</h2></li>
         <li style="margin-top: 7px;"><a href="">Which processor is right for you?</a></li>
       </ul>
-      <div ui-sref="spacegray_256gb_11ghz" class="buy-processor-buttons">
+      <div ui-sref="spacegray_256gb_11ghz({id: user.id, cartid: user.orderid})" class="buy-processor-buttons" type="button" name="button">
         <ul>
           <li class="processor-buttons" style="float: right; border: 2px solid #0c7ace;">
             <div class="inner-processor-buttons">
@@ -60,7 +60,7 @@
           </li>
         </ul>
       </div>
-      <div ui-sref="spacegray_256gb_13ghz" class="buy-processor-buttons">
+      <div ui-sref="spacegray_256gb_13ghz({id: user.id, cartid: user.orderid})" class="buy-processor-buttons" type="button" name="button">
         <ul>
           <li class="processor-buttons" style="float: right;">
             <div class="inner-processor-buttons">

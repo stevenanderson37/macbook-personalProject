@@ -1,15 +1,19 @@
 angular.module("app")
-.controller('spacegray_256GB_1.1GHz', function($scope, products, mainService, userService, authService, $state, $stateParams) {
-  $scope.stateName = 'Buy Space Gray 256GB 1.1GHz';
+.controller('spacegray_256GB_1.1GHz', function($scope, user, products, mainService, userService, authService, $state, $stateParams) {
 
-  // VARIABLES
-  // ============================================================
+  $scope.user = user;
+
+  $scope.getUsers = function() {
+		userService.getUsers()
+			.then(function(response) {
+				$scope.users = response.data;
+			});
+	};
+
   $scope.products = products.data;
   $scope.orderid = $state.params.cartid;
   $scope.qty = 1;
 
-  // FUNCTIONS
-  // ============================================================
   $scope.addToCart = function(id, productid, qty) {
     mainService.addToCart(id, productid, qty)
       .then(function(response) {
