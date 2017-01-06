@@ -248,6 +248,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_silver/silver_256GB_1.1GHz.html",
       controller: "silver_256GB_1.1GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -261,6 +272,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_silver/silver_256GB_1.3GHz.html",
       controller: "silver_256GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -274,6 +296,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_silver/silver_512GB_1.2GHz.html",
       controller: "silver_512GB_1.2GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -287,6 +320,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_silver/silver_512GB_1.3GHz.html",
       controller: "silver_512GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -347,6 +391,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_gold/gold_256GB_1.1GHz.html",
       controller: "gold_256GB_1.1GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -360,6 +415,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_gold/gold_256GB_1.3GHz.html",
       controller: "gold_256GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -373,6 +439,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_gold/gold_512GB_1.2GHz.html",
       controller: "gold_512GB_1.2GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -386,6 +463,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_gold/gold_512GB_1.3GHz.html",
       controller: "gold_512GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -446,6 +534,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_spacegray/spacegray_256GB_1.1GHz.html",
       controller: "spacegray_256GB_1.1GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -459,6 +558,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_spacegray/spacegray_256GB_1.3GHz.html",
       controller: "spacegray_256GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -472,6 +582,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_spacegray/spacegray_512GB_1.2GHz.html",
       controller: "spacegray_512GB_1.2GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -485,6 +606,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_spacegray/spacegray_512GB_1.3GHz.html",
       controller: "spacegray_512GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -525,6 +657,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_rosegold/rosegold_256GB_1.1GHz.html",
       controller: "rosegold_256GB_1.1GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -538,6 +681,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_rosegold/rosegold_256GB_1.3GHz.html",
       controller: "rosegold_256GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -571,6 +725,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_rosegold/rosegold_512GB_1.2GHz.html",
       controller: "rosegold_512GB_1.2GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
@@ -584,6 +749,17 @@ angular.module("app")
       templateUrl: "./app/routes/buy/buy_rosegold/rosegold_512GB_1.3GHz.html",
       controller: "rosegold_512GB_1.3GHz",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				products: function(mainService, $state) {
 
 					return mainService.getProducts();
