@@ -32,6 +32,11 @@ module.exports = {
 					.send(err);
 			}
 
+			delete user.password;
+			res.status(200)
+				.send(user);
+		});
+
 			// user = user[0];
 			// db.order_create([user.id], function(err, order) {
 			// 	if (err) {
@@ -45,11 +50,6 @@ module.exports = {
 			// 	res.status(200)
 			// 		.send(user);
 			// });
-
-			delete user.password;
-			res.status(200)
-				.send(user);
-		});
 	},
 
 	// initialUserOrder: function(req, res, next) {

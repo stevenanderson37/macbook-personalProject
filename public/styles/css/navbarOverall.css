@@ -60,13 +60,13 @@
   cursor: pointer;
 }
 
-#bag:hover .bag-dropdown-full {
-  transform: rotateX(0deg);
-}
-
-/*#bag.clicked .bag-dropdown-full {
+/*#bag:hover .bag-dropdown-full {
   transform: rotateX(0deg);
 }*/
+
+#bag.clicked .bag-dropdown-full {
+  transform: rotateX(0deg);
+}
 
 .bag-dropdown-full {
   transition: 0ms transform ease-in-out;

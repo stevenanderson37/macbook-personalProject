@@ -331,8 +331,6 @@
   background: #fafafa;
   margin-top: -5px;
   padding-bottom: 5px;
-  position: relative;
-  z-index: -1;
 }
 
 #available-in {

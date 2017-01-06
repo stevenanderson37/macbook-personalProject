@@ -3,7 +3,14 @@ angular.module("app")
 
   return {
     restrict: 'AE',
-    templateUrl: './app/routes/navbarOverall/navbarTmpl.html'
+    templateUrl: './app/routes/navbarOverall/navbarTmpl.html',
+    controller: function($scope, mainService) {
+      $(window).ready(function() {
+        $('#bag').on('click', function(){
+          $(this).toggleClass('clicked');
+        });
+      });
+    }
   }
 
 
