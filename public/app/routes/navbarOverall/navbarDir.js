@@ -4,7 +4,13 @@ angular.module("app")
   return {
     restrict: 'AE',
     templateUrl: './app/routes/navbarOverall/navbarTmpl.html',
-    controller: function($scope, mainService) {
+    controller: function($scope, mainService, authService, userService) {
+      // $scope.logout = function() {
+      //   userService.logout().then(function(response) {
+      //     $state.go('signin');
+      //   });
+      // };
+
       $(window).ready(function() {
         $('#bag').on('click', function(){
           $(this).toggleClass('clicked');

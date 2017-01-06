@@ -17,13 +17,17 @@ module.exports = {
 	// REGISTER USER //
 	register: function(req, res, next) {
 		var user = req.body;
+		var tempPassword = user.password;
 
 		// Hash the users password for security
 		user.password = hashPassword(user.password);
 
 		user.email = user.email.toLowerCase();
 
+
+
 		db.user.user_create([user.email, user.password, user.first_name, user.last_name, user.birthday, user.country, user.announcements, user.media, user.news], function(err, user) {
+
 			// If err, send err
 			if (err) {
 				console.log('Registration error: ', err);
@@ -31,37 +35,22 @@ module.exports = {
 				return res.status(500)
 					.send(err);
 			}
+			user = user[0];
+			req.login(user, function(err) {
+  			if (err) { return next(err); }
+				delete user.password;
 
-			delete user.password;
-			res.status(200)
-				.send(user);
+				db.order_create([user.id], function(err, order) {
+					if (err) {
+						return res.status(500)
+						.send(err);
+					}
+					res.status(200)
+						.send(user);
+				});
+			});
 		});
-
-			// user = user[0];
-			// db.order_create([user.id], function(err, order) {
-			// 	if (err) {
-			// 		return res.status(500)
-			// 		.send(err);
-			// 	}
-			//
-			// 	// Send user back without password.
-			// 	delete user.password;
-			// 	user.orderid = order.id;
-			// 	res.status(200)
-			// 		.send(user);
-			// });
 	},
-
-	// initialUserOrder: function(req, res, next) {
-	// 	db.order_create([req.params.userid], function(err, order) {
-	// 		if (err) {
-	// 			return res.status(500)
-	// 				.send(err);
-	// 		}
-	// 		res.status(200)
-	// 			.send('Order created successfully');
-	// 	});
-	// },
 
 	getUsers: function(req, res, next) {
 		db.users(function(err, users) {

@@ -149,6 +149,18 @@ angular.module("app")
       controller: "bagCtrl"
     })
 
+		// ORDER STATE
+		.state('order', {
+			url: '/order/:id',
+			templateUrl: './app/routes/order/orderTmpl.html',
+			controller: "orderCtrl",
+			resolve: {
+				order: function(mainService, $stateParams) {
+					return mainService.getUserOrder($stateParams.id);
+				}
+			}
+		})
+
 		// FAVORITES STATE
     .state('favorites', {
       url: '/favorites',
@@ -168,18 +180,6 @@ angular.module("app")
 			url: '/order_complete',
 			templateUrl: './app/routes/user/userTmpl.html',
 			controller: 'userCtrl'
-		})
-
-		// ORDER STATE
-		.state('order', {
-			url: '/order/:id',
-			templateUrl: './app/routes/order/orderTmpl.html',
-			controller: 'orderCtrl',
-			resolve: {
-				order: function(mainService, $stateParams) {
-					return mainService.getUserOrder($stateParams.id);
-				}
-			}
 		})
 
 		// PRODUCTS STATE
