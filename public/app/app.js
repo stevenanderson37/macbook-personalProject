@@ -155,6 +155,17 @@ angular.module("app")
 			templateUrl: './app/routes/order/orderTmpl.html',
 			controller: "orderCtrl",
 			resolve: {
+				user: function(authService, $state) {
+					return authService.getCurrentUser()
+						.then(function(response) {
+							if (!response.data)
+								$state.go('signin');
+							return response.data;
+						})
+						.catch(function(err) {
+							$state.go('signin');
+						});
+				},
 				order: function(mainService, $stateParams) {
 					return mainService.getUserOrder($stateParams.id);
 				}
