@@ -9,7 +9,9 @@ angular.module("app")
         var winScroll = $(this).scrollTop();
 
         if (winScroll >= $('.wireless-header-container').offset().top - $(window).height()) {
-          var offset = winScroll - $('.wireless-header-container').offset().top + $(window).height();
+
+          var offset = winScroll - $('.wireless-header-container').offset().top + $(window).height() - 150;
+
           // center moves down on the y-axis on scroll
           $('.wireless-header-img img').css({
             'transform': 'translate(0px, -'+ offset /80 +'%)'

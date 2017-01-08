@@ -243,10 +243,6 @@
   width: 100vw;
   height: 640px;
   margin: auto;
-  /*background-image: url("../img/wireless/bluetooth_lifestyle_large_2x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   overflow: hidden;
 }
 
@@ -341,23 +337,21 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: #ffffff;
 }
 
-.wireless-airplay {
-  width: 100%;
-  height: 730px;
-  background-image: url("../img/wireless/airplay_lifestyle_large_2x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.wireless-airplay-header {
+  width: 100vw;
+  height: 640px;
+  margin: auto;
   overflow: hidden;
 }
 
 .wireless-airplay-headline {
-  width: 100%;
+  width: 100vw;
   height: auto;
   margin: auto;
+  position: absolute;
+  z-index: -1;
 }
 
 .wireless-airplay-headline h6 {
@@ -377,6 +371,25 @@
   padding-bottom: 75px;
   text-align: center;
   color: #ffffff;
+}
+
+.wireless-airplay-header-img {
+  width: 100vw;
+  height: 640px;
+  margin: auto;
+  position: relative;
+  z-index: -3;
+}
+
+.wireless-airplay-header-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+  transition: 0s linear;
+  transition-property: transform;
 }
 
 .wireless-airplay-text {
@@ -424,23 +437,21 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: #ffffff;
 }
 
-.wireless-hotspot {
-  width: 100%;
-  height: 730px;
-  background-image: url("../img/wireless/personal_hotspot_lifestyle_large_2x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.wireless-hotspot-header {
+  width: 100vw;
+  height: 640px;
+  margin: auto;
   overflow: hidden;
 }
 
 .wireless-hotspot-headline {
-  width: 100%;
+  width: 100vw;
   height: auto;
   margin: auto;
+  position: absolute;
+  z-index: -1;
 }
 
 .wireless-hotspot-headline h6 {
@@ -460,6 +471,25 @@
   padding-bottom: 75px;
   text-align: center;
   color: #ffffff;
+}
+
+.wireless-hotspot-header-img {
+  width: 100vw;
+  height: 640px;
+  margin: auto;
+  position: relative;
+  z-index: -3;
+}
+
+.wireless-hotspot-header-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+  transition: 0s linear;
+  transition-property: transform;
 }
 
 .wireless-hotspot-text {
