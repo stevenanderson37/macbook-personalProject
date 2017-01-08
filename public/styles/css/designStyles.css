@@ -70,12 +70,30 @@
 
 /* DESIGN KEYBOARD */
 
+.design .information-center h2 {
+  font-size: 54px;
+  line-height: 56px;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.design .information-center h3 {
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 200;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .design .information-center p {
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
   text-align: justify;
-  padding-top: 25px;
   padding-left: 100px;
   padding-right: 100px;
 }

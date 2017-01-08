@@ -5,10 +5,21 @@ angular.module("app")
     restrict: 'AE',
     templateUrl: './app/routes/navbarState/stateNavbarTmpl.html',
     controller: function($scope, mainService) {
-      $(".full-state-navbar").stick_in_parent({
-        "parent": "body",
-        "bottoming": false,
-        "sticky_class": ".stuck-state-navbar"
+      // $(".full-state-navbar").stick_in_parent({
+      //   "parent": "body",
+      //   "bottoming": false,
+      //   "sticky_class": ".stuck-state-navbar"
+      // });
+
+      // STICKY NAVBAR WITH JQUERY
+      var num = 44; //number of pixels before modifying styles
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= num) {
+          $('.full-state-navbar').addClass('fixed-navbar');
+        } else {
+          $('.full-state-navbar').removeClass('fixed-navbar');
+        }
       });
 
       $(window).scroll(function() {

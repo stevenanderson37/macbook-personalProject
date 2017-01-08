@@ -209,6 +209,21 @@
   letter-spacing: 3px;
 }
 
+/*.home-photo2-container {
+  width: 100vw;
+  height: 1250px;
+  margin: auto;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.home-photo2-container img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}*/
+
 #home_photo2 {
   width: 100vw;
   height: 1250px;
