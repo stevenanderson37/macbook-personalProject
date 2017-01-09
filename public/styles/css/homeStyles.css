@@ -211,7 +211,7 @@
 
 /*.home-photo2-container {
   width: 100vw;
-  height: 1250px;
+  height: 1000px;
   margin: auto;
   position: relative;
   z-index: -2;
@@ -221,7 +221,11 @@
 .home-photo2-container img {
   width: 100%;
   height: auto;
+  position: absolute;
   margin: auto;
+  margin-top: -300px;
+  left: 0;
+  z-index: -1;
 }*/
 
 #home_photo2 {
@@ -470,24 +474,41 @@
   margin: auto;
   background: white;
   border-bottom: 1px solid #d6d6d6;
+  z-index: 1;
+}
+
+.home-photo5-container {
+  width: 1026px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  z-index: -3;
+  /*border-top: 1px solid #d6d6d6;*/
 }
 
 .home-photo5 {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
+  z-index: -3;
+  border-top: 1px solid #d6d6d6;
 }
 
 .home-photo5 img {
   width: 977px;
   height: auto;
   margin: auto;
+  position: relative;
+  z-index: -1;
+  margin-top: -240px;
+  /*transform: translateY(-240px);*/
 }
 
 .home-photo5-shadow {
   width: 1193px;
   height: auto;
   margin: auto;
+  z-index: -3;
 }
 
 .home-photo5-shadow img {
@@ -495,7 +516,10 @@
   height: auto;
   margin: auto;
   margin-top: -150px;
-  transform: translateX(-38%);
+  z-index: -2;
+  transform: translateX(-540px);
+  /*transform: translateX(-450px);*/
+  /*opacity: 0.0;*/
 }
 
 .wireless-icons-container {
