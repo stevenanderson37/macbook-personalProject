@@ -16,6 +16,22 @@
   box-shadow: 0px 1px 2px rgba(125, 125, 125, .5);
 }
 
+.account-body button {
+  border-style: none;
+  background-color: #ffffff;
+  color: #0085CF;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.account-body .button {
+  color: #0085CF;
+}
+
+.account-body button:hover {
+  text-decoration: underline;
+}
+
 .account-body-inner-container {
   width: 95%;
   height: auto;
@@ -66,7 +82,15 @@
 }
 
 .account-logout-container {
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
+  float: right;
+}
 
+.account-logout-container a {
+  color: #0085CF;
+  font-weight: normal;
 }
 
 .account-logout-container a:hover {

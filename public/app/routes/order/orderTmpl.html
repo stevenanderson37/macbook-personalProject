@@ -34,7 +34,7 @@
 
                 <ul class="bag-product-upper-right">
                   <li class="bag-item-total">
-                    <h2>{{product.price | currency}}</h2>
+                    <h2>{{(product.price * product.qty) | currency}}</h2>
                   </li>
                   <li>
                     <input type="number" ng-model="product.qty">
@@ -94,14 +94,14 @@
             <ul class="bag-items-totals-left">
               <li><h5>Bag Subtotal</h5></li>
               <li><h5 style="font-weight: bold; padding-top: 10px;"><span>Free Shipping</span></h5></li>
-              <li><h4>Estimated Tax | <a>Edit</a></h4></li>
+              <!-- <li><h4>Estimated Tax | <a>Edit</a></h4></li> -->
               <li><h3 style="border-top: 1px solid #cccccc;">Total</h3></li>
             </ul>
             <ul class="bag-items-totals-right">
-              <li><h5>unknown{{bag_subtotal}}</h5></li>
+              <li><h5>needs fixed{{bag_subtotal}}</h5></li>
               <li><h5 style="padding-top: 10px;"><span>$0.00</span></h5></li>
-              <li><h5 style="padding-top: 10px;">unknown{{estimated_tax}}</h5></li>
-              <li><h2 style="border-top: 1px solid #cccccc;">unknown{{bag_total}}</h2></li>
+              <!-- <li><h5 style="padding-top: 10px;">unknown{{estimated_tax}}</h5></li> -->
+              <li><h2 style="border-top: 1px solid #cccccc;">needs fixed{{bag_total}}</h2></li>
             </ul>
           </div>
         </div>
@@ -114,7 +114,7 @@
           </div> -->
 
           <div class="bag-checkout-right">
-            {{order}}
+            <!-- {{order}} -->
             <button class="button-medium" type="button" ng-click="placeOrder(id, order.id)">Check Out</button>
           </div>
         </div>

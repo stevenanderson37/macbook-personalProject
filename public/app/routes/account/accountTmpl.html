@@ -12,6 +12,10 @@
         <img src="./styles/img/accountHome/section_divider_crease_down.png" />
       </div>
 
+      <div class="account-logout-container">
+        <a ng-click="logout()">logout</a>
+      </div>
+
       <div class="account-user-info-container">
         Name: <input type="text" ng-model="user.first_name">
         <input type="text" ng-model="user.last_name">
@@ -29,17 +33,14 @@
 
       <br><br>
 
-      <button type="button" name="button" ui-sref="">View Past Orders</button>
+      <!-- <button type="button" name="button" ui-sref="">View Past Orders</button>
 
-      <br><br>
+      <br> -->
+      <br>
 
       <button type="button" name="button" ui-sref="products({id: user.id, cartid: user.orderid})">Shop All MacBook Options</button>
 
       <br><br><br>
-
-      <div class="account-logout-container">
-        <a ng-click="logout()">logout</a>
-      </div>
     </div>
   </div>
 
