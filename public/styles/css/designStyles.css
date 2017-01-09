@@ -1,3 +1,9 @@
+.design sup {
+  vertical-align: super;
+  font-size: 44px;
+  line-height: 34px;
+}
+
 .design p {
   font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
   font-weight: 200;
@@ -70,6 +76,13 @@
 
 /* DESIGN KEYBOARD */
 
+.design-keyboard {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
 .design .information-center h2 {
   font-size: 54px;
   line-height: 56px;
@@ -93,7 +106,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
-  text-align: justify;
+  text-align: left;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -111,12 +124,237 @@
   margin: auto;
 }
 
+.design-key-types-container {
+  width: 780px;
+  height: 145px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.design-key-types {
+  width: 390px;
+  height: 145px;
+  margin: auto;
+  text-align: center;
+}
+
+.design-key-scissor {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-image: url('../img/design/design-large-files/design_keyboard_scissor_large.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.design-key-butterfly {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-image: url('../img/design/design-large-files/design_keyboard_butterfly_large.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.design h6 {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #666666;
+}
+
 /* DESIGN KEY DESIGN */
 
+.design-keydesign-container {
+  width: 100vw;
+  height: 494px;
+  margin: auto;
+  background-color: #FAFAFA;
+}
 
+.design-keydesign {
+  width: 980px;
+  height: 145px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
 
-/* DESIGN BACKLIGHTING */
+.design-keydesign-left {
+  width: 60%;
+  height: 145px;
+  margin: auto;
+  text-align: left;
+}
 
+.design-keydesign-right {
+  width: 40%;
+  height: 145px;
+  margin: auto;
+  padding-top: 65px;
+  display: flex;
+  flex-direction: row;
+}
 
+/* DESIGN BACKLIGHTING LIGHT */
+.design-backlighting-container-full {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+}
+
+.design-backlighting-light-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+
+.design-backlighting-img {
+  width: 1226px;
+  height: auto;
+  margin: auto;
+}
+
+.design-backlighting-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* DESIGN BACKLIGHTING DARK */
+
+.design-backlighting-dark-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background-color: #000000;
+  position: absolute;
+}
 
 /* DESIGN PIXELS */
+
+.design-pixels-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-top: 835px;
+}
+
+.design .information-left p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: left;
+  padding-right: 300px;
+}
+
+.design-pixels-inner-container {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  z-index: -4;
+}
+
+.design-pixels-header-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.design-pixels-parallax-img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  /*padding-top: ;*/
+}
+
+.design-pixels-parallax-img img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-right: 0px;
+}
+
+.design-pixels-measurements-full {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.design-pixels-measurements {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  margin-left: 0px;
+}
+
+.design-pixels-led-container {
+  width: 100vw;
+  height: 1034px;
+  margin: auto;
+  background-image: url('../img/design/design-large-files/pixel_macbook_large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.design-pixels-led {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  padding-left: 650px;
+  padding-top: 300px;
+}
+
+.design .design-pixels-led p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.design-pixels-aperture-container {
+  width: 157px;
+  height: 157px;
+  margin: auto;
+  margin-left: 0px;
+  margin-top: 20px;
+  background-image: url('../img/design/design-large-files/pixel_colors_large.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  /*position: relative;
+  z-index: -5;*/
+}
+
+#design-pixels-led-layer1 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#design-pixels-led-layer2 {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  transform: translateY(-153px);
+}
+
+/* DESIGN FORCE TOUCH */
