@@ -348,13 +348,93 @@
   width: 100%;
   height: auto;
   margin: auto;
+  transform: translateY(-157px);
 }
 
 #design-pixels-led-layer2 {
   width: 85%;
   height: auto;
   margin: auto;
-  transform: translateY(-153px);
+  transform: translateY(-310px);
+}
+
+.design-white-rectangles-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#hiding-white-rectangles-left {
+  width: 28%;
+  height: 160px;
+  background-color: #ffffff;
+  margin-left: 12px;
+  margin-top: 160px;
+  visibility: hidden;
+}
+
+#hiding-white-rectangles-mid {
+  width: 25%;
+  height: 160px;
+  background-color: #ffffff;
+  margin-left: 4px;
+  margin-top: 160px;
+  visibility: hidden;
+}
+
+#hiding-white-rectangles-right {
+  width: 29%;
+  height: 160px;
+  background-color: #ffffff;
+  margin-left: 2px;
+  margin-top: 160px;
+  visibility: hidden;
+}
+
+@keyframes rectangleMoveDown {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-margin-top: 0px;
+    margin-top: 0px;
+  }
+
+  to {
+    -webkit-margin-top: 160px;
+    margin-top: 160px;
+  }
+}
+
+.rectangleMoveDown {
+  -webkit-animation-name: rectangleMoveDown;
+  animation-name: rectangleMoveDown;
+}
+
+@keyframes barMoveUp {
+  from, to {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    -webkit-transform: translateY(-280px);
+    transform: translateY(-280px);
+  }
+
+  to {
+    -webkit-transform: translateY(-310px);
+    transform: translateY(-310px);
+  }
+}
+
+.barMoveUp {
+  -webkit-animation-name: barMoveUp;
+  animation-name: barMoveUp;
 }
 
 /* DESIGN FORCE TOUCH */
