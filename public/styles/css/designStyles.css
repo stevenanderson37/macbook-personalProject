@@ -149,6 +149,10 @@
   background-size: contain;
 }
 
+.design-key-scissor img:hover {
+  opacity: 0;
+}
+
 .design-key-butterfly {
   width: 100%;
   height: auto;
@@ -157,6 +161,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.design-key-butterfly img:hover {
+  opacity: 0;
 }
 
 .design h6 {
@@ -438,3 +446,153 @@
 }
 
 /* DESIGN FORCE TOUCH */
+
+.design-forcetouch-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+}
+
+.design-forcetouch-parallax-imgs {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+}
+
+.design-forcetouch-container .information-left h3 {
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 200;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.design-forcetouch-container .information-left-taptic p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: left;
+  padding-right: 525px;
+}
+
+.design-forcetouch-container .information-left-taptic {
+  margin-bottom: 100px;
+  position: relative;
+  z-index: -1;
+}
+
+.design-forcetouch-taptic-img-container {
+  width: 509px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  margin-right: -25px;
+}
+
+.design-forcetouch-taptic-img {
+  width: 509px;
+  height: 194px;
+  margin: auto;
+}
+
+.design-forcetouch-taptic-img img {
+
+}
+
+.design-forcetouch-pinktrack {
+  width: 95vw;
+  height: auto;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.design-forcetouch-pinktrack img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.design-forcetouch-container .information-center {
+  width: 980px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+.design-forcetouch-container .information-center h3 {
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.design-forcetouch-container .information-center p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.design-forcetouch-laptop-carousel-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.design-forcetouch-laptop-carousel {
+  width: 1088px;
+  height: 623px;
+  margin: auto;
+  text-align: center;
+  background-image: url('../img/design/design-large-files/gallery_macbook_large.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 75px;
+}
+
+.design-forcetouch-carousel-imgs {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.design-forcetouch-carousel-text {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+.design-forcetouch-carousel-text ul {
+  width: 550px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.design-forcetouch-carousel-text h6 {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #000000;
+  padding-left: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.design-forcetouch-carousel-text p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
