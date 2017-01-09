@@ -653,6 +653,14 @@
   margin: auto;
 }
 
+.home-internals-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+}
+
 .home-internals {
   width: 1018px;
   height: 711px;
@@ -679,7 +687,7 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background: #ffffff;
+  /*background: #ffffff;*/
   overflow: hidden;
 }
 
@@ -697,6 +705,14 @@
   margin-top: -9px;
   padding-left: 13px;
   letter-spacing: 3px;
+}
+
+.home-battery-stack-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  position: relative;
+  z-index: -1;
 }
 
 .home-battery-stack {
