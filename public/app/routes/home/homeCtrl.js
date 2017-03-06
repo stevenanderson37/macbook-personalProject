@@ -1,5 +1,4 @@
-angular.module("app")
-.controller('homeCtrl', function($scope, $stateParams, $state, mainService, userService, authService) {
+angular.module("app").controller('homeCtrl', function($scope, $stateParams, $state, mainService, userService, authService) {
   $scope.stateName = 'Home';
 
   // $(window).stellar();
