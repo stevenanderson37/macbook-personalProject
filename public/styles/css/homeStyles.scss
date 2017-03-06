@@ -1,4 +1,6 @@
-/* homeTmpl.html */
+@import '../overallStyles';
+
+/* HOME STYLES */
 
 .home-body-content {
   width: 100vw;
@@ -23,7 +25,7 @@
 
 .top-headline-full h1 {
   text-align: center;
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 64px;
   line-height: 68px;
   font-weight: 200;
@@ -33,7 +35,7 @@
 
 .top-headline-full h2 {
   text-align: center;
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 42px;
   line-height: 48px;
   font-weight: 200;
@@ -43,7 +45,7 @@
 }
 
 .home-body-content p {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 18px;
   line-height: 26px;
   font-weight: 200;
@@ -56,7 +58,7 @@
   height: 313px;
   margin: auto;
   margin-bottom: 50px;
-  background-image: url("../img/home/hero_static_medium_2x.jpg");
+  background-image: url("../../styles/img/home/hero_static_medium_2x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -77,7 +79,7 @@
 }
 
 .macbook-intro p {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 27px;
   line-height: 41px;
   font-weight: 200;
@@ -249,7 +251,7 @@
   height: 800px;
   overflow: hidden;
   margin: auto;
-  background-image: url('../img/home/overview_colors_medium_2x.jpg');
+  background-image: url('../../styles/img/home/overview_colors_medium_2x.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -353,7 +355,7 @@
 }
 
 #available-in {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -404,7 +406,7 @@
 }
 
 .information-left h2 {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 52px;
   line-height: 56px;
   font-weight: 200;
@@ -415,14 +417,14 @@
 }
 
 .information-left p {
-  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-pro;
   font-weight: 200;
   font-style: normal;
 }
 
 .information-left a {
   color: #0c7ace;
-  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-pro;
   font-weight: 200;
   font-style: normal;
 }
@@ -439,7 +441,7 @@
 }
 
 .information-center h2 {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-size: 52px;
   line-height: 56px;
   font-weight: 200;
@@ -449,7 +451,7 @@
 }
 
 .information-center p {
-  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-pro;
   font-weight: 200;
   font-size: 18px;
   font-style: normal;
@@ -457,7 +459,7 @@
 
 .information-center a {
   color: #0c7ace;
-  font-family: "Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-pro;
   font-weight: 200;
   font-size: 18px;
   line-height: 25px;
@@ -591,7 +593,7 @@
   height: 882px;
   margin: auto;
   overflow: hidden;
-  background-image: url("../img/home/design_port_large_2x.jpg");
+  background-image: url("../../styles/img/home/design_port_large_2x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 2204px auto;
@@ -665,7 +667,7 @@
   width: 1018px;
   height: 711px;
   margin: auto;
-  background-image: url("../img/home/internals_layer_start_medium_2x.jpg");
+  background-image: url("../../styles/img/home/internals_layer_start_medium_2x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -721,7 +723,7 @@
   margin: auto;
   margin-top: 123px;
   float: left;
-  background-image: url("../img/home/overview_battery_base_medium_2x.jpg");
+  background-image: url("../../styles/img/home/overview_battery_base_medium_2x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 911px 378px;
@@ -998,7 +1000,7 @@
 .home-pure-invention {
   width: auto;
   height: 838px;
-  background-image: url("../img/home/overview_design_medium_2x.jpg");
+  background-image: url("../../styles/img/home/overview_design_medium_2x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: auto 838px;

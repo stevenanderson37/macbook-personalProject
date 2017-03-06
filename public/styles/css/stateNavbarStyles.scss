@@ -1,4 +1,6 @@
-/* NAVBAR-MacBook */
+@import '../overallStyles';
+
+/* NAVBAR-MacBook STYLES */
 
 .fixed-navbar-placeholder {
   width: 100%;
@@ -16,7 +18,7 @@
   height: 52px;
   margin: auto;
   text-align: center;
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-weight: thin;
   font-style: normal;
   color: #333333;

@@ -1,3 +1,7 @@
+@import '../overallStyles';
+
+/* ACCOUNT STYLES */
+
 .account-background {
   width: 100%;
   height: auto;
@@ -19,13 +23,13 @@
 .account-body button {
   border-style: none;
   background-color: #ffffff;
-  color: #0085CF;
+  color: $account-buttonblue;
   cursor: pointer;
   margin-left: -5px;
 }
 
 .account-body .button {
-  color: #0085CF;
+  color: $account-buttonblue;
 }
 
 .account-body button:hover {
@@ -89,7 +93,7 @@
 }
 
 .account-logout-container a {
-  color: #0085CF;
+  color: $account-buttonblue;
   font-weight: normal;
 }
 
