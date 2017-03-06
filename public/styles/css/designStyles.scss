@@ -9,7 +9,7 @@
 }
 
 .design p {
-  font-family: "Myriad Set Pro","Myriad Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-family: $myriad-set-pro;
   font-weight: 200;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
   width: 100%;
   height: 1009px;
   margin: auto;
-  background-image: url("../img/design/design-large-files/design_hero_large.jpg");
+  background-image: url("../../styles/img/design/design-large-files/design_hero_large.jpg");
   background-position: 50% -300px;
   background-repeat: no-repeat;
   background-size: auto 1109px;
@@ -147,7 +147,7 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-image: url('../img/design/design-large-files/design_keyboard_scissor_large.jpg');
+  background-image: url('../../styles/img/design/design-large-files/design_keyboard_scissor_large.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -161,7 +161,7 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-image: url('../img/design/design-large-files/design_keyboard_butterfly_large.jpg');
+  background-image: url('../../styles/img/design/design-large-files/design_keyboard_butterfly_large.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -320,7 +320,7 @@
   width: 100vw;
   height: 1034px;
   margin: auto;
-  background-image: url('../img/design/design-large-files/pixel_macbook_large.jpg');
+  background-image: url('../../styles/img/design/design-large-files/pixel_macbook_large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -347,7 +347,7 @@
   margin: auto;
   margin-left: 0px;
   margin-top: 20px;
-  background-image: url('../img/design/design-large-files/pixel_colors_large.jpg');
+  background-image: url('../../styles/img/design/design-large-files/pixel_colors_large.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,7 +583,7 @@
   height: 623px;
   margin: auto;
   text-align: center;
-  background-image: url('../img/design/design-large-files/gallery_macbook_large.jpg');
+  background-image: url('../../styles/img/design/design-large-files/gallery_macbook_large.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
