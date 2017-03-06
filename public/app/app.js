@@ -783,5 +783,5 @@ angular.module("app")
 
 		// ASSIGN OTHERWISE
 		// ============================================================
-		$urlRouterProvider.otherwise('macbook');
+		$urlRouterProvider.otherwise('/macbook');
 	});

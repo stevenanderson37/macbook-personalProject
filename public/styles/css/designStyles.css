@@ -492,6 +492,36 @@
   margin-right: -25px;
 }
 
+.design-forcetouch-taptic-img-container .glass-line {
+  width: 1px;
+  height: 50px;
+  background-color: #666666;
+  position: absolute;
+  /*z-index: -1;*/
+}
+
+.design-forcetouch-taptic-img-container .engine-line {
+  width: 165px;
+  height: 1px;
+  background-color: #666666;
+  position: absolute;
+  /*z-index: -1;*/
+}
+
+.design-forcetouch-taptic-img-container .sensors-line {
+  width: 352px;
+  height: 26px;
+  border-bottom: 1px solid #666666;
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  margin-bottom: -40px;
+  margin-left: 65px;
+  /*z-index: -1;*/
+}
+
 .design-forcetouch-taptic-img {
   width: 509px;
   height: 194px;
