@@ -11,6 +11,32 @@ CREATE TABLE users (
   news BOOLEAN
 );
 
+CREATE TABLE macbooks (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  processor VARCHAR(100),
+  sdram VARCHAR(100),
+  storage VARCHAR(100),
+  graphics VARCHAR(100),
+  keyboard VARCHAR(100),
+  accessory_kit VARCHAR(100),
+  price DECIMAL,
+  macbook_img TEXT
+);
+
+CREATE TABLE orders (
+  id SERIAL PRIMARY KEY,
+  userid INTEGER FOREIGN KEY REFERENCES users(id),
+  complete BOOLEAN
+);
+
+CREATE TABLE products_in_cart (
+  id SERIAL PRIMARY KEY,
+  orderid INTEGER REFERENCES orders(id),
+  macbookid INTEGER REFERENCES macbooks(id),
+  qty INTEGER
+);
+
 CREATE TABLE security_questions (
   security_question1 TEXT,
   security_answer1 VARCHAR(100),
@@ -18,7 +44,7 @@ CREATE TABLE security_questions (
   security_answer2 VARCHAR(100),
   security_question3 TEXT,
   security_answer3 VARCHAR(100),
-  userid INTEGER REFERENCES users.id
+  userid INTEGER REFERENCES users(id)
 );
 
 CREATE TABLE shipping_info (
@@ -33,7 +59,7 @@ CREATE TABLE shipping_info (
   business_address BOOLEAN,
   mobile_area VARCHAR(10),
   mobile_phone VARCHAR(25),
-  userid INTEGER REFERENCES users.id
+  userid INTEGER REFERENCES users(id)
 );
 
 CREATE TABLE billing_info (
@@ -50,20 +76,7 @@ CREATE TABLE billing_info (
   street_address_a VARCHAR(100),
   street_address_b VARCHAR(100),
   zip VARCHAR(100),
-  userid INTEGER REFERENCES users.id
-);
-
-CREATE TABLE macbooks (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  processor VARCHAR(100),
-  sdram VARCHAR(100),
-  storage VARCHAR(100),
-  graphics VARCHAR(100),
-  keyboard VARCHAR(100),
-  accessory_kit VARCHAR(100),
-  price DECIMAL,
-  macbook_img TEXT
+  userid INTEGER REFERENCES users(id)
 );
 
 CREATE TABLE accessories (
@@ -78,19 +91,6 @@ CREATE TABLE products (
   id SERIAL PRIMARY KEY,
   macbookid INTEGER REFERENCES macbooks.id,
   accessoryid INTEGER REFERENCES accessories.id
-);
-
-CREATE TABLE orders (
-  id SERIAL PRIMARY KEY,
-  userid INTEGER REFERENCES users.id,
-  complete BOOLEAN
-);
-
-CREATE TABLE products_in_cart (
-  id SERIAL PRIMARY KEY,
-  orderid INTEGER REFERENCES orders.id,
-  productid INTEGER REFERENCES products.id,
-  qty INTEGER
 );
 
 CREATE TABLE favorites (

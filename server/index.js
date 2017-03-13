@@ -22,8 +22,8 @@ var massiveServer = massive.connectSync({
 app.set('db', massiveServer);
 var db = app.get('db');
 
-var dbSetup = require('./services/dbSetup');
-dbSetup.run();
+// var dbSetup = require('./services/dbSetup');
+// dbSetup.run();
 
 // CONTROLLERS //
 var userCtrl = require('./controllers/userCtrl');
