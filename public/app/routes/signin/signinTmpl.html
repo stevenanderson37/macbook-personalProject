@@ -20,9 +20,9 @@
         <h2>Sign in to Apple Store</h2>
         <br>
         <form ng-submit="login(user)">
-          <input placeholder="Apple ID*" type="email" ng-model="user.email" required></input>
+          <input placeholder="Apple ID*" type="email" ng-model="user.email" ng-init="user.email='guest@emailprovider.com'" required></input>
           <br>
-          <input placeholder="Password*" type="password" ng-model="user.password" required></input>
+          <input placeholder="Password*" type="password" ng-model="user.password" ng-init="user.password='guest'" required></input>
           <br>
           <button type="submit" class="button-medium" style="float: right;">Sign In</button>
         </form>
